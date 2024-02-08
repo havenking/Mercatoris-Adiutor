@@ -1,2 +1,2 @@
-# Mercatoris-Adiutor
+# Mercatoris Adiutor
 Ravendawn merchant helper
