@@ -9,7 +9,76 @@
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         Height="600" Width="800">
-    <Grid>
+    <Grid Background="Gray">
+        <TabControl Background="DarkGray">
+            <TabItem Header="Planner" FontSize="16">
+                <Grid Background="Gray">
 
+                    <ListBox Grid.Row="0" x:Name="PlannerlistBox" ItemsSource="{Binding UserLog}" Background="Gray">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <local:PlannerRegistry/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Database"  FontSize="16">
+                <Grid Background="Gray">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <TabControl Background="DarkGray">
+                        <TabItem Header="Blacksmith">
+                            <Grid Background="Gray">
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Carpenter">
+                            <Grid Background="Gray">
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Cook">
+                            <Grid Background="Gray">
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Merchant">
+                            <Grid Background="Gray">
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Miner">
+                            <Grid Background="Gray">
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Ship Builder">
+                            <Grid Background="Gray">
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Wagon Crafter">
+                            <Grid Background="Gray">
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Weaver">
+                            <Grid Background="Gray">
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Wood Cutter">
+                            <Grid Background="Gray">
+
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Details"  FontSize="16"/>
+        </TabControl>
     </Grid>
 </Window>
