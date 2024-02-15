@@ -6,117 +6,273 @@ using System.Threading.Tasks;
 
 namespace MercatorisAdiutor.Database.WoodCutting.Objects
 {
-    public struct Juniper : GatheringObject
+    public abstract class WoodCuttingGatheringObject : GatheringObject
     {
-        public string Name => nameof(Juniper);
+        internal string name = string.Empty;
+        internal int labor = 0;
+        internal int cost = 0;
+        internal int gatheringNumber = 0;
+        internal int gatheringExperience = 0;
+        internal int gatheringTime = 0;
+        internal Production[] gatheringProduction = Array.Empty<Production>();
 
-        public int Experience => 1800;
+        public string Name => name;
 
-        public int Labor => 20;
+        public int Labor => labor;
 
-        public int Time => 120;
+        public int Cost => cost;
 
-        public int Cost => 550;
+        public int TotalExperience => GatheringExperience * GatheringNumber;
 
-        public Production[] Production =>
+        public int TotalTime => GatheringTime * GatheringNumber;
+
+        public int GatheringNumber => gatheringNumber;
+
+        public int GatheringExperience => gatheringExperience;
+
+        public int GatheringTime => gatheringTime;
+
+        public Production[] TotalProduction
+        {
+            get
+            {
+                List<Production> totalProduction = new List<Production>();
+
+                foreach (Production production in GatheringProduction)
+                    totalProduction.Add(production * GatheringNumber);
+
+                return totalProduction.ToArray();
+            }
+        }
+
+        public Production[] GatheringProduction => gatheringProduction;
+    }
+
+    public sealed class Juniper : WoodCuttingGatheringObject
+    {
+        private static Juniper? instance = null;
+        private static readonly object locker = new object();
+
+        Juniper ()
+        {
+            name = "Juniper";
+            labor = 20;
+            cost = 550;
+            gatheringNumber = 1;
+            gatheringExperience = 1800;
+            gatheringTime = 120;
+
+            gatheringProduction =
             [
                 new Production() { Item = Items.DenseLog.Instance, Min = 0, Max = 1 },
                 new Production() { Item = Items.SmallLog.Instance, Min = 4, Max = 8 }
             ];
+        }
+
+        public static Juniper Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new Juniper();
+                    }
+
+                    return instance;
+                }
+            }
+        }
     }
 
-    public struct Fir : GatheringObject
+    public sealed class Fir : WoodCuttingGatheringObject
     {
-        public string Name => nameof(Fir);
+        private static Fir? instance = null;
+        private static readonly object locker = new object();
 
-        public int Experience => 6400;
+        Fir ()
+        {
+            name = "Fir";
+            labor = 80;
+            cost = 2200;
+            gatheringNumber = 1;
+            gatheringExperience = 6400;
+            gatheringTime = 480;
 
-        public int Labor => 80;
-
-        public int Time => 480;
-
-        public int Cost => 2200;
-
-        public Production[] Production =>
+            gatheringProduction =
             [
                 new Production() { Item = Items.DenseLog.Instance, Min = 0, Max = 1 },
                 new Production() { Item = Items.SmallLog.Instance, Min = 20, Max = 26 }
             ];
+        }
+
+        public static Fir Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new Fir();
+                    }
+
+                    return instance;
+                }
+            }
+        }
     }
 
-    public struct Palm : GatheringObject
+    public sealed class Palm : WoodCuttingGatheringObject
     {
-        public string Name => nameof(Palm);
+        private static Palm? instance = null;
+        private static readonly object locker = new object();
 
-        public int Experience => 4800;
+        Palm ()
+        {
+            name = "Palm";
+            labor = 60;
+            cost = 1650;
+            gatheringNumber = 1;
+            gatheringExperience = 4800;
+            gatheringTime = 360;
 
-        public int Labor => 60;
-
-        public int Time => 360;
-
-        public int Cost => 1650;
-
-        public Production[] Production =>
+            gatheringProduction =
             [
                 new Production() { Item = Items.DenseLog.Instance, Min = 0, Max = 1 },
                 new Production() { Item = Items.HeavyLog.Instance, Min = 14, Max = 19 }
             ];
+        }
+
+        public static Palm Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new Palm();
+                    }
+
+                    return instance;
+                }
+            }
+        }
     }
 
-    public struct Oak : GatheringObject
+    public sealed class Oak : WoodCuttingGatheringObject
     {
-        public string Name => nameof(Oak);
+        private static Oak? instance = null;
+        private static readonly object locker = new object();
 
-        public int Experience => 19000;
+        Oak ()
+        {
+            name = "Oak";
+            labor = 240;
+            cost = 6600;
+            gatheringNumber = 1;
+            gatheringExperience = 19000;
+            gatheringTime = 1440;
 
-        public int Labor => 240;
-
-        public int Time => 1440;
-
-        public int Cost => 6600;
-
-        public Production[] Production =>
+            gatheringProduction =
             [
                 new Production() { Item = Items.DenseLog.Instance, Min = 0, Max = 1 },
                 new Production() { Item = Items.SmallLog.Instance, Min = 50, Max = 80 }
             ];
+        }
+
+        public static Oak Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new Oak();
+                    }
+
+                    return instance;
+                }
+            }
+        }
     }
 
-    public struct Wildleaf : GatheringObject
+    public sealed class Wildleaf : WoodCuttingGatheringObject
     {
-        public string Name => nameof(Wildleaf);
+        private static Wildleaf? instance = null;
+        private static readonly object locker = new object();
 
-        public int Experience => 13000;
+        Wildleaf ()
+        {
+            name = "Wildleaf";
+            labor = 160;
+            cost = 4400;
+            gatheringNumber = 1;
+            gatheringExperience = 13000;
+            gatheringTime = 960;
 
-        public int Labor => 160;
-
-        public int Time => 960;
-
-        public int Cost => 4400;
-
-        public Production[] Production =>
+            gatheringProduction =
             [
                 new Production() { Item = Items.DenseLog.Instance, Min = 0, Max = 1 },
                 new Production() { Item = Items.SturdyLog.Instance, Min = 28, Max = 37 }
             ];
+        }
+
+        public static Wildleaf Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new Wildleaf();
+                    }
+
+                    return instance;
+                }
+            }
+        }
     }
 
-    public struct Willow : GatheringObject
+    public sealed class Willow : WoodCuttingGatheringObject
     {
-        public string Name => nameof(Willow);
+        private static Willow? instance = null;
+        private static readonly object locker = new object();
 
-        public int Experience => 9600;
+        Willow ()
+        {
+            name = "Willow";
+            labor = 120;
+            cost = 3300;
+            gatheringNumber = 1;
+            gatheringExperience = 9600;
+            gatheringTime = 720;
 
-        public int Labor => 120;
-
-        public int Time => 720;
-
-        public int Cost => 3300;
-
-        public Production[] Production =>
+            gatheringProduction =
             [
                 new Production() { Item = Items.DenseLog.Instance, Min = 0, Max = 1 },
                 new Production() { Item = Items.FineLog.Instance, Min = 14, Max = 19 }
             ];
+        }
+
+        public static Willow Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new Willow();
+                    }
+
+                    return instance;
+                }
+            }
+        }
     }
 }

@@ -1,14 +1,21 @@
 ﻿namespace MercatorisAdiutor.Database.Farming.Items
 {
-    public class FarmingItem : Item
+    public abstract class FarmingItem : Item
     {
-        public string Name => this.GetType().Name;
+        internal string name = string.Empty;
+        internal int price = 0;
+
+        public string Name => name;
 
         public Profession Profession => Profession.Farming;
 
         public Category Category => Category.Gathering;
 
-        public int Price { get; set; }
+        public int Price 
+        {
+            get { return price; }
+            set { price = value; }
+        }
     }
 
     public sealed class ThreeLeafClover : FarmingItem
@@ -16,7 +23,10 @@
         private static ThreeLeafClover? instance = null;
         private static readonly object locker = new object();
 
-        ThreeLeafClover() { }
+        ThreeLeafClover() 
+        {
+            name = "Three-Leaf Clover";
+        }
 
         public static ThreeLeafClover Instance
         {
@@ -40,7 +50,10 @@
         private static Potato? instance = null;
         private static readonly object locker = new object();
 
-        Potato() { }
+        Potato()
+        {
+            name = "Potato";
+        }
 
         public static Potato Instance
         {
@@ -64,7 +77,10 @@
         private static Cotton? instance = null;
         private static readonly object locker = new object();
 
-        Cotton() { }
+        Cotton() 
+        {
+            name = "Potato";
+        }
 
         public static Cotton Instance
         {
@@ -84,11 +100,14 @@
     }
 
     public sealed class Corn : FarmingItem
-         {
+    {
         private static Corn? instance = null;
         private static readonly object locker = new object();
 
-        Corn() { }
+        Corn()
+        {
+            name = "Corn";
+        }
 
         public static Corn Instance
         {
@@ -108,16 +127,19 @@
     }
 
     public sealed class Wheat : FarmingItem
-         {
+    {
         private static Wheat? instance = null;
         private static readonly object locker = new object();
 
-        Wheat() { }
+        Wheat()
+        {
+            name = "Wheat";
+        }
 
         public static Wheat Instance
         {
             get
-            {
+       {
                 lock (locker)
                 {
                     if (instance == null)
@@ -132,11 +154,14 @@
     }
 
     public sealed class Apple : FarmingItem
-         {
+    {
         private static Apple? instance = null;
         private static readonly object locker = new object();
 
-        Apple() { }
+        Apple()
+        {
+            name = "Apple";
+        }
 
         public static Apple Instance
         {
@@ -156,11 +181,14 @@
     }
 
     public sealed class Carrot : FarmingItem
-         {
+    {
         private static Carrot? instance = null;
         private static readonly object locker = new object();
 
-        Carrot() { }
+        Carrot()
+        {
+            name = "Carrot";
+        }
 
         public static Carrot Instance
         {
@@ -180,11 +208,14 @@
     }
 
     public sealed class Grape : FarmingItem
-         {
+    {
         private static Grape? instance = null;
         private static readonly object locker = new object();
 
-        Grape() { }
+        Grape()
+        {
+            name = "Grape";
+        }
 
         public static Grape Instance
         {
@@ -204,11 +235,14 @@
     }
 
     public sealed class Blueberry : FarmingItem
-         {
+    {
         private static Blueberry? instance = null;
         private static readonly object locker = new object();
 
-        Blueberry() { }
+        Blueberry()
+        {
+            name = "Blueberry";
+        }
 
         public static Blueberry Instance
         {
@@ -228,11 +262,14 @@
     }
 
     public sealed class Cabbage : FarmingItem
-         {
+    {
         private static Cabbage? instance = null;
         private static readonly object locker = new object();
 
-        Cabbage() { }
+        Cabbage()
+        {
+            name = "Cabbage";
+        }
 
         public static Cabbage Instance
         {
@@ -252,11 +289,14 @@
     }
 
     public sealed class Pepper : FarmingItem
-         {
+    {
         private static Pepper? instance = null;
         private static readonly object locker = new object();
 
-        Pepper() { }
+        Pepper()
+        {
+            name = "Pepper";
+        }
 
         public static Pepper Instance
         {
@@ -276,11 +316,14 @@
     }
 
     public sealed class Cherry : FarmingItem
-         {
+    {
         private static Cherry? instance = null;
         private static readonly object locker = new object();
 
-        Cherry() { }
+        Cherry()
+        {
+            name = "Cherry";
+        }
 
         public static Cherry Instance
         {
@@ -300,11 +343,14 @@
     }
 
     public sealed class Orange : FarmingItem
-         {
+    {
         private static Orange? instance = null;
         private static readonly object locker = new object();
 
-        Orange() { }
+        Orange()
+        {
+            name = "Orange";
+        }
 
         public static Orange Instance
         {
@@ -324,11 +370,14 @@
     }
 
     public sealed class Onion : FarmingItem
-         {
+    {
         private static Onion? instance = null;
         private static readonly object locker = new object();
 
-        Onion() { }
+        Onion()
+        {
+            name = "Onion";
+        }
 
         public static Onion Instance
         {
@@ -348,11 +397,14 @@
     }
 
     public sealed class Strawberry : FarmingItem
-         {
+    {
         private static Strawberry? instance = null;
         private static readonly object locker = new object();
 
-        Strawberry() { }
+        Strawberry()
+        {
+            name = "Strawberry";
+        }
 
         public static Strawberry Instance
         {
@@ -372,11 +424,14 @@
     }
 
     public sealed class Bean : FarmingItem
-         {
+    {
         private static Bean? instance = null;
         private static readonly object locker = new object();
 
-        Bean() { }
+        Bean()
+        {
+            name = "Bean";
+        }
 
         public static Bean Instance
         {
@@ -396,11 +451,14 @@
     }
 
     public sealed class Banana : FarmingItem
-         {
+    {
         private static Banana? instance = null;
         private static readonly object locker = new object();
 
-        Banana() { }
+        Banana()
+        {
+            name = "Banana";
+        }
 
         public static Banana Instance
         {
@@ -420,11 +478,14 @@
     }
 
     public sealed class Pumpkin : FarmingItem
-         {
+    {
         private static Pumpkin? instance = null;
         private static readonly object locker = new object();
 
-        Pumpkin() { }
+        Pumpkin()
+        {
+            name = "Pumpkin";
+        }
 
         public static Pumpkin Instance
         {
@@ -444,11 +505,14 @@
     }
 
     public sealed class Watermelon : FarmingItem
-         {
+    {
         private static Watermelon? instance = null;
         private static readonly object locker = new object();
 
-        Watermelon() { }
+        Watermelon()
+        {
+            name = "Watermelon";
+        }
 
         public static Watermelon Instance
         {
@@ -468,11 +532,14 @@
     }
 
     public sealed class Pea : FarmingItem
-         {
+    {
         private static Pea? instance = null;
         private static readonly object locker = new object();
 
-        Pea() { }
+        Pea()
+        {
+            name = "Pea";
+        }
 
         public static Pea Instance
         {
@@ -492,11 +559,14 @@
     }
 
     public sealed class Moonberry : FarmingItem
-         {
+    {
         private static Moonberry? instance = null;
         private static readonly object locker = new object();
 
-        Moonberry() { }
+        Moonberry()
+        {
+            name = "Moonberry";
+        }
 
         public static Moonberry Instance
         {
@@ -516,11 +586,14 @@
     }
 
     public sealed class Garlic : FarmingItem
-         {
+    {
         private static Garlic? instance = null;
         private static readonly object locker = new object();
 
-        Garlic() { }
+        Garlic()
+        {
+            name = "Garlic";
+        }
 
         public static Garlic Instance
         {
@@ -540,11 +613,14 @@
     }
 
     public sealed class Acorn : FarmingItem
-         {
+    {
         private static Acorn? instance = null;
         private static readonly object locker = new object();
 
-        Acorn() { }
+        Acorn()
+        {
+            name = "Acorn";
+        }
 
         public static Acorn Instance
         {
@@ -564,11 +640,14 @@
     }
 
     public sealed class Brocolli : FarmingItem
-         {
+    {
         private static Brocolli? instance = null;
         private static readonly object locker = new object();
 
-        Brocolli() { }
+        Brocolli()
+        {
+            name = "Brocolli";
+        }
 
         public static Brocolli Instance
         {
@@ -588,11 +667,14 @@
     }
 
     public sealed class Sunberry : FarmingItem
-         {
+    {
         private static Sunberry? instance = null;
         private static readonly object locker = new object();
 
-        Sunberry() { }
+        Sunberry()
+        {
+            name = "Sunberry";
+        }
 
         public static Sunberry Instance
         {

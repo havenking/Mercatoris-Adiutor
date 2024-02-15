@@ -2,38 +2,21 @@
 
 namespace MercatorisAdiutor.Database.WoodCutting.Items
 {
-    public class WoodCuttingItem : Item
+    public abstract class WoodCuttingItem : Item
     {
-        public string Name => this.GetType().Name;
+        internal string name = string.Empty;
+        internal int price = 0;
+
+        public string Name => name;
 
         public Profession Profession => Profession.WoodCutting;
 
         public Category Category => Category.Gathering;
 
-        public int Price { get; set; }
-    }
-
-    public sealed class SmallLog : WoodCuttingItem
-    {
-        private static SmallLog? instance = null;
-        private static readonly object locker = new object();
-
-        SmallLog() { }
-
-        public static SmallLog Instance
+        public int Price
         {
-            get
-            {
-                lock (locker)
-                {
-                    if (instance == null)
-                    {
-                        instance = new SmallLog();
-                    }
-
-                    return instance;
-                }
-            }
+            get { return price; }
+            set { price = value; }
         }
     }
 
@@ -42,7 +25,10 @@ namespace MercatorisAdiutor.Database.WoodCutting.Items
         private static DenseLog? instance = null;
         private static readonly object locker = new object();
 
-        DenseLog() { }
+        DenseLog()
+        {
+            name = "Dense Log";
+        }
 
         public static DenseLog Instance
         {
@@ -61,12 +47,42 @@ namespace MercatorisAdiutor.Database.WoodCutting.Items
         }
     }
 
+    public sealed class SmallLog : WoodCuttingItem
+    {
+        private static SmallLog? instance = null;
+        private static readonly object locker = new object();
+
+        SmallLog()
+        {
+            name = "Small Log";
+        }
+
+        public static SmallLog Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new SmallLog();
+                    }
+
+                    return instance;
+                }
+            }
+        }
+    }
+
     public sealed class HeavyLog : WoodCuttingItem
     {
         private static HeavyLog? instance = null;
         private static readonly object locker = new object();
 
-        HeavyLog() { }
+        HeavyLog()
+        {
+            name = "Heavy Log";
+        }
 
         public static HeavyLog Instance
         {
@@ -90,7 +106,10 @@ namespace MercatorisAdiutor.Database.WoodCutting.Items
         private static SturdyLog? instance = null;
         private static readonly object locker = new object();
 
-        SturdyLog() { }
+        SturdyLog()
+        {
+            name = "Sturdy Log";
+        }
 
         public static SturdyLog Instance
         {
@@ -114,7 +133,10 @@ namespace MercatorisAdiutor.Database.WoodCutting.Items
         private static FineLog? instance = null;
         private static readonly object locker = new object();
 
-        FineLog() { }
+        FineLog()
+        {
+            name = "Fine Log";
+        }
 
         public static FineLog Instance
         {
