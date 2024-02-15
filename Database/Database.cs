@@ -12,6 +12,7 @@ namespace MercatorisAdiutor.Database
         Carpentry,
         Cooking,
         Farming,
+        Husbandry,
         TradePackCrafting,
         Minning,
         ShipBuilding,

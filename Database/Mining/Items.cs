@@ -1,41 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MercatorisAdiutor.Database.Husbandry.Items
+﻿namespace MercatorisAdiutor.Database.Mining.Items
 {
-    public abstract class HusbandryItem : Item
+    public abstract class MiningItem : Item
     {
         internal string name = string.Empty;
         internal int price = 0;
 
-        public string Name => this.GetType().Name;
+        public string Name => name;
 
-        public Profession Profession => Profession.Husbandry;
+        public Profession Profession => Profession.Minning;
 
         public Category Category => Category.Gathering;
 
-        public int Price
+        public int Price 
         {
             get { return price; }
             set { price = value; }
         }
     }
 
-    public sealed class Fertilizer : HusbandryItem
+    public sealed class Stone : MiningItem
     {
-        private static Fertilizer? instance = null;
+        private static Stone? instance = null;
         private static readonly object locker = new object();
 
-        Fertilizer()
+        Stone() 
         {
-            name = "Fertilizer";
+            name = "Stone";
         }
 
-        public static Fertilizer Instance
+        public static Stone Instance
         {
             get
             {
@@ -43,7 +36,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
                 {
                     if (instance == null)
                     {
-                        instance = new Fertilizer();
+                        instance = new Stone();
                     }
 
                     return instance;
@@ -52,17 +45,17 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
         }
     }
 
-    public sealed class Shank : HusbandryItem
+    public sealed class Salt : MiningItem
     {
-        private static Shank? instance = null;
+        private static Salt? instance = null;
         private static readonly object locker = new object();
 
-        Shank()
+        Salt()
         {
-            name = "Shank";
+            name = "Salt";
         }
 
-        public static Shank Instance
+        public static Salt Instance
         {
             get
             {
@@ -70,7 +63,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
                 {
                     if (instance == null)
                     {
-                        instance = new Shank();
+                        instance = new Salt();
                     }
 
                     return instance;
@@ -79,17 +72,17 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
         }
     }
 
-    public sealed class Hide : HusbandryItem
+    public sealed class Coal : MiningItem
     {
-        private static Hide? instance = null;
+        private static Coal? instance = null;
         private static readonly object locker = new object();
 
-        Hide()
+        Coal()
         {
-            name = "Hide";
+            name = "Coal";
         }
 
-        public static Hide Instance
+        public static Coal Instance
         {
             get
             {
@@ -97,7 +90,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
                 {
                     if (instance == null)
                     {
-                        instance = new Hide();
+                        instance = new Coal();
                     }
 
                     return instance;
@@ -106,17 +99,17 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
         }
     }
 
-    public sealed class SpoolOfHair : HusbandryItem
+    public sealed class Amethyst : MiningItem
     {
-        private static SpoolOfHair? instance = null;
+        private static Amethyst? instance = null;
         private static readonly object locker = new object();
 
-        SpoolOfHair()
+        Amethyst()
         {
-            name = "Spool Of Hair";
+            name = "Amethyst";
         }
 
-        public static SpoolOfHair Instance
+        public static Amethyst Instance
         {
             get
             {
@@ -124,7 +117,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
                 {
                     if (instance == null)
                     {
-                        instance = new SpoolOfHair();
+                        instance = new Amethyst();
                     }
 
                     return instance;
@@ -133,17 +126,17 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
         }
     }
 
-    public sealed class Chicken : HusbandryItem
+    public sealed class Citrine : MiningItem
     {
-        private static Chicken? instance = null;
+        private static Citrine? instance = null;
         private static readonly object locker = new object();
 
-        Chicken()
+        Citrine()
         {
-            name = "Chicken";
+            name = "Citrine";
         }
 
-        public static Chicken Instance
+        public static Citrine Instance
         {
             get
             {
@@ -151,7 +144,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
                 {
                     if (instance == null)
                     {
-                        instance = new Chicken();
+                        instance = new Citrine();
                     }
 
                     return instance;
@@ -160,17 +153,17 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
         }
     }
 
-    public sealed class Egg : HusbandryItem
+    public sealed class Ruby : MiningItem
     {
-        private static Egg? instance = null;
+        private static Ruby? instance = null;
         private static readonly object locker = new object();
 
-        Egg()
+        Ruby()
         {
-            name = "Egg";
+            name = "Ruby";
         }
 
-        public static Egg Instance
+        public static Ruby Instance
         {
             get
             {
@@ -178,7 +171,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
                 {
                     if (instance == null)
                     {
-                        instance = new Egg();
+                        instance = new Ruby();
                     }
 
                     return instance;
@@ -187,17 +180,17 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
         }
     }
 
-    public sealed class Milk : HusbandryItem
+    public sealed class Sapphire : MiningItem
     {
-        private static Milk? instance = null;
+        private static Sapphire? instance = null;
         private static readonly object locker = new object();
 
-        Milk()
+        Sapphire()
         {
-            name = "Milk";
+            name = "Sapphire";
         }
 
-        public static Milk Instance
+        public static Sapphire Instance
         {
             get
             {
@@ -205,7 +198,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
                 {
                     if (instance == null)
                     {
-                        instance = new Milk();
+                        instance = new Sapphire();
                     }
 
                     return instance;
@@ -214,17 +207,17 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
         }
     }
 
-    public sealed class Wool : HusbandryItem
+    public sealed class Topaz : MiningItem
     {
-        private static Wool? instance = null;
+        private static Topaz? instance = null;
         private static readonly object locker = new object();
 
-        Wool()
+        Topaz()
         {
-            name = "Wool";
+            name = "Topaz";
         }
 
-        public static Wool Instance
+        public static Topaz Instance
         {
             get
             {
@@ -232,7 +225,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
                 {
                     if (instance == null)
                     {
-                        instance = new Wool();
+                        instance = new Topaz();
                     }
 
                     return instance;
@@ -241,17 +234,17 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
         }
     }
 
-    public sealed class Feather : HusbandryItem
+    public sealed class CopperOre : MiningItem
     {
-        private static Feather? instance = null;
+        private static CopperOre? instance = null;
         private static readonly object locker = new object();
 
-        Feather()
+        CopperOre()
         {
-            name = "Feather";
+            name = "Copper Ore";
         }
 
-        public static Feather Instance
+        public static CopperOre Instance
         {
             get
             {
@@ -259,7 +252,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
                 {
                     if (instance == null)
                     {
-                        instance = new Feather();
+                        instance = new CopperOre();
                     }
 
                     return instance;
@@ -268,17 +261,17 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
         }
     }
 
-    public sealed class Cheese : HusbandryItem
+    public sealed class IronOre : MiningItem
     {
-        private static Cheese? instance = null;
+        private static IronOre? instance = null;
         private static readonly object locker = new object();
 
-        Cheese()
+        IronOre()
         {
-            name = "Cheese";
+            name = "Iron Ore";
         }
 
-        public static Cheese Instance
+        public static IronOre Instance
         {
             get
             {
@@ -286,7 +279,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
                 {
                     if (instance == null)
                     {
-                        instance = new Cheese();
+                        instance = new IronOre();
                     }
 
                     return instance;
@@ -295,17 +288,17 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
         }
     }
 
-    public sealed class Honey : HusbandryItem
+    public sealed class CobaltOre : MiningItem
     {
-        private static Honey? instance = null;
+        private static CobaltOre? instance = null;
         private static readonly object locker = new object();
 
-        Honey()
+        CobaltOre()
         {
-            name = "Honey";
+            name = "Cobalt Ore";
         }
 
-        public static Honey Instance
+        public static CobaltOre Instance
         {
             get
             {
@@ -313,7 +306,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
                 {
                     if (instance == null)
                     {
-                        instance = new Honey();
+                        instance = new CobaltOre();
                     }
 
                     return instance;
@@ -322,17 +315,17 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
         }
     }
 
-    public sealed class Beef : HusbandryItem
+    public sealed class TitaniumOre : MiningItem
     {
-        private static Beef? instance = null;
+        private static TitaniumOre? instance = null;
         private static readonly object locker = new object();
 
-        Beef()
+        TitaniumOre()
         {
-            name = "Beef";
+            name = "Titanium Ore";
         }
 
-        public static Beef Instance
+        public static TitaniumOre Instance
         {
             get
             {
@@ -340,7 +333,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
                 {
                     if (instance == null)
                     {
-                        instance = new Beef();
+                        instance = new TitaniumOre();
                     }
 
                     return instance;
