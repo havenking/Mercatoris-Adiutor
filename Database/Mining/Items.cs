@@ -236,7 +236,7 @@
     }
     #endregion
 
-    #region Products
+    #region Ores
     public sealed class CopperOre : MiningItem
     {
         private static CopperOre? instance = null;

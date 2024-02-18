@@ -7,7 +7,7 @@
 
         public string Name => name;
 
-        public Profession Profession => Profession.Weaving;
+        public Profession Profession => Profession.Blacksmithing;
 
         public Category Category => Category.Crafting;
 
