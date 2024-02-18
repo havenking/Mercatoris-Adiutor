@@ -18,6 +18,7 @@
         }
     }
 
+    #region SubProducts
     public sealed class ThreeLeafClover : FarmingItem
     {
         private static ThreeLeafClover? instance = null;
@@ -44,7 +45,9 @@
             }
         }
     }
+    #endregion
 
+    #region Products
     public sealed class Potato : FarmingItem
     {
         private static Potato? instance = null;
@@ -692,4 +695,5 @@
             }
         }
     }
+    #endregion
 }

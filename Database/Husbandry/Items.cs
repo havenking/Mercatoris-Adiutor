@@ -25,6 +25,7 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
         }
     }
 
+    #region SubProducts
     public sealed class Fertilizer : HusbandryItem
     {
         private static Fertilizer? instance = null;
@@ -51,7 +52,9 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
             }
         }
     }
+    #endregion
 
+    #region Products
     public sealed class Shank : HusbandryItem
     {
         private static Shank? instance = null;
@@ -348,4 +351,5 @@ namespace MercatorisAdiutor.Database.Husbandry.Items
             }
         }
     }
+    #endregion
 }

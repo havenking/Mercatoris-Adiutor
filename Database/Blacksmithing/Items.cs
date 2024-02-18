@@ -1,37 +1,35 @@
-﻿using MercatorisAdiutor.Database.Farming.Items;
-
-namespace MercatorisAdiutor.Database.WoodCutting.Items
+﻿namespace MercatorisAdiutor.Database.Blacksmithing.Items
 {
-    public abstract class WoodCuttingItem : Item
+    public abstract class BlacksmithingItem : Item
     {
         internal string name = string.Empty;
         internal int price = 0;
 
         public string Name => name;
 
-        public Profession Profession => Profession.WoodCutting;
+        public Profession Profession => Profession.Weaving;
 
-        public Category Category => Category.Gathering;
+        public Category Category => Category.Crafting;
 
-        public int Price
+        public int Price 
         {
             get { return price; }
             set { price = value; }
         }
     }
 
-    #region SubProducts
-    public sealed class DenseLog : WoodCuttingItem
+    #region Ingots
+    public sealed class CopperIngot : BlacksmithingItem
     {
-        private static DenseLog? instance = null;
+        private static CopperIngot? instance = null;
         private static readonly object locker = new object();
 
-        DenseLog()
+        CopperIngot()
         {
-            name = "Dense Log";
+            name = "Copper Ingot";
         }
 
-        public static DenseLog Instance
+        public static CopperIngot Instance
         {
             get
             {
@@ -39,7 +37,115 @@ namespace MercatorisAdiutor.Database.WoodCutting.Items
                 {
                     if (instance == null)
                     {
-                        instance = new DenseLog();
+                        instance = new CopperIngot();
+                    }
+
+                    return instance;
+                }
+            }
+        }
+    }
+
+    public sealed class IronIngot : BlacksmithingItem
+    {
+        private static IronIngot? instance = null;
+        private static readonly object locker = new object();
+
+        IronIngot()
+        {
+            name = "Iron Ingot";
+        }
+
+        public static IronIngot Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new IronIngot();
+                    }
+
+                    return instance;
+                }
+            }
+        }
+    }
+
+    public sealed class SteelIngot : BlacksmithingItem
+    {
+        private static SteelIngot? instance = null;
+        private static readonly object locker = new object();
+
+        SteelIngot()
+        {
+            name = "Steel Ingot";
+        }
+
+        public static SteelIngot Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new SteelIngot();
+                    }
+
+                    return instance;
+                }
+            }
+        }
+    }
+
+    public sealed class CobaltIngot : BlacksmithingItem
+    {
+        private static CobaltIngot? instance = null;
+        private static readonly object locker = new object();
+
+        CobaltIngot()
+        {
+            name = "Cobalt Ingot";
+        }
+
+        public static CobaltIngot Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new CobaltIngot();
+                    }
+
+                    return instance;
+                }
+            }
+        }
+    }
+
+    public sealed class TitaniumIngot : BlacksmithingItem
+    {
+        private static TitaniumIngot? instance = null;
+        private static readonly object locker = new object();
+
+        TitaniumIngot()
+        {
+            name = "Titanium Ingot";
+        }
+
+        public static TitaniumIngot Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new TitaniumIngot();
                     }
 
                     return instance;
@@ -49,113 +155,27 @@ namespace MercatorisAdiutor.Database.WoodCutting.Items
     }
     #endregion
 
-    #region Products
-    public sealed class SmallLog : WoodCuttingItem
-    {
-        private static SmallLog? instance = null;
-        private static readonly object locker = new object();
+    #region Weapons
+    #endregion
 
-        SmallLog()
-        {
-            name = "Small Log";
-        }
+    #region Armors
+    #endregion
 
-        public static SmallLog Instance
-        {
-            get
-            {
-                lock (locker)
-                {
-                    if (instance == null)
-                    {
-                        instance = new SmallLog();
-                    }
+    #region Whetstones
+    #endregion
 
-                    return instance;
-                }
-            }
-        }
-    }
+    #region Fishing
+    #endregion
 
-    public sealed class HeavyLog : WoodCuttingItem
-    {
-        private static HeavyLog? instance = null;
-        private static readonly object locker = new object();
+    #region Housing Craft
+    #endregion
 
-        HeavyLog()
-        {
-            name = "Heavy Log";
-        }
+    #region Misc
+    #endregion
 
-        public static HeavyLog Instance
-        {
-            get
-            {
-                lock (locker)
-                {
-                    if (instance == null)
-                    {
-                        instance = new HeavyLog();
-                    }
+    #region Moa Equipment
+    #endregion
 
-                    return instance;
-                }
-            }
-        }
-    }
-
-    public sealed class SturdyLog : WoodCuttingItem
-    {
-        private static SturdyLog? instance = null;
-        private static readonly object locker = new object();
-
-        SturdyLog()
-        {
-            name = "Sturdy Log";
-        }
-
-        public static SturdyLog Instance
-        {
-            get
-            {
-                lock (locker)
-                {
-                    if (instance == null)
-                    {
-                        instance = new SturdyLog();
-                    }
-
-                    return instance;
-                }
-            }
-        }
-    }
-
-    public sealed class FineLog : WoodCuttingItem
-    {
-        private static FineLog? instance = null;
-        private static readonly object locker = new object();
-
-        FineLog()
-        {
-            name = "Fine Log";
-        }
-
-        public static FineLog Instance
-        {
-            get
-            {
-                lock (locker)
-                {
-                    if (instance == null)
-                    {
-                        instance = new FineLog();
-                    }
-
-                    return instance;
-                }
-            }
-        }
-    }
+    #region Ship Module
     #endregion
 }

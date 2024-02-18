@@ -41,6 +41,19 @@
         public static Production operator *(Production a, int b) => new() {Item = a.Item, Min = a.Min * b, Max = a.Max * b};
     }
 
+    public interface CraftingRecipe
+    {
+        public string Name { get; }
+
+        public int Tax { get; }
+
+        public int Experience { get; }
+
+        public Material[] Materials { get; }
+
+        public Item CraftedItem { get; }
+    }
+
     public struct Material
     {
         public Item Item { get; set; }
@@ -52,6 +65,6 @@
             return Item.Equals(b.Item);
         }
 
-        public static Material operator +(Material a, Material b) => new() { Item = a.Item, Quantity = a.Quantity + b.Quantity};
+        public static Material operator +(Material a, Material b) => new() { Item = a.Item, Quantity = a.Quantity + b.Quantity };
     }
 }

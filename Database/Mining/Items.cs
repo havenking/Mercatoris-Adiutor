@@ -18,6 +18,7 @@
         }
     }
 
+    #region SubProducts
     public sealed class Stone : MiningItem
     {
         private static Stone? instance = null;
@@ -233,7 +234,9 @@
             }
         }
     }
+    #endregion
 
+    #region Products
     public sealed class CopperOre : MiningItem
     {
         private static CopperOre? instance = null;
@@ -341,4 +344,5 @@
             }
         }
     }
+    #endregion
 }
