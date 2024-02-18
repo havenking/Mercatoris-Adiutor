@@ -1198,17 +1198,17 @@
     #endregion
 
     #region Housing Craft
-    public sealed class WorkTable : CarpentryItem
+    public sealed class WeakTable : CarpentryItem
     {
-        private static WorkTable? instance = null;
+        private static WeakTable? instance = null;
         private static readonly object locker = new object();
 
-        WorkTable()
+        WeakTable()
         {
-            name = "Work Table";
+            name = "Weak Table";
         }
 
-        public static WorkTable Instance
+        public static WeakTable Instance
         {
             get
             {
@@ -1216,7 +1216,7 @@
                 {
                     if (instance == null)
                     {
-                        instance = new WorkTable();
+                        instance = new WeakTable();
                     }
 
                     return instance;

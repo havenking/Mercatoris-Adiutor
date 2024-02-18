@@ -1,9 +1,4 @@
-﻿using MercatorisAdiutor.Database.Carpentry.Items;
-using MercatorisAdiutor.Database.Farming.Objects;
-using System.Net;
-using System.Xml.Linq;
-
-namespace MercatorisAdiutor.Database.Carpentry.Objects
+﻿namespace MercatorisAdiutor.Database.Carpentry.Objects
 {
     public abstract class CarpentryCraftingRecipe : CraftingRecipe
     {
@@ -287,7 +282,7 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
             [
                 new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Carpentry.Items.WoodenBulwark.Instance;
         }
 
         public static WoodenBulwarkRecipe Instance
@@ -321,7 +316,7 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
             [
                 new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 4 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.MysticStaff.Instance;
         }
 
         public static MysticStaffRecipe Instance
@@ -356,7 +351,7 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
                 new Material() { Item = Weaving.Items.CoarseThread.Instance, Quantity = 1 },
                 new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 3 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.OakWoodBow.Instance;
         }
 
         public static OakWoodBowRecipe Instance
@@ -390,7 +385,7 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
             [
                 new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.WoodenBuckler.Instance;
         }
 
         public static WoodenBucklerRecipe Instance
@@ -424,7 +419,7 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
             [
                 new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.KnottedSceptre.Instance;
         }
 
         public static KnottedSceptreRecipe Instance
@@ -462,7 +457,7 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
                 new Material() { Item = Blacksmithing.Items.CopperIngot.Instance, Quantity = 3 },
                 new Material() { Item = Carpentry.Items.WoodenBulwark.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SentinelShield.Instance;
         }
 
         public static SentinelShieldRecipe Instance
@@ -490,15 +485,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SturdyBucklerRecipe()
         {
             name = "Sturdy Buckler";
-            tax = 0;
-            experience = 0;
+            tax = 111;
+            experience = 1840;
             materials =
             [
                 new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 3 },
                 new Material() { Item = Weaving.Items.CoarseLeather.Instance, Quantity = 1 },
                 new Material() { Item = Carpentry.Items.WoodenBuckler.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SturdyBuckler.Instance;
         }
 
         public static SturdyBucklerRecipe Instance
@@ -526,13 +521,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         TribalSceptreRecipe()
         {
             name = "Tribal Sceptre";
-            tax = 0;
-            experience = 0;
+            tax = 111;
+            experience = 1840;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.KnottedSceptre.Instance, Quantity = 1 },
+                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 4 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.TribalSceptre.Instance;
         }
 
         public static TribalSceptreRecipe Instance
@@ -560,13 +556,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         ViperBowRecipe()
         {
             name = "Viper's Bow";
-            tax = 0;
-            experience = 0;
+            tax = 221;
+            experience = 3680;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 6 },
+                new Material() { Item = Weaving.Items.CoarseThread.Instance, Quantity = 2 },
+                new Material() { Item = Carpentry.Items.OakWoodBow.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.ViperBow.Instance;
         }
 
         public static ViperBowRecipe Instance
@@ -594,13 +592,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         WarlockStaffRecipe()
         {
             name = "Warlock Staff";
-            tax = 0;
-            experience = 0;
+            tax = 221;
+            experience = 3680;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.MysticStaff.Instance, Quantity = 1 },
+                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 8 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.WarlockStaff.Instance;
         }
 
         public static WarlockStaffRecipe Instance
@@ -630,13 +629,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SerpentSceptreRecipe()
         {
             name = "Serpent Sceptre";
-            tax = 0;
-            experience = 0;
+            tax = 420;
+            experience = 7000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 10 },
+                new Material() { Item = Carpentry.Items.TribalSceptre.Instance, Quantity = 1 },
+                new Material() { Item = Monster.Items.TrollFang.Instance, Quantity = 6 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SerpentSceptre.Instance;
         }
 
         public static SerpentSceptreRecipe Instance
@@ -664,13 +665,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         DefenderBulwarkRecipe()
         {
             name = "Defender's Bulwark";
-            tax = 0;
-            experience = 0;
+            tax = 420;
+            experience = 7000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Monster.Items.SeaCuredLeather.Instance, Quantity = 6 },
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 6 },
+                new Material() { Item = Blacksmithing.Items.IronIngot.Instance, Quantity = 8 },
+                new Material() { Item = Carpentry.Items.SentinelShield.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.DefenderBulwark.Instance;
         }
 
         public static DefenderBulwarkRecipe Instance
@@ -698,13 +702,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         CultistStaffRecipe()
         {
             name = "Cultist Staff";
-            tax = 0;
-            experience = 0;
+            tax = 840;
+            experience = 14000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 16 },
+                new Material() { Item = Carpentry.Items.WarlockStaff.Instance, Quantity = 1 },
+                new Material() { Item = Monster.Items.TrollFang.Instance, Quantity = 12 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.CultistStaff.Instance;
         }
 
         public static CultistStaffRecipe Instance
@@ -732,13 +738,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         MarauderShieldRecipe()
         {
             name = "Marauder's Shield";
-            tax = 0;
-            experience = 0;
+            tax = 420;
+            experience = 7000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Monster.Items.SeaCuredLeather.Instance, Quantity = 6 },
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 5 },
+                new Material() { Item = Weaving.Items.CraftmanLeather.Instance, Quantity = 2 },
+                new Material() { Item = Carpentry.Items.SturdyBuckler.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.MarauderShield.Instance;
         }
 
         public static MarauderShieldRecipe Instance
@@ -766,13 +775,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         BlackAshBowRecipe()
         {
             name = "Black Ash Bow";
-            tax = 0;
-            experience = 0;
+            tax = 840;
+            experience = 14000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Monster.Items.SeaCuredLeather.Instance, Quantity = 12 },
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.CraftmanThread.Instance, Quantity = 5 },
+                new Material() { Item = Carpentry.Items.ViperBow.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.BlackAshBow.Instance;
         }
 
         public static BlackAshBowRecipe Instance
@@ -1319,13 +1331,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         FishingStickRecipe()
         {
             name = "Fishing Stick";
-            tax = 0;
-            experience = 0;
+            tax = 63;
+            experience = 1040;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 1 },
+                new Material() { Item = Weaving.Items.CoarseThread.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.FishingStick.Instance;
         }
 
         public static FishingStickRecipe Instance
@@ -1353,13 +1366,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         FishingRodRecipe()
         {
             name = "Fishing Rod";
-            tax = 0;
-            experience = 0;
+            tax = 125;
+            experience = 2080;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 },
+                new Material() { Item = Weaving.Items.CoarseThread.Instance, Quantity = 2 },
+                new Material() { Item = Carpentry.Items.FishingStick.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.FishingRod.Instance;
         }
 
         public static FishingRodRecipe Instance
@@ -1387,13 +1402,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         CraftmanFishingRodRecipe()
         {
             name = "Craftman's Fishing Rod";
-            tax = 0;
-            experience = 0;
+            tax = 375;
+            experience = 6240;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 3 },
+                new Material() { Item = Weaving.Items.CraftmanThread.Instance, Quantity = 3 },
+                new Material() { Item = Carpentry.Items.FishingRod.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.CraftmanFishingRod.Instance;
         }
 
         public static CraftmanFishingRodRecipe Instance
@@ -1421,13 +1438,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SailorFishingRodRecipe()
         {
             name = "Sailor's Fishing Rod";
-            tax = 0;
-            experience = 0;
+            tax = 816;
+            experience = 13600;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 3 },
+                new Material() { Item = Weaving.Items.FineThread.Instance, Quantity = 5 },
+                new Material() { Item = Carpentry.Items.CraftmanFishingRod.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SailorFishingRod.Instance;
         }
 
         public static SailorFishingRodRecipe Instance
@@ -1455,13 +1474,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         ArtisanFishingRodRecipe()
         {
             name = "Artisan Fishing Rod";
-            tax = 0;
-            experience = 0;
+            tax = 2688;
+            experience = 44800;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.MerchantThread.Instance, Quantity = 12 },
+                new Material() { Item = Carpentry.Items.SailorFishingRod.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.ArtisanFishingRod.Instance;
         }
 
         public static ArtisanFishingRodRecipe Instance
@@ -1489,13 +1510,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         LightwoodAnglerRecipe()
         {
             name = "Lightwood Angler";
-            tax = 0;
-            experience = 0;
+            tax = 4224;
+            experience = 70400;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.FinePlank.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.ArtisanThread.Instance, Quantity = 16 },
+                new Material() { Item = Carpentry.Items.ArtisanFishingRod.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.LightwoodAngler.Instance;
         }
 
         public static LightwoodAnglerRecipe Instance
@@ -1517,24 +1540,25 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
     #endregion
 
     #region Housing Craft
-    public sealed class WorkTableRecipe : CarpentryCraftingRecipe
+    public sealed class WeakTableRecipe : CarpentryCraftingRecipe
     {
-        private static WorkTableRecipe? instance = null;
+        private static WeakTableRecipe? instance = null;
         private static readonly object locker = new object();
 
-        WorkTableRecipe()
+        WeakTableRecipe()
         {
-            name = "Work Table";
-            tax = 0;
-            experience = 0;
+            name = "Weak Table";
+            tax = 216;
+            experience = 3600;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 2 },
+                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 8 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.WeakTable.Instance;
         }
 
-        public static WorkTableRecipe Instance
+        public static WeakTableRecipe Instance
         {
             get
             {
@@ -1542,7 +1566,7 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
                 {
                     if (instance == null)
                     {
-                        instance = new WorkTableRecipe();
+                        instance = new WeakTableRecipe();
                     }
 
                     return instance;
@@ -1559,13 +1583,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         FrailLoamRecipe()
         {
             name = "Frail Loam";
-            tax = 0;
-            experience = 0;
+            tax = 480;
+            experience = 8000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.SimpleCloth.Instance, Quantity = 6 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.FrailLoam.Instance;
         }
 
         public static FrailLoamRecipe Instance
@@ -1593,13 +1618,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         ProtectiveCharmRecipe()
         {
             name = "Protective Charm";
-            tax = 0;
-            experience = 0;
+            tax = 480;
+            experience = 8000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.SimpleCloth.Instance, Quantity = 6 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.ProtectiveCharm.Instance;
         }
 
         public static ProtectiveCharmRecipe Instance
@@ -1627,13 +1653,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         BasicStabilizerRecipe()
         {
             name = "Basic Stabilizer";
-            tax = 0;
-            experience = 0;
+            tax = 480;
+            experience = 8000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.SimpleCloth.Instance, Quantity = 6 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.BasicStabilizer.Instance;
         }
 
         public static BasicStabilizerRecipe Instance
@@ -1661,13 +1688,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         StorageContaierRecipe()
         {
             name = "Storage Contaier";
-            tax = 0;
-            experience = 0;
+            tax = 442;
+            experience = 73600;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 2 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 1 },
+                new Material() { Item = Blacksmithing.Items.IronBar.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.StorageContaier.Instance;
         }
 
         public static StorageContaierRecipe Instance
@@ -1695,13 +1724,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         WorkBenchRecipe()
         {
             name = "Work Bench";
-            tax = 0;
-            experience = 0;
+            tax = 1560;
+            experience = 26000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 20 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 5 },
+                new Material() { Item = Blacksmithing.Items.IronIngot.Instance, Quantity = 20 },
+                new Material() { Item = Blacksmithing.Items.SteelIngot.Instance, Quantity = 10 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.WorkBench.Instance;
         }
 
         public static WorkBenchRecipe Instance
@@ -1729,13 +1761,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         ChairRecipe()
         {
             name = "Chair";
-            tax = 0;
-            experience = 0;
+            tax = 432;
+            experience = 7200;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 8 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 2 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.Chair.Instance;
         }
 
         public static ChairRecipe Instance
@@ -1763,13 +1796,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SimpleBedRecipe()
         {
             name = "Simple Bed";
-            tax = 0;
-            experience = 0;
+            tax = 1440;
+            experience = 24000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.SimpleCloth.Instance, Quantity = 15 },
+                new Material() { Item = Weaving.Items.CoarseThread.Instance, Quantity = 10 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SimpleBed.Instance;
         }
 
         public static SimpleBedRecipe Instance
@@ -1797,13 +1832,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         WallReinforcementRecipe()
         {
             name = "Wall Reinforcement";
-            tax = 0;
-            experience = 0;
+            tax = 442;
+            experience = 7360;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 8 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 1 },
+                new Material() { Item = Blacksmithing.Items.IronBar.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.WallReinforcement.Instance;
         }
 
         public static WallReinforcementRecipe Instance
@@ -1831,13 +1868,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         EnergyStabilizerRecipe()
         {
             name = "Energy Stabilizer";
-            tax = 0;
-            experience = 0;
+            tax = 1380;
+            experience = 23000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.FineThread.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.EnergyStabilizer.Instance;
         }
 
         public static EnergyStabilizerRecipe Instance
@@ -1865,13 +1903,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SimpleLoomRecipe()
         {
             name = "Simple Loom";
-            tax = 0;
-            experience = 0;
+            tax = 1380;
+            experience = 23000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.FineThread.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SimpleLoom.Instance;
         }
 
         public static SimpleLoomRecipe Instance
@@ -1899,13 +1938,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         WardingCharmRecipe()
         {
             name = "Warding Charm";
-            tax = 0;
-            experience = 0;
+            tax = 1380;
+            experience = 23000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.FineThread.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.WardingCharm.Instance;
         }
 
         public static WardingCharmRecipe Instance
@@ -1933,13 +1973,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SuperiorWorkBenchRecipe()
         {
             name = "Superior Work Bench";
-            tax = 0;
-            experience = 0;
+            tax = 3030;
+            experience = 50500;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 30 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 5 },
+                new Material() { Item = Blacksmithing.Items.SteelIngot.Instance, Quantity = 15 },
+                new Material() { Item = Blacksmithing.Items.CobaltIngot.Instance, Quantity = 10 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SuperiorWorkBench.Instance;
         }
 
         public static SuperiorWorkBenchRecipe Instance
@@ -1967,13 +2010,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         CabinetRecipe()
         {
             name = "Cabinet";
-            tax = 0;
-            experience = 0;
+            tax = 216;
+            experience = 3600;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 3 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.Cabinet.Instance;
         }
 
         public static CabinetRecipe Instance
@@ -2001,13 +2045,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SquareTableRecipe()
         {
             name = "Square Table";
-            tax = 0;
-            experience = 0;
+            tax = 1650;
+            experience = 27500;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 2 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 4 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SquareTable.Instance;
         }
 
         public static SquareTableRecipe Instance
@@ -2035,13 +2080,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         ComfortableBedRecipe()
         {
             name = "Comfortable Bed";
-            tax = 0;
-            experience = 0;
+            tax = 3870;
+            experience = 64500;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 2 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 4 },
+                new Material() { Item = Weaving.Items.MerchantThread.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.MerchantCloth.Instance, Quantity = 10 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.ComfortableBed.Instance;
         }
 
         public static ComfortableBedRecipe Instance
@@ -2069,13 +2117,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SturdyContainerRecipe()
         {
             name = "Sturdy Container";
-            tax = 0;
-            experience = 0;
+            tax = 2496;
+            experience = 41600;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 18 },
+                new Material() { Item = Blacksmithing.Items.CommonPlate.Instance, Quantity = 6 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SturdyContainer.Instance;
         }
 
         public static SturdyContainerRecipe Instance
@@ -2103,13 +2152,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         ArcaneStabilizerRecipe()
         {
             name = "Arcane Stabilizer";
-            tax = 0;
-            experience = 0;
+            tax = 2100;
+            experience = 35000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 15 },
+                new Material() { Item = Weaving.Items.MerchantThread.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.ArcaneStabilizer.Instance;
         }
 
         public static ArcaneStabilizerRecipe Instance
@@ -2137,13 +2187,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SpellboundCharmRecipe()
         {
             name = "Spellbound Charm";
-            tax = 0;
-            experience = 0;
+            tax = 2100;
+            experience = 35000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 15 },
+                new Material() { Item = Weaving.Items.MerchantThread.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SpellboundCharm.Instance;
         }
 
         public static SpellboundCharmRecipe Instance
@@ -2171,13 +2222,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         WallFortificationRecipe()
         {
             name = "Wall Fortification";
-            tax = 0;
-            experience = 0;
+            tax = 2490;
+            experience = 41500;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 18 },
+                new Material() { Item = Blacksmithing.Items.CommonPlate.Instance, Quantity = 6 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.WallFortification.Instance;
         }
 
         public static WallFortificationRecipe Instance
@@ -2205,13 +2257,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         LuxuryBedRecipe()
         {
             name = "Luxury Bed";
-            tax = 0;
-            experience = 0;
+            tax = 7800;
+            experience = 130000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 25 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.ArtisanThread.Instance, Quantity = 10 },
+                new Material() { Item = Weaving.Items.ArtisanCloth.Instance, Quantity = 20 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.LuxuryBed.Instance;
         }
 
         public static LuxuryBedRecipe Instance
@@ -2239,13 +2294,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         LoomRecipe()
         {
             name = "Loom";
-            tax = 0;
-            experience = 0;
+            tax = 1440;
+            experience = 24000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 8 },
+                new Material() { Item = Weaving.Items.MerchantThread.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.Loom.Instance;
         }
 
         public static LoomRecipe Instance
@@ -2273,13 +2329,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         ArtisanWorkBenchRecipe()
         {
             name = "Artisan Work Bench";
-            tax = 0;
-            experience = 0;
+            tax = 8400;
+            experience = 140000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 65 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 5 },
+                new Material() { Item = Blacksmithing.Items.CobaltIngot.Instance, Quantity = 50 },
+                new Material() { Item = Blacksmithing.Items.TitaniumIngot.Instance, Quantity = 30 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.ArtisanWorkBench.Instance;
         }
 
         public static ArtisanWorkBenchRecipe Instance
@@ -2307,13 +2366,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         ArmoiresRecipe()
         {
             name = "Armoires";
-            tax = 0;
-            experience = 0;
+            tax = 924;
+            experience = 15400;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 10 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.Armoires.Instance;
         }
 
         public static ArmoiresRecipe Instance
@@ -2341,13 +2401,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SturdySquareTableRecipe()
         {
             name = "Sturdy Square Table";
-            tax = 0;
-            experience = 0;
+            tax = 2280;
+            experience = 38000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 25 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SturdySquareTable.Instance;
         }
 
         public static SturdySquareTableRecipe Instance
@@ -2375,13 +2436,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         FireplaceRecipe()
         {
             name = "Fireplace";
-            tax = 0;
-            experience = 0;
+            tax = 1656;
+            experience = 27600;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 18 },
+                new Material() { Item = Mining.Items.Stone.Instance, Quantity = 10 },
+                new Material() { Item = Mining.Items.Coal.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.Fireplace.Instance;
         }
 
         public static FireplaceRecipe Instance
@@ -2411,13 +2474,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         MastRecipe()
         {
             name = "Mast";
-            tax = 0;
-            experience = 0;
+            tax = 1200;
+            experience = 20000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 20 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 20 },
+                new Material() { Item = Blacksmithing.Items.IronIngot.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.Mast.Instance;
         }
 
         public static MastRecipe Instance
@@ -2445,13 +2510,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SmallGunDeckRecipe()
         {
             name = "Small Gun Deck";
-            tax = 0;
-            experience = 0;
+            tax = 1776;
+            experience = 29600;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 30 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 20 },
+                new Material() { Item = Blacksmithing.Items.IronIngot.Instance, Quantity = 8 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SmallGunDeck.Instance;
         }
 
         public static SmallGunDeckRecipe Instance
@@ -2479,13 +2546,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SmallFishingStorageRecipe()
         {
             name = "Small Fishing Storage";
-            tax = 0;
-            experience = 0;
+            tax = 1776;
+            experience = 29600;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 30 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 20 },
+                new Material() { Item = Blacksmithing.Items.IronIngot.Instance, Quantity = 8 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SmallFishingStorage.Instance;
         }
 
         public static SmallFishingStorageRecipe Instance
@@ -2513,13 +2582,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SmallCargoHoldRecipe()
         {
             name = "Small Cargo Hold";
-            tax = 0;
-            experience = 0;
+            tax = 1776;
+            experience = 29600;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 30 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 20 },
+                new Material() { Item = Blacksmithing.Items.IronIngot.Instance, Quantity = 8 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SmallCargoHold.Instance;
         }
 
         public static SmallCargoHoldRecipe Instance
@@ -2547,13 +2618,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SmallHullFrameRecipe()
         {
             name = "Small Hull Frame";
-            tax = 0;
-            experience = 0;
+            tax = 2928;
+            experience = 48800;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 50 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 40 },
+                new Material() { Item = Blacksmithing.Items.IronIngot.Instance, Quantity = 10 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SmallHullFrame.Instance;
         }
 
         public static SmallHullFrameRecipe Instance
@@ -2581,13 +2654,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         MediumGunDeckRecipe()
         {
             name = "Medium Gun Deck";
-            tax = 0;
-            experience = 0;
+            tax = 5280;
+            experience = 88000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 50 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 40 },
+                new Material() { Item = Blacksmithing.Items.IronBar.Instance, Quantity = 10 },
+                new Material() { Item = Carpentry.Items.WoodenArch.Instance, Quantity = 3 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.MediumGunDeck.Instance;
         }
 
         public static MediumGunDeckRecipe Instance
@@ -2615,13 +2691,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         MediumFishingStorageRecipe()
         {
             name = "Medium Fishing Storage";
-            tax = 0;
-            experience = 0;
+            tax = 5280;
+            experience = 88000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 50 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 40 },
+                new Material() { Item = Blacksmithing.Items.IronBar.Instance, Quantity = 10 },
+                new Material() { Item = Carpentry.Items.WoodenArch.Instance, Quantity = 3 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.MediumFishingStorage.Instance;
         }
 
         public static MediumFishingStorageRecipe Instance
@@ -2649,13 +2728,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         MediumHullFrameRecipe()
         {
             name = "Medium Hull Frame";
-            tax = 0;
-            experience = 0;
+            tax = 12720;
+            experience = 212000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 120 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 80 },
+                new Material() { Item = Blacksmithing.Items.IronBar.Instance, Quantity = 25 },
+                new Material() { Item = Carpentry.Items.WoodenArch.Instance, Quantity = 8 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.MediumHullFrame.Instance;
         }
 
         public static MediumHullFrameRecipe Instance
@@ -2683,13 +2765,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         MediumCargoHoldRecipe()
         {
             name = "Medium Cargo Hold";
-            tax = 0;
-            experience = 0;
+            tax = 5280;
+            experience = 88000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 50 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 40 },
+                new Material() { Item = Blacksmithing.Items.IronBar.Instance, Quantity = 10 },
+                new Material() { Item = Carpentry.Items.WoodenArch.Instance, Quantity = 3 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.MediumCargoHold.Instance;
         }
 
         public static MediumCargoHoldRecipe Instance
@@ -2717,13 +2802,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         LargeCargoHoldRecipe()
         {
             name = "Large Cargo Hold";
-            tax = 0;
-            experience = 0;
+            tax = 18720;
+            experience = 312000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 160 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 80 },
+                new Material() { Item = Blacksmithing.Items.SteelBar.Instance, Quantity = 20 },
+                new Material() { Item = Carpentry.Items.SuppleWoodenArch.Instance, Quantity = 8 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.LargeCargoHold.Instance;
         }
 
         public static LargeCargoHoldRecipe Instance
@@ -2751,13 +2839,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         LargeGunDeckRecipe()
         {
             name = "Large Gun Deck";
-            tax = 0;
-            experience = 0;
+            tax = 18720;
+            experience = 312000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 160 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 80 },
+                new Material() { Item = Blacksmithing.Items.SteelBar.Instance, Quantity = 20 },
+                new Material() { Item = Carpentry.Items.SuppleWoodenArch.Instance, Quantity = 8 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.LargeGunDeck.Instance;
         }
 
         public static LargeGunDeckRecipe Instance
@@ -2785,13 +2876,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         LargeFishingStorageRecipe()
         {
             name = "Large Fishing Storage";
-            tax = 0;
-            experience = 0;
+            tax = 18720;
+            experience = 312000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 160 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 80 },
+                new Material() { Item = Blacksmithing.Items.SteelBar.Instance, Quantity = 20 },
+                new Material() { Item = Carpentry.Items.SuppleWoodenArch.Instance, Quantity = 8 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.LargeFishingStorage.Instance;
         }
 
         public static LargeFishingStorageRecipe Instance
@@ -2819,13 +2913,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         LargeHullFrameRecipe()
         {
             name = "LargeHullFrame";
-            tax = 0;
-            experience = 0;
+            tax = 37500;
+            experience = 625000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 300 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 150 },
+                new Material() { Item = Blacksmithing.Items.SteelBar.Instance, Quantity = 50 },
+                new Material() { Item = Carpentry.Items.SuppleWoodenArch.Instance, Quantity = 20 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.LargeHullFrame.Instance;
         }
 
         public static LargeHullFrameRecipe Instance
@@ -2855,13 +2952,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SmallAmmunitionCabinKitRecipe()
         {
             name = "Small Ammunition Cabin Kit";
-            tax = 0;
-            experience = 0;
+            tax = 4920;
+            experience = 82000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 50 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 10 },
+                new Material() { Item = Blacksmithing.Items.SteelIngot.Instance, Quantity = 10 },
+                new Material() { Item = Carpentry.Items.WoodenArch.Instance, Quantity = 2 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SmallAmmunitionCabinKit.Instance;
         }
 
         public static SmallAmmunitionCabinKitRecipe Instance
@@ -2889,13 +2989,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SmallMaintenanceUnitKitRecipe()
         {
             name = "Small Maintenance Unit Kit";
-            tax = 0;
-            experience = 0;
+            tax = 4920;
+            experience = 82000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 50 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 10 },
+                new Material() { Item = Blacksmithing.Items.SteelIngot.Instance, Quantity = 10 },
+                new Material() { Item = Carpentry.Items.WoodenArch.Instance, Quantity = 2 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SmallMaintenanceUnitKit.Instance;
         }
 
         public static SmallMaintenanceUnitKitRecipe Instance
@@ -2923,13 +3026,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SmallFishingCraneKitRecipe()
         {
             name = "Small Fishing Crane Kit";
-            tax = 0;
-            experience = 0;
+            tax = 4920;
+            experience = 82000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 50 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 10 },
+                new Material() { Item = Blacksmithing.Items.SteelIngot.Instance, Quantity = 10 },
+                new Material() { Item = Carpentry.Items.WoodenArch.Instance, Quantity = 2 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SmallFishingCraneKit.Instance;
         }
 
         public static SmallFishingCraneKitRecipe Instance
@@ -2957,13 +3063,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SmallTradepackContainerKitRecipe()
         {
             name = "Small Tradepack Container Kit";
-            tax = 0;
-            experience = 0;
+            tax = 4920;
+            experience = 82000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 50 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 10 },
+                new Material() { Item = Blacksmithing.Items.SteelIngot.Instance, Quantity = 10 },
+                new Material() { Item = Carpentry.Items.WoodenArch.Instance, Quantity = 2 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SmallTradepackContainerKit.Instance;
         }
 
         public static SmallTradepackContainerKitRecipe Instance
@@ -2991,13 +3100,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         MediumTradepackContainerKitRecipe()
         {
             name = "Medium Tradepack Container Kit";
-            tax = 0;
-            experience = 0;
+            tax = 14700;
+            experience = 245000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 135 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 30 },
+                new Material() { Item = Blacksmithing.Items.CobaltIngot.Instance, Quantity = 20 },
+                new Material() { Item = Carpentry.Items.SuppleWoodenArch.Instance, Quantity = 4 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.MediumTradepackContainerKit.Instance;
         }
 
         public static MediumTradepackContainerKitRecipe Instance
@@ -3025,13 +3137,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         MediumMaintenanceUnitKitRecipe()
         {
             name = "Medium Maintenance Unit Kit";
-            tax = 0;
-            experience = 0;
+            tax = 14700;
+            experience = 245000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 135 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 30 },
+                new Material() { Item = Blacksmithing.Items.CobaltIngot.Instance, Quantity = 20 },
+                new Material() { Item = Carpentry.Items.SuppleWoodenArch.Instance, Quantity = 4 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.MediumMaintenanceUnitKit.Instance;
         }
 
         public static MediumMaintenanceUnitKitRecipe Instance
@@ -3059,13 +3174,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         MediumAmmunitionCabinKitRecipe()
         {
             name = "Medium Ammunition Cabin Kit";
-            tax = 0;
-            experience = 0;
+            tax = 14700;
+            experience = 245000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 135 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 30 },
+                new Material() { Item = Blacksmithing.Items.CobaltIngot.Instance, Quantity = 20 },
+                new Material() { Item = Carpentry.Items.SuppleWoodenArch.Instance, Quantity = 4 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.MediumAmmunitionCabinKit.Instance;
         }
 
         public static MediumAmmunitionCabinKitRecipe Instance
@@ -3093,13 +3211,16 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         MediumFishingCraneKitRecipe()
         {
             name = "Medium Fishing Crane Kit";
-            tax = 0;
-            experience = 0;
+            tax = 14700;
+            experience = 245000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 135 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 30 },
+                new Material() { Item = Blacksmithing.Items.CobaltIngot.Instance, Quantity = 20 },
+                new Material() { Item = Carpentry.Items.SuppleWoodenArch.Instance, Quantity = 4 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.MediumFishingCraneKit.Instance;
         }
 
         public static MediumFishingCraneKitRecipe Instance
@@ -3129,13 +3250,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         CommonWheelRecipe()
         {
             name = "Common Wheel";
-            tax = 0;
-            experience = 0;
+            tax = 96;
+            experience = 1600;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 10 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.CommonWheel.Instance;
         }
 
         public static CommonWheelRecipe Instance
@@ -3163,13 +3285,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SmallWagonContainerRecipe()
         {
             name = "Small Wagon Container";
-            tax = 0;
-            experience = 0;
+            tax = 672;
+            experience = 11200;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 20 },
+                new Material() { Item = Blacksmithing.Items.CommonPlate.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SmallWagonContainer.Instance;
         }
 
         public static SmallWagonContainerRecipe Instance
@@ -3197,13 +3320,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         WoodenArchRecipe()
         {
             name = "Wooden Arch";
-            tax = 0;
-            experience = 0;
+            tax = 288;
+            experience = 4800;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 15 },
+                new Material() { Item = Cooking.Items.Oil.Instance, Quantity = 10 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.WoodenArch.Instance;
         }
 
         public static WoodenArchRecipe Instance
@@ -3231,13 +3355,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SwiftWheelRecipe()
         {
             name = "Swift Wheel";
-            tax = 0;
-            experience = 0;
+            tax = 183;
+            experience = 3040;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 10 },
+                new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SwiftWheel.Instance;
         }
 
         public static SwiftWheelRecipe Instance
@@ -3266,13 +3391,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         CommonWagonContainerRecipe()
         {
             name = "Common Wagon Container";
-            tax = 0;
-            experience = 0;
+            tax = 1752;
+            experience = 29200;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.RefinedPlank.Instance, Quantity = 25 },
+                new Material() { Item = Blacksmithing.Items.CommonPlate.Instance, Quantity = 3 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.CommonWagonContainer.Instance;
         }
 
         public static CommonWagonContainerRecipe Instance
@@ -3300,13 +3426,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SturdyWheelRecipe()
         {
             name = "Sturdy Wheel";
-            tax = 0;
-            experience = 0;
+            tax = 528;
+            experience = 8800;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 16 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 5 },
+                new Material() { Item = Carpentry.Items.WoodenArch.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SturdyWheel.Instance;
         }
 
         public static SturdyWheelRecipe Instance
@@ -3334,13 +3462,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         MediumWagonContainerRecipe()
         {
             name = "Medium Wagon Container";
-            tax = 0;
-            experience = 0;
+            tax = 3456;
+            experience = 57600;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 20 },
+                new Material() { Item = Blacksmithing.Items.ReinforcedPlate.Instance, Quantity = 5 },
+                new Material() { Item = Blacksmithing.Items.IronBar.Instance, Quantity = 5 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.MediumWagonContainer.Instance;
         }
 
         public static MediumWagonContainerRecipe Instance
@@ -3368,13 +3498,14 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         SuppleWoodenArchRecipe()
         {
             name = "Supple Wooden Arch";
-            tax = 0;
-            experience = 0;
+            tax = 456;
+            experience = 7600;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.TreatedPlank.Instance, Quantity = 15 },
+                new Material() { Item = Cooking.Items.Oil.Instance, Quantity = 20 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.SuppleWoodenArch.Instance;
         }
 
         public static SuppleWoodenArchRecipe Instance
@@ -3402,13 +3533,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         ReinforcedWheelRecipe()
         {
             name = "Reinforced Wheel";
-            tax = 0;
-            experience = 0;
+            tax = 1680;
+            experience = 28000;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 50 },
+                new Material() { Item = Blacksmithing.Items.Bolt.Instance, Quantity = 10 },
+                new Material() { Item = Carpentry.Items.SuppleWoodenArch.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.ReinforcedWheel.Instance;
         }
 
         public static ReinforcedWheelRecipe Instance
@@ -3436,13 +3569,15 @@ namespace MercatorisAdiutor.Database.Carpentry.Objects
         LargeWagonContainerRecipe()
         {
             name = "Large Wagon Container";
-            tax = 0;
-            experience = 0;
+            tax = 8784;
+            experience = 146400;
             materials =
             [
-                new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 2 }
+                new Material() { Item = Carpentry.Items.SturdyPlank.Instance, Quantity = 35 },
+                new Material() { Item = Blacksmithing.Items.ReinforcedPlate.Instance, Quantity = 15 },
+                new Material() { Item = Blacksmithing.Items.SteelBar.Instance, Quantity = 10 }
             ];
-            craftedItem = Items.DensePlank.Instance;
+            craftedItem = Items.LargeWagonContainer.Instance;
         }
 
         public static LargeWagonContainerRecipe Instance

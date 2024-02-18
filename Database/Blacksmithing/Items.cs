@@ -171,6 +171,167 @@
     #endregion
 
     #region Misc
+    public sealed class Nail : BlacksmithingItem
+    {
+        private static Nail? instance = null;
+        private static readonly object locker = new object();
+
+        Nail()
+        {
+            name = "Nail";
+        }
+
+        public static Nail Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new Nail();
+                    }
+
+                    return instance;
+                }
+            }
+        }
+    }
+
+    public sealed class CommonPlate : BlacksmithingItem
+    {
+        private static CommonPlate? instance = null;
+        private static readonly object locker = new object();
+
+        CommonPlate()
+        {
+            name = "Common Plate";
+        }
+
+        public static CommonPlate Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new CommonPlate();
+                    }
+
+                    return instance;
+                }
+            }
+        }
+    }
+
+    public sealed class ReinforcedPlate : BlacksmithingItem
+    {
+        private static ReinforcedPlate? instance = null;
+        private static readonly object locker = new object();
+
+        ReinforcedPlate()
+        {
+            name = "Reinforced Plate";
+        }
+
+        public static ReinforcedPlate Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new ReinforcedPlate();
+                    }
+
+                    return instance;
+                }
+            }
+        }
+    }
+
+    public sealed class IronBar : BlacksmithingItem
+    {
+        private static IronBar? instance = null;
+        private static readonly object locker = new object();
+
+        IronBar()
+        {
+            name = "Iron Bar";
+        }
+
+        public static IronBar Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new IronBar();
+                    }
+
+                    return instance;
+                }
+            }
+        }
+    }
+
+    public sealed class Bolt : BlacksmithingItem
+    {
+        private static Bolt? instance = null;
+        private static readonly object locker = new object();
+
+        Bolt()
+        {
+            name = "Bolt";
+        }
+
+        public static Bolt Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new Bolt();
+                    }
+
+                    return instance;
+                }
+            }
+        }
+    }
+
+    public sealed class SteelBar : BlacksmithingItem
+    {
+        private static SteelBar? instance = null;
+        private static readonly object locker = new object();
+
+        SteelBar()
+        {
+            name = "Steel Bar";
+        }
+
+        public static SteelBar Instance
+        {
+            get
+            {
+                lock (locker)
+                {
+                    if (instance == null)
+                    {
+                        instance = new SteelBar();
+                    }
+
+                    return instance;
+                }
+            }
+        }
+    }
     #endregion
 
     #region Moa Equipment
