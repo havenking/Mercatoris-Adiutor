@@ -1,0 +1,352 @@
+﻿<Window x:Class="MercatorisAdiutor.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MercatorisAdiutor"
+        mc:Ignorable="d"
+        Title="Mercatoris Adiutor"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Height="600" Width="800">
+    <Grid Background="Gray">
+        <TabControl Background="DarkGray">
+            <TabItem Header="Planner" FontSize="16">
+                <Grid Background="Gray">
+
+                    <ListBox Grid.Row="0" x:Name="PlannerlistBox" ItemsSource="{Binding UserLog}" Background="Gray">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <local:PlannerRegistry/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Catalog"  FontSize="16">
+                <Grid Background="Gray">
+                    <TabControl TabStripPlacement="Left" Background="DarkGray">
+                        <TabItem FontSize="16">
+                            <TabItem.Header>
+                                <Grid>
+                                    <TextBlock Text="Blacksmithing"/>
+                                </Grid>
+                            </TabItem.Header>
+
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Expander Name="BlacksmithingRecipesExpander" Grid.Row="0" Header="Recipes" ExpandDirection="Down" IsExpanded="True" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="BlacksmithingRecipesListBox" ItemsSource="{Binding BlacksmithingRecipes}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+
+                                    <Expander Name="BlacksmithingItemsExpander" Grid.Row="1" Header="Items" ExpandDirection="Down" IsExpanded="false" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="BlacksmithingItemsListBox" ItemsSource="{Binding BlacksmithingItems}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+                                </Grid>
+                            </ScrollViewer>
+                        </TabItem>
+                        <TabItem Header="Carpentry" FontSize="16">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <Expander Name="CarpentryRecipesExpander" Grid.Row="0" Header="Recipes" ExpandDirection="Down" IsExpanded="True" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="CarpentryRecipesListBox" ItemsSource="{Binding CarpentryRecipes}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+
+                                    <Expander Name="CarpentryItemsExpander" Grid.Row="1" Header="Items" ExpandDirection="Down" IsExpanded="false" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="CarpentryItemsListBox" ItemsSource="{Binding CarpentryItems}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+                                </Grid>
+                            </ScrollViewer>
+                        </TabItem>
+                        <TabItem Header="Cooking" FontSize="16">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Expander Name="CookingRecipesExpander" Grid.Row="0" Header="Recipes" ExpandDirection="Down" IsExpanded="True" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="CookingRecipesListBox" ItemsSource="{Binding CookingRecipes}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+
+                                    <Expander Name="CookingItemsExpander" Grid.Row="1" Header="Items" ExpandDirection="Down" IsExpanded="false" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="CookingItemsListBox" ItemsSource="{Binding CookingItems}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+                                </Grid>
+                            </ScrollViewer>
+                        </TabItem>
+                        <TabItem Header="Farming" FontSize="16">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Expander Name="FarmingRecipesExpander" Grid.Row="0" Header="Recipes" ExpandDirection="Down" IsExpanded="True" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="FarmingRecipesListBox" ItemsSource="{Binding FarmingRecipes}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+
+                                    <Expander Name="FarmingItemsExpander" Grid.Row="1" Header="Items" ExpandDirection="Down" IsExpanded="false" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="FarmingItemsListBox" ItemsSource="{Binding FarmingItems}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+                                </Grid>
+                            </ScrollViewer>
+                        </TabItem>
+                        <TabItem Header="Fishing" FontSize="16">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Expander Name="FishingRecipesExpander" Grid.Row="0" Header="Recipes" ExpandDirection="Down" IsExpanded="True" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="FishingRecipesListBox" ItemsSource="{Binding FishingRecipes}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+
+                                    <Expander Name="FishingItemsExpander" Grid.Row="1" Header="Items" ExpandDirection="Down" IsExpanded="false" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="FishingItemsListBox" ItemsSource="{Binding FishingItems}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+                                </Grid>
+                            </ScrollViewer>
+                        </TabItem>
+                        <TabItem Header="Husbandry" FontSize="16">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Expander Name="HusbandryRecipesExpander" Grid.Row="0" Header="Recipes" ExpandDirection="Down" IsExpanded="True" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="HusbandryRecipesListBox" ItemsSource="{Binding HusbandryRecipes}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+
+                                    <Expander Name="HusbandryItemsExpander" Grid.Row="1" Header="Items" ExpandDirection="Down" IsExpanded="false" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="HusbandryItemsListBox" ItemsSource="{Binding HusbandryItems}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+                                </Grid>
+                            </ScrollViewer>
+                        </TabItem>
+                        <TabItem Header="Mining" FontSize="16">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Expander Name="MiningRecipesExpander" Grid.Row="0" Header="Recipes" ExpandDirection="Down" IsExpanded="True" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="MiningRecipesListBox" ItemsSource="{Binding MiningRecipes}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+
+                                    <Expander Name="MiningItemsExpander" Grid.Row="1" Header="Items" ExpandDirection="Down" IsExpanded="false" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="MiningItemsListBox" ItemsSource="{Binding MiningItems}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+                                </Grid>
+                            </ScrollViewer>
+                        </TabItem>
+                        <TabItem Header="Weaving" FontSize="16">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Expander Name="WeavingRecipesExpander" Grid.Row="0" Header="Recipes" ExpandDirection="Down" IsExpanded="True" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="WeavingRecipesListBox" ItemsSource="{Binding WeavingRecipes}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+
+                                    <Expander Name="WeavingItemsExpander" Grid.Row="1" Header="Items" ExpandDirection="Down" IsExpanded="false" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="WeavingItemsListBox" ItemsSource="{Binding WeavingItems}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+                                </Grid>
+                            </ScrollViewer>
+                        </TabItem>
+                        <TabItem Header="Woodcutting" FontSize="16">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Expander Name="WoodcuttingRecipesExpander" Grid.Row="0" Header="Recipes" ExpandDirection="Down" IsExpanded="True" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="WoodcuttingRecipesListBox" ItemsSource="{Binding WoodcuttingRecipes}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+
+                                    <Expander Name="WoodcuttingItemsExpander" Grid.Row="1" Header="Items" ExpandDirection="Down" IsExpanded="false" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="WoodcuttingItemsListBox" ItemsSource="{Binding WoodcuttingItems}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+                                </Grid>
+                            </ScrollViewer>
+                        </TabItem>
+                        <TabItem Header="Monster Drop" FontSize="16">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Expander Name="MonsterItemsExpander" Grid.Row="1" Header="Items" ExpandDirection="Down" IsExpanded="false" VerticalAlignment="Top" Background="LightGray">
+                                        <ListBox Name="MonsterItemsListBox" ItemsSource="{Binding MonsterItems}" Background="Gray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </Expander>
+                                </Grid>
+                            </ScrollViewer>
+                        </TabItem>
+                        <TabItem Header="Tradepacks" FontSize="16">
+                            <ScrollViewer>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <ListBox Name="TradepackRecipesListBox" ItemsSource="{Binding TradepackRecipes}" Background="Gray">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </Grid>
+                            </ScrollViewer>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Details"  FontSize="16">
+                <Grid Background="Gray">
+                    
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
