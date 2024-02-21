@@ -20,7 +20,6 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
         }
     }
 
-    #region SubProducts
     public sealed class DenseLog : WoodCuttingItem
     {
         private static DenseLog? instance = null;
@@ -47,9 +46,7 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
             }
         }
     }
-    #endregion
 
-    #region Products
     public sealed class SmallLog : WoodCuttingItem
     {
         private static SmallLog? instance = null;
@@ -157,5 +154,4 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
             }
         }
     }
-    #endregion
 }

@@ -2,26 +2,6 @@
 
 namespace MercatorisAdiutor.Model.Tradepack.Tradepacks
 {
-    public enum TradePosts
-    {
-        Riverend,
-        Margrove,
-        OrcaBay,
-        Seabreeze,
-        Tarmire,
-        Darzuac,
-        Gilead,
-        Glaceforde,
-        Ravencrest,
-        Defiance
-    }
-
-    public enum TradepackStatus
-    {
-        Active,
-        Inactive
-    }
-
     public abstract class Tradepack
     {
         internal string name = string.Empty;
