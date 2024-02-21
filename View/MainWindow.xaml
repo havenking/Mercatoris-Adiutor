@@ -4,14 +4,58 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MercatorisAdiutor"
+        xmlns:view="clr-namespace:MercatorisAdiutor.View"
+        xmlns:converters="clr-namespace:MercatorisAdiutor.View.Converters"
         mc:Ignorable="d"
         Title="Mercatoris Adiutor"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         Height="600" Width="800">
+    <Window.Resources>
+        <BitmapImage x:Key="AlchemyImageSource" UriSource="../Resources/Images/Alchemy.png" />
+        <BitmapImage x:Key="BlacksmithingImageSource" UriSource="../Resources/Images/Blacksmithing.png" />
+        <BitmapImage x:Key="CarpentryImageSource" UriSource="../Resources/Images/Carpentry.png" />
+        <BitmapImage x:Key="CookingImageSource" UriSource="../Resources/Images/Cooking.png" />
+        <BitmapImage x:Key="FarmingImageSource" UriSource="../Resources/Images/Farming.png" />
+        <BitmapImage x:Key="FishingImageSource" UriSource="../Resources/Images/Fishing.png" />
+        <BitmapImage x:Key="HusbandryImageSource" UriSource="../Resources/Images/Husbandry.png" />
+        <BitmapImage x:Key="MiningImageSource" UriSource="../Resources/Images/Mining.png" />
+        <BitmapImage x:Key="WeavingImageSource" UriSource="../Resources/Images/Weaving.png"/>
+        <BitmapImage x:Key="WoodcuttingImageSource" UriSource="../Resources/Images/Woodcutting.png" />
+        <BitmapImage x:Key="MonsterDropImageSource" UriSource="../Resources/Images/Generic.png" />
+        <BitmapImage x:Key="TradepackImageSource" UriSource="../Resources/Images/Generic.png" />
+        <BitmapImage x:Key="RecipeImageSource" UriSource="../Resources/Images/Generic.png" />
+        <BitmapImage x:Key="ItemImageSource" UriSource="../Resources/Images/Generic.png" />
+
+        <Style x:Key="TabItemImprovedStyle" TargetType="{x:Type TabItem}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabItem}">
+                        <Grid Margin="0">
+                            <Border Name="Border" Margin="0" Background="Transparent" BorderBrush="Black" BorderThickness="0" CornerRadius="3">
+                                <ContentPresenter x:Name="ContentSite" VerticalAlignment="Center" HorizontalAlignment="Stretch" ContentSource="Header" Margin="2" RecognizesAccessKey="True"/>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Panel.ZIndex" Value="100" />
+                                <Setter TargetName="Border" Property="Background" Value="White" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="Border" Property="Background" Value="DarkRed" />
+                                <Setter TargetName="Border" Property="BorderBrush" Value="Black" />
+                                <Setter Property="Foreground" Value="DarkGray" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
     <Grid Background="Gray">
         <TabControl Background="DarkGray">
-            <TabItem Header="Planner" FontSize="16">
+            <TabItem x:Name="PlannerTab" Header="Planner" FontSize="16">
                 <Grid Background="Gray">
                     <ListBox x:Name="PlannerlistBox" ItemsSource="{Binding UserLog}" Background="LightGray">
                         <ListBox.ItemTemplate>
@@ -22,13 +66,62 @@
                     </ListBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Catalog"  FontSize="16">
-                <Grid Background="Gray">
-                    <TabControl TabStripPlacement="Left" Background="DarkGray">
-                        <TabItem FontSize="16">
+
+            <TabItem x:Name="CatalogTab" Header="Catalog"  FontSize="16">
+                <Grid Background="Black">
+                    <TabControl TabStripPlacement="Left" BorderThickness="0" Padding="0" Background="Black">
+                        <TabItem Style="{StaticResource TabItemImprovedStyle}" IsEnabled="false" FontSize="16">
                             <TabItem.Header>
-                                <Grid>
-                                    <TextBlock Text="Blacksmithing"/>
+                                <Grid Background="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{StaticResource AlchemyImageSource}" Width="16" Height="16" Margin="5,0"/>
+
+                                    <TextBlock Grid.Column="1" Text="Alchemy" Margin="5,0" Foreground="White"/>
+                                </Grid>
+                            </TabItem.Header>
+
+                            <TabControl>
+                                <TabItem Header="Recipes">
+                                    <ScrollViewer>
+                                        <ListBox ItemsSource="{Binding BlacksmithingRecipes}" Background="LightGray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Text" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </ScrollViewer>
+                                </TabItem>
+
+                                <TabItem Header="Items">
+                                    <ScrollViewer>
+                                        <ListBox ItemsSource="{Binding BlacksmithingItems}" Background="LightGray">
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="Text" Background="Gray"/>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+                                    </ScrollViewer>
+                                </TabItem>
+                            </TabControl>
+                        </TabItem>
+
+                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                            <TabItem.Header>
+                                <Grid Background="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{StaticResource BlacksmithingImageSource}" Width="16" Height="16" Margin="5,0"/>
+
+                                    <TextBlock Grid.Column="1" Text="Blacksmithing" Margin="5,0" Foreground="White"/>
                                 </Grid>
                             </TabItem.Header>
 
@@ -58,8 +151,21 @@
                                 </TabItem>
                             </TabControl>
                         </TabItem>
-                        
-                        <TabItem Header="Carpentry" FontSize="16">
+
+                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                            <TabItem.Header>
+                                <Grid Background="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{StaticResource CarpentryImageSource}" Width="16" Height="16" Margin="5,0"/>
+
+                                    <TextBlock Grid.Column="1" Text="Carpentry" Margin="5,0" Foreground="White"/>
+                                </Grid>
+                            </TabItem.Header>
+
                             <TabControl>
                                 <TabItem Header="Recipes">
                                     <ScrollViewer>
@@ -86,8 +192,21 @@
                                 </TabItem>
                             </TabControl>
                         </TabItem>
-                        
-                        <TabItem Header="Cooking" FontSize="16">
+
+                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                            <TabItem.Header>
+                                <Grid Background="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{StaticResource CookingImageSource}" Width="16" Height="16"  Margin="5,0"/>
+
+                                    <TextBlock Grid.Column="1" Text="Cooking" Foreground="White"/>
+                                </Grid>
+                            </TabItem.Header>
+
                             <TabControl>
                                 <TabItem Header="Recipes">
                                     <ScrollViewer>
@@ -114,8 +233,21 @@
                                 </TabItem>
                             </TabControl>
                         </TabItem>
-                        
-                        <TabItem Header="Farming" FontSize="16">
+
+                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                            <TabItem.Header>
+                                <Grid Background="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{StaticResource FarmingImageSource}" Width="16" Height="16"  Margin="5,0"/>
+
+                                    <TextBlock Grid.Column="1" Text="Farming" Foreground="White"/>
+                                </Grid>
+                            </TabItem.Header>
+
                             <TabControl>
                                 <TabItem Header="Recipes">
                                     <ScrollViewer>
@@ -142,8 +274,21 @@
                                 </TabItem>
                             </TabControl>
                         </TabItem>
-                        
-                        <TabItem Header="Fishing" FontSize="16">
+
+                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                            <TabItem.Header>
+                                <Grid Background="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{StaticResource FishingImageSource}" Width="16" Height="16"  Margin="5,0"/>
+
+                                    <TextBlock Grid.Column="1" Text="Fishing" Foreground="White"/>
+                                </Grid>
+                            </TabItem.Header>
+
                             <TabControl>
                                 <TabItem Header="Recipes">
                                     <ScrollViewer>
@@ -170,8 +315,21 @@
                                 </TabItem>
                             </TabControl>
                         </TabItem>
-                        
-                        <TabItem Header="Husbandry" FontSize="16">
+
+                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                            <TabItem.Header>
+                                <Grid Background="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{StaticResource HusbandryImageSource}" Width="16" Height="16"  Margin="5,0"/>
+
+                                    <TextBlock Grid.Column="1" Text="Husbandry" Foreground="White"/>
+                                </Grid>
+                            </TabItem.Header>
+
                             <TabControl>
                                 <TabItem Header="Recipes">
                                     <ScrollViewer>
@@ -198,8 +356,21 @@
                                 </TabItem>
                             </TabControl>
                         </TabItem>
-                        
-                        <TabItem Header="Mining" FontSize="16">
+
+                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                            <TabItem.Header>
+                                <Grid Background="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{StaticResource MiningImageSource}" Width="16" Height="16"  Margin="5,0"/>
+
+                                    <TextBlock Grid.Column="1" Text="Mining" Foreground="White"/>
+                                </Grid>
+                            </TabItem.Header>
+
                             <TabControl>
                                 <TabItem Header="Recipes">
                                     <ScrollViewer>
@@ -226,8 +397,21 @@
                                 </TabItem>
                             </TabControl>
                         </TabItem>
-                        
-                        <TabItem Header="Weaving" FontSize="16">
+
+                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                            <TabItem.Header>
+                                <Grid Background="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{StaticResource WeavingImageSource}" Width="16" Height="16"  Margin="5,0"/>
+
+                                    <TextBlock Grid.Column="1" Text="Weaving" Foreground="White"/>
+                                </Grid>
+                            </TabItem.Header>
+
                             <TabControl>
                                 <TabItem Header="Recipes">
                                     <ScrollViewer>
@@ -254,27 +438,72 @@
                                 </TabItem>
                             </TabControl>
                         </TabItem>
-                        
-                        <TabItem Header="Woodcutting" FontSize="16">
-                            <TabControl>
-                                <TabItem Header="Recipes">
+
+                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                            <TabItem.Header>
+                                <Grid Background="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{StaticResource WoodcuttingImageSource}" Width="16" Height="16"  Margin="5,0"/>
+
+                                    <TextBlock Grid.Column="1" Text="Woodcutting" Foreground="White"/>
+                                </Grid>
+                            </TabItem.Header>
+
+                            <TabControl BorderThickness="2" BorderBrush="White" Padding="0">
+                                <TabItem  Style="{StaticResource TabItemImprovedStyle}">
+                                    <TabItem.Header>
+                                        <Grid Background="Black">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="1*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Grid.Column="0" Source="{StaticResource RecipeImageSource}" Width="16" Height="16"  Margin="5,0"/>
+
+                                            <TextBlock Grid.Column="1" Text="Recipes" Margin="5,0" Foreground="White"/>
+                                        </Grid>
+                                    </TabItem.Header>
+
                                     <ScrollViewer>
-                                        <ListBox ItemsSource="{Binding WoodcuttingRecipes}" Background="LightGray">
+                                        <ListBox ItemsSource="{Binding WoodcuttingRecipes}" Background="Black">
                                             <ListBox.ItemTemplate>
                                                 <DataTemplate>
-                                                    <TextBlock Text="Text" Background="Gray"/>
+                                                    <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
                                                 </DataTemplate>
                                             </ListBox.ItemTemplate>
                                         </ListBox>
                                     </ScrollViewer>
                                 </TabItem>
 
-                                <TabItem Header="Items">
+                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                                    <TabItem.Header>
+                                        <Grid Background="Black">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="1*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Grid.Column="0" Source="{StaticResource ItemImageSource}" Width="16" Height="16"  Margin="5,0"/>
+
+                                            <TextBlock Grid.Column="1" Text="Items" Foreground="White"/>
+                                        </Grid>
+                                    </TabItem.Header>
+
                                     <ScrollViewer>
-                                        <ListBox ItemsSource="{Binding WoodcuttingItems}" Background="LightGray">
+                                        <ListBox ItemsSource="{Binding WoodcuttingItems}" Background="Black">
+                                            <ListBox.ItemContainerStyle>
+                                                <Style TargetType="ListBoxItem">
+                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                                                </Style>
+                                            </ListBox.ItemContainerStyle>
+
                                             <ListBox.ItemTemplate>
                                                 <DataTemplate>
-                                                    <TextBlock Text="Text" Background="Gray"/>
+                                                    <view:ItemCatalog/>
                                                 </DataTemplate>
                                             </ListBox.ItemTemplate>
                                         </ListBox>
@@ -282,8 +511,21 @@
                                 </TabItem>
                             </TabControl>
                         </TabItem>
-                        
-                        <TabItem Header="Monster Drop" FontSize="16">
+
+                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                            <TabItem.Header>
+                                <Grid Background="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{StaticResource MonsterDropImageSource}" Width="16" Height="16"  Margin="5,0"/>
+
+                                    <TextBlock Grid.Column="1" Text="Monster Drop" Foreground="White"/>
+                                </Grid>
+                            </TabItem.Header>
+
                             <ScrollViewer>
                                 <ListBox ItemsSource="{Binding MonsterDropItems}" Background="LightGray">
                                     <ListBox.ItemTemplate>
@@ -294,8 +536,21 @@
                                 </ListBox>
                             </ScrollViewer>
                         </TabItem>
-                        
-                        <TabItem Header="Tradepacks" FontSize="16">
+
+                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                            <TabItem.Header>
+                                <Grid Background="Black">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Column="0" Source="{StaticResource TradepackImageSource}" Width="16" Height="16"  Margin="5,0"/>
+
+                                    <TextBlock Grid.Column="1" Text="Tradepacks" Foreground="White"/>
+                                </Grid>
+                            </TabItem.Header>
+
                             <ScrollViewer>
                                 <ListBox Name="TradepackRecipesListBox" ItemsSource="{Binding TradepackRecipes}" Background="Gray">
                                     <ListBox.ItemTemplate>
@@ -309,8 +564,8 @@
                     </TabControl>
                 </Grid>
             </TabItem>
-            
-            <TabItem Header="Details"  FontSize="16">
+
+            <TabItem x:Name="DetailsTab" Header="Details"  FontSize="16">
                 <Grid Background="Gray">
                     
                 </Grid>

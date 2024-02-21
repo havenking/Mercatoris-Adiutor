@@ -4,10 +4,16 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
 {
     public abstract class WoodCuttingItem : Item
     {
+        internal int id = -1;
         internal string name = string.Empty;
+        internal string icon = string.Empty;
         internal int price = 0;
 
+        public int Id => id;
+
         public string Name => name;
+
+        public string Icon => icon;
 
         public Profession Profession => Profession.WoodCutting;
 
@@ -27,7 +33,9 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
 
         DenseLog()
         {
+            id = 34371;
             name = "Dense Log";
+            icon = "34371_DenseLog.png";
         }
 
         public static DenseLog Instance
@@ -54,7 +62,9 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
 
         SmallLog()
         {
+            id = 28977;
             name = "Small Log";
+            icon = "28977_SmallLog.png";
         }
 
         public static SmallLog Instance
@@ -81,7 +91,9 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
 
         HeavyLog()
         {
+            id = 45504;
             name = "Heavy Log";
+            icon = "generic.png";
         }
 
         public static HeavyLog Instance
@@ -108,7 +120,9 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
 
         SturdyLog()
         {
+            id = 45505;
             name = "Sturdy Log";
+            icon = "generic.png";
         }
 
         public static SturdyLog Instance
@@ -135,7 +149,9 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
 
         FineLog()
         {
+            id = 45502;
             name = "Fine Log";
+            icon = "generic.png";
         }
 
         public static FineLog Instance

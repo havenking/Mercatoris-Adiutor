@@ -9,10 +9,16 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 {
     public abstract class HusbandryItem : Item
     {
+        internal int id = -1;
         internal string name = string.Empty;
+        internal string icon = string.Empty;
         internal int price = 0;
 
-        public string Name => this.GetType().Name;
+        public int Id => id;
+
+        public string Name => name;
+
+        public string Icon => icon;
 
         public Profession Profession => Profession.Husbandry;
 

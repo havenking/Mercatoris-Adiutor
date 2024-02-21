@@ -5,11 +5,14 @@ namespace MercatorisAdiutor.Model.Tradepack.Tradepacks
     public abstract class Tradepack
     {
         internal string name = string.Empty;
+        internal string icon = string.Empty;
         internal int price = 0;
         internal TradepackStatus status = TradepackStatus.Active;
         internal Material[] materials = Array.Empty<Material>();
 
         public string Name => name;
+
+        public string Icon => icon;
 
         public TradepackStatus Status => status;
 

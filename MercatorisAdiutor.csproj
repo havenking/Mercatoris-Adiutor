@@ -9,11 +9,39 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Images\28977_SmallLog.png" />
     <None Remove="Resources\Images\34371_DenseLog.png" />
+    <None Remove="Resources\Images\alchemy.png" />
+    <None Remove="Resources\Images\blacksmithing.png" />
+    <None Remove="Resources\Images\breeding.png" />
+    <None Remove="Resources\Images\carpentry.png" />
+    <None Remove="Resources\Images\cooking.png" />
+    <None Remove="Resources\Images\farming.png" />
+    <None Remove="Resources\Images\fishing.png" />
+    <None Remove="Resources\Images\generic.png" />
+    <None Remove="Resources\Images\herbalism.png" />
+    <None Remove="Resources\Images\husbandry.png" />
+    <None Remove="Resources\Images\mining.png" />
+    <None Remove="Resources\Images\weaving.png" />
+    <None Remove="Resources\Images\woodcutting.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Images\28977_SmallLog.png" />
     <Resource Include="Resources\Images\34371_DenseLog.png" />
+    <Resource Include="Resources\Images\Alchemy.png" />
+    <Resource Include="Resources\Images\Blacksmithing.png" />
+    <Resource Include="Resources\Images\Breeding.png" />
+    <Resource Include="Resources\Images\Carpentry.png" />
+    <Resource Include="Resources\Images\Cooking.png" />
+    <Resource Include="Resources\Images\Farming.png" />
+    <Resource Include="Resources\Images\Fishing.png" />
+    <Resource Include="Resources\Images\Generic.png" />
+    <Resource Include="Resources\Images\Herbalism.png" />
+    <Resource Include="Resources\Images\Husbandry.png" />
+    <Resource Include="Resources\Images\Mining.png" />
+    <Resource Include="Resources\Images\Weaving.png" />
+    <Resource Include="Resources\Images\Woodcutting.png" />
   </ItemGroup>
 
 </Project>
