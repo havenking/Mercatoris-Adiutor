@@ -10,7 +10,7 @@
         <converters:IconConverter x:Key="IconConverter"/>
     </UserControl.Resources>
 
-    <Expander ExpandDirection="Down" IsExpanded="False" BorderBrush="Gray" BorderThickness="5" Background="LightGray">
+    <Expander ExpandDirection="Down" IsExpanded="False" BorderBrush="Gray" BorderThickness="2" Background="LightGray">
         <Expander.Header>
             <Grid>
                 <Grid.ColumnDefinitions>

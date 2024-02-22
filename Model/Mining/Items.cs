@@ -105,7 +105,9 @@
             }
         }
     }
+    #endregion
 
+    #region Gems
     public sealed class Amethyst : MiningItem
     {
         private static Amethyst? instance = null;

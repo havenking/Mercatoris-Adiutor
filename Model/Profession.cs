@@ -9,6 +9,7 @@ namespace MercatorisAdiutor.Model
     public enum Profession
     {
         None,
+        Alchemy,
         Blacksmithing,
         Carpentry,
         Cooking,

@@ -10,7 +10,7 @@ namespace MercatorisAdiutor.Model
 {
     public static class Database
     {
-        public static void InitializeWoodcuttingItems()
+        public static void InitializeDatabse()
         {
             DenseLog.Instance.Price = -1;
             SmallLog.Instance.Price = -1;
