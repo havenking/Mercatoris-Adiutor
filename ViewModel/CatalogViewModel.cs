@@ -37,7 +37,6 @@ namespace MercatorisAdiutor.ViewModel
             HusbandryItems = catalog.GetAllHusbandryItems();
             MiningItems = catalog.GetAllMiningItems();
             MonsterItems = catalog.GetAllMonsterItems();
-            TradepackItems = catalog.GetAllTradepackItems();
             WeavingItems = catalog.GetAllWeavingItems();
             WoodcuttingItems = catalog.GetAllWoodcuttingItems();
         }

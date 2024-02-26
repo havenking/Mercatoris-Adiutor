@@ -11,5 +11,7 @@
         public Profession Profession { get; }
 
         public Category Category { get; }
+
+        public int Price { get; set; }
     }
 }
