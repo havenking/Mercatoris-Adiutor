@@ -11,37 +11,49 @@ namespace MercatorisAdiutor.ViewModel
     public class CatalogViewModel : BaseViewModel
     {
         private Catalog catalog;
-        private List<Item> alchemyItems;
-        private List<Item> blacksmithingItems;
-        private List<Item> carpentryItems;
-        private List<Item> cookingItems;
-        private List<Item> farmingItems;
-        private List<Item> fishingItems;
-        private List<Item> husbandryItems;
-        private List<Item> miningItems;
-        private List<Item> monsterItems;
-        private List<Item> tradepackItems;
-        private List<Item> weavingItems;
-        private List<Item> woodcuttingItems;
+        private List<ItemCatalogViewModel> alchemyItems;
+        private List<ItemCatalogViewModel> blacksmithingItems;
+        private List<ItemCatalogViewModel> carpentryItems;
+        private List<ItemCatalogViewModel> cookingItems;
+        private List<ItemCatalogViewModel> farmingItems;
+        private List<ItemCatalogViewModel> fishingItems;
+        private List<ItemCatalogViewModel> husbandryItems;
+        private List<ItemCatalogViewModel> miningItems;
+        private List<ItemCatalogViewModel> monsterItems;
+        private List<ItemCatalogViewModel> tradepackItems;
+        private List<ItemCatalogViewModel> weavingItems;
+        private List<ItemCatalogViewModel> woodcuttingItems;
 
         public CatalogViewModel()
         {
             catalog = new Catalog();
 
-            AlchemyItems = catalog.GetAllAlchemyItems();
-            BlacksmithingItems = catalog.GetAllBlacksmithingItems();
-            CarpentryItems = catalog.GetAllCarpentryItems();
-            CookingItems = catalog.GetAllCookingItems();
-            FarmingItems = catalog.GetAllFarmingItems();
-            FishingItems = catalog.GetAllFishingItems();
-            HusbandryItems = catalog.GetAllHusbandryItems();
-            MiningItems = catalog.GetAllMiningItems();
-            MonsterItems = catalog.GetAllMonsterItems();
-            WeavingItems = catalog.GetAllWeavingItems();
-            WoodcuttingItems = catalog.GetAllWoodcuttingItems();
+            alchemyItems = new List<ItemCatalogViewModel>();
+            blacksmithingItems = new List<ItemCatalogViewModel>();
+            carpentryItems = new List<ItemCatalogViewModel>();
+            cookingItems = new List<ItemCatalogViewModel>();
+            farmingItems = new List<ItemCatalogViewModel>();
+            fishingItems = new List<ItemCatalogViewModel>();
+            husbandryItems = new List<ItemCatalogViewModel>();
+            miningItems = new List<ItemCatalogViewModel>();
+            monsterItems = new List<ItemCatalogViewModel>();
+            weavingItems = new List<ItemCatalogViewModel>();
+            woodcuttingItems = new List<ItemCatalogViewModel>();
+
+            catalog.GetAllAlchemyItems().ForEach(x => alchemyItems.Add(new ItemCatalogViewModel(x)));
+            catalog.GetAllBlacksmithingItems().ForEach(x => blacksmithingItems.Add(new ItemCatalogViewModel(x)));
+            catalog.GetAllCarpentryItems().ForEach(x => carpentryItems.Add(new ItemCatalogViewModel(x)));
+            catalog.GetAllCookingItems().ForEach(x => cookingItems.Add(new ItemCatalogViewModel(x)));
+            catalog.GetAllFarmingItems().ForEach(x => farmingItems.Add(new ItemCatalogViewModel(x)));
+            catalog.GetAllFishingItems().ForEach(x => fishingItems.Add(new ItemCatalogViewModel(x)));
+            catalog.GetAllHusbandryItems().ForEach(x => husbandryItems.Add(new ItemCatalogViewModel(x)));
+            catalog.GetAllMiningItems().ForEach(x => miningItems.Add(new ItemCatalogViewModel(x)));
+            catalog.GetAllMonsterItems().ForEach(x => monsterItems.Add(new ItemCatalogViewModel(x)));
+            catalog.GetAllWeavingItems().ForEach(x => weavingItems.Add(new ItemCatalogViewModel(x)));
+            catalog.GetAllWoodcuttingItems().ForEach(x => woodcuttingItems.Add(new ItemCatalogViewModel(x)));
         }
 
-        public List<Item> AlchemyItems
+        public List<ItemCatalogViewModel> AlchemyItems
         {
             get
             {
@@ -55,7 +67,7 @@ namespace MercatorisAdiutor.ViewModel
             }
         }
 
-        public List<Item> BlacksmithingItems
+        public List<ItemCatalogViewModel> BlacksmithingItems
         {
             get
             {
@@ -69,7 +81,7 @@ namespace MercatorisAdiutor.ViewModel
             }
         }
 
-        public List<Item> CarpentryItems
+        public List<ItemCatalogViewModel> CarpentryItems
         {
             get
             {
@@ -83,7 +95,7 @@ namespace MercatorisAdiutor.ViewModel
             }
         }
 
-        public List<Item> CookingItems
+        public List<ItemCatalogViewModel> CookingItems
         {
             get
             {
@@ -97,7 +109,7 @@ namespace MercatorisAdiutor.ViewModel
             }
         }
 
-        public List<Item> FarmingItems
+        public List<ItemCatalogViewModel> FarmingItems
         {
             get
             {
@@ -111,7 +123,7 @@ namespace MercatorisAdiutor.ViewModel
             }
         }
 
-        public List<Item> FishingItems
+        public List<ItemCatalogViewModel> FishingItems
         {
             get
             {
@@ -125,7 +137,7 @@ namespace MercatorisAdiutor.ViewModel
             }
         }
 
-        public List<Item> HusbandryItems
+        public List<ItemCatalogViewModel> HusbandryItems
         {
             get
             {
@@ -139,7 +151,7 @@ namespace MercatorisAdiutor.ViewModel
             }
         }
 
-        public List<Item> MiningItems
+        public List<ItemCatalogViewModel> MiningItems
         {
             get
             {
@@ -153,7 +165,7 @@ namespace MercatorisAdiutor.ViewModel
             }
         }
 
-        public List<Item> MonsterItems
+        public List<ItemCatalogViewModel> MonsterItems
         {
             get
             {
@@ -167,7 +179,7 @@ namespace MercatorisAdiutor.ViewModel
             }
         }
 
-        public List<Item> TradepackItems
+        public List<ItemCatalogViewModel> TradepackItems
         {
             get
             {
@@ -181,7 +193,7 @@ namespace MercatorisAdiutor.ViewModel
             }
         }
 
-        public List<Item> WeavingItems
+        public List<ItemCatalogViewModel> WeavingItems
         {
             get
             {
@@ -196,7 +208,7 @@ namespace MercatorisAdiutor.ViewModel
         }
 
 
-        public List<Item> WoodcuttingItems
+        public List<ItemCatalogViewModel> WoodcuttingItems
         {
             get
             {

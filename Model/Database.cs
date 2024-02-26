@@ -15,6 +15,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
@@ -494,16 +495,19 @@ namespace MercatorisAdiutor.Model
             InitializeDatabse();
         }
 
-        public static Database Instance()
+        public static Database Instance
         {
-            lock (locker)
+            get
             {
-                if (instance == null)
+                lock (locker)
                 {
-                    instance = new Database();
-                }
+                    if (instance == null)
+                    {
+                        instance = new Database();
+                    }
 
-                return instance;
+                    return instance;
+                }
             }
         }
 
@@ -572,7 +576,7 @@ namespace MercatorisAdiutor.Model
 
             if (File.Exists(path))
             {
-                string[] lines = File.ReadAllLines(path);
+                string[] lines = await File.ReadAllLinesAsync(path);
                 int i = 0;
 
                 while (lines.Length > i)
@@ -593,10 +597,7 @@ namespace MercatorisAdiutor.Model
                     i++;
                 }
 
-                using (FileStream writer = File.OpenWrite(path))
-                {
-                    await File.WriteAllLinesAsync(path, lines);
-                }
+                await File.WriteAllLinesAsync(path, lines);
             }
 
             fileSemaphore.Release();
