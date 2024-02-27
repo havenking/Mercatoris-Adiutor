@@ -9,8 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\Images\28977_SmallLog.png" />
-    <None Remove="Resources\Images\34371_DenseLog.png" />
+    <None Remove="Resources\Images\28962.png" />
+    <None Remove="Resources\Images\28963.png" />
+    <None Remove="Resources\Images\28964.png" />
+    <None Remove="Resources\Images\28965.png" />
+    <None Remove="Resources\Images\28966.png" />
+    <None Remove="Resources\Images\28969.png" />
+    <None Remove="Resources\Images\28970.png" />
+    <None Remove="Resources\Images\28971.png" />
+    <None Remove="Resources\Images\28972.png" />
+    <None Remove="Resources\Images\28973.png" />
+    <None Remove="Resources\Images\28977.png" />
+    <None Remove="Resources\Images\34371.png" />
+    <None Remove="Resources\Images\35432.png" />
+    <None Remove="Resources\Images\35433.png" />
+    <None Remove="Resources\Images\35434.png" />
+    <None Remove="Resources\Images\35435.png" />
+    <None Remove="Resources\Images\35436.png" />
     <None Remove="Resources\Images\alchemy.png" />
     <None Remove="Resources\Images\blacksmithing.png" />
     <None Remove="Resources\Images\breeding.png" />
@@ -27,8 +42,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\Images\28977_SmallLog.png" />
-    <Resource Include="Resources\Images\34371_DenseLog.png" />
+    <Resource Include="Resources\Images\28962.png" />
+    <Resource Include="Resources\Images\28963.png" />
+    <Resource Include="Resources\Images\28964.png" />
+    <Resource Include="Resources\Images\28965.png" />
+    <Resource Include="Resources\Images\28966.png" />
+    <Resource Include="Resources\Images\28969.png" />
+    <Resource Include="Resources\Images\28970.png" />
+    <Resource Include="Resources\Images\28971.png" />
+    <Resource Include="Resources\Images\28972.png" />
+    <Resource Include="Resources\Images\28973.png" />
+    <Resource Include="Resources\Images\28977.png" />
+    <Resource Include="Resources\Images\34371.png" />
+    <Resource Include="Resources\Images\35432.png" />
+    <Resource Include="Resources\Images\35433.png" />
+    <Resource Include="Resources\Images\35434.png" />
+    <Resource Include="Resources\Images\35435.png" />
+    <Resource Include="Resources\Images\35436.png" />
     <Resource Include="Resources\Images\Alchemy.png" />
     <Resource Include="Resources\Images\Blacksmithing.png" />
     <Resource Include="Resources\Images\Breeding.png" />

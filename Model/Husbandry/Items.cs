@@ -39,7 +39,9 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 
         Fertilizer()
         {
+            id = 0;
             name = "Fertilizer";
+            icon = "generic.png";
         }
 
         public static Fertilizer Instance
@@ -68,7 +70,9 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 
         Shank()
         {
+            id = 0;
             name = "Shank";
+            icon = "generic.png";
         }
 
         public static Shank Instance
@@ -95,7 +99,9 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 
         Hide()
         {
+            id = 0;
             name = "Hide";
+            icon = "generic.png";
         }
 
         public static Hide Instance
@@ -122,7 +128,9 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 
         SpoolOfHair()
         {
+            id = 0;
             name = "Spool Of Hair";
+            icon = "generic.png";
         }
 
         public static SpoolOfHair Instance
@@ -149,7 +157,9 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 
         Chicken()
         {
+            id = 0;
             name = "Chicken";
+            icon = "generic.png";
         }
 
         public static Chicken Instance
@@ -176,7 +186,9 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 
         Egg()
         {
+            id = 0;
             name = "Egg";
+            icon = "generic.png";
         }
 
         public static Egg Instance
@@ -203,7 +215,9 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 
         Milk()
         {
+            id = 0;
             name = "Milk";
+            icon = "generic.png";
         }
 
         public static Milk Instance
@@ -230,7 +244,9 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 
         Wool()
         {
+            id = 0;
             name = "Wool";
+            icon = "generic.png";
         }
 
         public static Wool Instance
@@ -257,7 +273,9 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 
         Feather()
         {
+            id = 0;
             name = "Feather";
+            icon = "generic.png";
         }
 
         public static Feather Instance
@@ -284,7 +302,9 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 
         Cheese()
         {
+            id = 0;
             name = "Cheese";
+            icon = "generic.png";
         }
 
         public static Cheese Instance
@@ -311,7 +331,9 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 
         Honey()
         {
+            id = 0;
             name = "Honey";
+            icon = "generic.png";
         }
 
         public static Honey Instance
@@ -338,7 +360,9 @@ namespace MercatorisAdiutor.Model.Husbandry.Items
 
         Beef()
         {
+            id = 0;
             name = "Beef";
+            icon = "generic.png";
         }
 
         public static Beef Instance

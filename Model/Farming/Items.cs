@@ -30,9 +30,11 @@
         private static ThreeLeafClover? instance = null;
         private static readonly object locker = new object();
 
-        ThreeLeafClover() 
+        ThreeLeafClover()
         {
+            id = 0;
             name = "Three-Leaf Clover";
+            icon = "generic.png";
         }
 
         public static ThreeLeafClover Instance
@@ -61,7 +63,9 @@
 
         Potato()
         {
+            id = 0;
             name = "Potato";
+            icon = "generic.png";
         }
 
         public static Potato Instance
@@ -115,7 +119,9 @@
 
         Corn()
         {
+            id = 0;
             name = "Corn";
+            icon = "generic.png";
         }
 
         public static Corn Instance
@@ -142,7 +148,9 @@
 
         Wheat()
         {
+            id = 0;
             name = "Wheat";
+            icon = "generic.png";
         }
 
         public static Wheat Instance
@@ -169,7 +177,9 @@
 
         Apple()
         {
+            id = 0;
             name = "Apple";
+            icon = "generic.png";
         }
 
         public static Apple Instance
@@ -196,7 +206,9 @@
 
         Carrot()
         {
+            id = 0;
             name = "Carrot";
+            icon = "generic.png";
         }
 
         public static Carrot Instance
@@ -223,7 +235,9 @@
 
         Grape()
         {
+            id = 0;
             name = "Grape";
+            icon = "generic.png";
         }
 
         public static Grape Instance
@@ -250,7 +264,9 @@
 
         Blueberry()
         {
+            id = 0;
             name = "Blueberry";
+            icon = "generic.png";
         }
 
         public static Blueberry Instance
@@ -277,7 +293,9 @@
 
         Cabbage()
         {
+            id = 0;
             name = "Cabbage";
+            icon = "generic.png";
         }
 
         public static Cabbage Instance
@@ -304,7 +322,9 @@
 
         Pepper()
         {
+            id = 0;
             name = "Pepper";
+            icon = "generic.png";
         }
 
         public static Pepper Instance
@@ -331,7 +351,9 @@
 
         Cherry()
         {
+            id = 0;
             name = "Cherry";
+            icon = "generic.png";
         }
 
         public static Cherry Instance
@@ -358,7 +380,9 @@
 
         Orange()
         {
+            id = 0;
             name = "Orange";
+            icon = "generic.png";
         }
 
         public static Orange Instance
@@ -385,7 +409,9 @@
 
         Onion()
         {
+            id = 0;
             name = "Onion";
+            icon = "generic.png";
         }
 
         public static Onion Instance
@@ -412,7 +438,9 @@
 
         Strawberry()
         {
+            id = 0;
             name = "Strawberry";
+            icon = "generic.png";
         }
 
         public static Strawberry Instance
@@ -439,7 +467,9 @@
 
         Bean()
         {
+            id = 0;
             name = "Bean";
+            icon = "generic.png";
         }
 
         public static Bean Instance
@@ -466,7 +496,9 @@
 
         Banana()
         {
+            id = 0;
             name = "Banana";
+            icon = "generic.png";
         }
 
         public static Banana Instance
@@ -493,7 +525,9 @@
 
         Pumpkin()
         {
+            id = 0;
             name = "Pumpkin";
+            icon = "generic.png";
         }
 
         public static Pumpkin Instance
@@ -520,7 +554,9 @@
 
         Watermelon()
         {
+            id = 0;
             name = "Watermelon";
+            icon = "generic.png";
         }
 
         public static Watermelon Instance
@@ -547,7 +583,9 @@
 
         Pea()
         {
+            id = 0;
             name = "Pea";
+            icon = "generic.png";
         }
 
         public static Pea Instance
@@ -574,7 +612,9 @@
 
         Moonberry()
         {
+            id = 0;
             name = "Moonberry";
+            icon = "generic.png";
         }
 
         public static Moonberry Instance
@@ -601,7 +641,9 @@
 
         Garlic()
         {
+            id = 0;
             name = "Garlic";
+            icon = "generic.png";
         }
 
         public static Garlic Instance
@@ -628,7 +670,9 @@
 
         Acorn()
         {
+            id = 0;
             name = "Acorn";
+            icon = "generic.png";
         }
 
         public static Acorn Instance
@@ -655,7 +699,9 @@
 
         Brocolli()
         {
+            id = 0;
             name = "Brocolli";
+            icon = "generic.png";
         }
 
         public static Brocolli Instance
@@ -682,7 +728,9 @@
 
         Sunberry()
         {
+            id = 0;
             name = "Sunberry";
+            icon = "generic.png";
         }
 
         public static Sunberry Instance

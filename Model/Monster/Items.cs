@@ -32,7 +32,9 @@
 
         TrollFang()
         {
+            id = 0;
             name = "Troll Fang";
+            icon = "generic.png";
         }
 
         public static TrollFang Instance
@@ -61,7 +63,9 @@
 
         SeaCuredLeather()
         {
+            id = 0;
             name = "Sea Cured Leather";
+            icon = "generic.png";
         }
 
         public static SeaCuredLeather Instance

@@ -33,7 +33,9 @@
 
         CopperIngot()
         {
+            id = 0;
             name = "Copper Ingot";
+            icon = "generic.png";
         }
 
         public static CopperIngot Instance
@@ -60,7 +62,9 @@
 
         IronIngot()
         {
+            id = 0;
             name = "Iron Ingot";
+            icon = "generic.png";
         }
 
         public static IronIngot Instance
@@ -87,7 +91,9 @@
 
         SteelIngot()
         {
+            id = 0;
             name = "Steel Ingot";
+            icon = "generic.png";
         }
 
         public static SteelIngot Instance
@@ -114,7 +120,9 @@
 
         CobaltIngot()
         {
+            id = 0;
             name = "Cobalt Ingot";
+            icon = "generic.png";
         }
 
         public static CobaltIngot Instance
@@ -141,7 +149,9 @@
 
         TitaniumIngot()
         {
+            id = 0;
             name = "Titanium Ingot";
+            icon = "generic.png";
         }
 
         public static TitaniumIngot Instance
@@ -185,7 +195,9 @@
 
         Nail()
         {
+            id = 0;
             name = "Nail";
+            icon = "generic.png";
         }
 
         public static Nail Instance
@@ -212,7 +224,9 @@
 
         CommonPlate()
         {
+            id = 0;
             name = "Common Plate";
+            icon = "generic.png";
         }
 
         public static CommonPlate Instance
@@ -239,7 +253,9 @@
 
         ReinforcedPlate()
         {
+            id = 0;
             name = "Reinforced Plate";
+            icon = "generic.png";
         }
 
         public static ReinforcedPlate Instance
@@ -266,7 +282,9 @@
 
         IronBar()
         {
+            id = 0;
             name = "Iron Bar";
+            icon = "generic.png";
         }
 
         public static IronBar Instance
@@ -293,7 +311,9 @@
 
         Bolt()
         {
+            id = 0;
             name = "Bolt";
+            icon = "generic.png";
         }
 
         public static Bolt Instance
@@ -320,7 +340,9 @@
 
         SteelBar()
         {
+            id = 0;
             name = "Steel Bar";
+            icon = "generic.png";
         }
 
         public static SteelBar Instance

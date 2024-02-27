@@ -35,7 +35,7 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
         {
             id = 34371;
             name = "Dense Log";
-            icon = "34371_DenseLog.png";
+            icon = "34371.png";
         }
 
         public static DenseLog Instance
@@ -64,7 +64,7 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
         {
             id = 28977;
             name = "Small Log";
-            icon = "28977_SmallLog.png";
+            icon = "28977.png";
         }
 
         public static SmallLog Instance
@@ -93,7 +93,7 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
         {
             id = 45504;
             name = "Heavy Log";
-            icon = "generic.png";
+            icon = "45504.png";
         }
 
         public static HeavyLog Instance
@@ -122,7 +122,7 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
         {
             id = 45505;
             name = "Sturdy Log";
-            icon = "generic.png";
+            icon = "45505.png";
         }
 
         public static SturdyLog Instance
@@ -151,7 +151,7 @@ namespace MercatorisAdiutor.Model.WoodCutting.Items
         {
             id = 45502;
             name = "Fine Log";
-            icon = "generic.png";
+            icon = "45502.png";
         }
 
         public static FineLog Instance

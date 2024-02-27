@@ -32,7 +32,9 @@
 
         SimpleCloth()
         {
+            id = 28966;
             name = "Simple Cloth";
+            icon = "28966.png";
         }
 
         public static SimpleCloth Instance
@@ -59,7 +61,9 @@
 
         CraftmanCloth()
         {
+            id = 28963;
             name = "Craftman's Cloth";
+            icon = "28963.png";
         }
 
         public static CraftmanCloth Instance
@@ -86,7 +90,9 @@
 
         Silk()
         {
+            id = 28965;
             name = "Silk";
+            icon = "28965.png";
         }
 
         public static Silk Instance
@@ -113,7 +119,9 @@
 
         MerchantCloth()
         {
+            id = 28964;
             name = "Merchant's Cloth";
+            icon = "28964.png";
         }
 
         public static MerchantCloth Instance
@@ -140,7 +148,9 @@
 
         ArtisanCloth()
         {
+            id = 28962;
             name = "Artisan Cloth";
+            icon = "28962.png";
         }
 
         public static ArtisanCloth Instance
@@ -169,7 +179,9 @@
 
         CoarseLeather()
         {
+            id = 35432;
             name = "Coarse Leather";
+            icon = "35432.png";
         }
 
         public static CoarseLeather Instance
@@ -196,7 +208,9 @@
 
         CraftmanLeather()
         {
+            id = 35433;
             name = "Craftman's Leather";
+            icon = "35433.png";
         }
 
         public static CraftmanLeather Instance
@@ -223,7 +237,9 @@
 
         TannedLeather()
         {
+            id = 35434;
             name = "Tanned Leather";
+            icon = "35434.png";
         }
 
         public static TannedLeather Instance
@@ -250,7 +266,9 @@
 
         MerchantLeather()
         {
+            id = 35435;
             name = "Merchant's Leather";
+            icon = "35435.png";
         }
 
         public static MerchantLeather Instance
@@ -277,7 +295,9 @@
 
         ArtisanLeather()
         {
+            id = 35436;
             name = "Artisan Leather";
+            icon = "35436.png";
         }
 
         public static ArtisanLeather Instance
@@ -306,7 +326,9 @@
 
         CoarseThread()
         {
+            id = 28971;
             name = "Coarse Thread";
+            icon = "28971.png";
         }
 
         public static CoarseThread Instance
@@ -333,7 +355,9 @@
 
         CraftmanThread()
         {
+            id = 28972;
             name = "Craftman's Thread";
+            icon = "28972.png";
         }
 
         public static CraftmanThread Instance
@@ -360,7 +384,9 @@
 
         FineThread()
         {
+            id = 28973;
             name = "Fine Thread";
+            icon = "28973.png";
         }
 
         public static FineThread Instance
@@ -387,7 +413,9 @@
 
         MerchantThread()
         {
+            id = 28969;
             name = "Merchant's Thread";
+            icon = "28969.png";
         }
 
         public static MerchantThread Instance
@@ -414,7 +442,9 @@
 
         ArtisanThread()
         {
+            id = 28970;
             name = "Artisan Thread";
+            icon = "28970.png";
         }
 
         public static ArtisanThread Instance
@@ -443,7 +473,9 @@
 
         CheapRug()
         {
+            id = 42780;
             name = "Cheap Rug";
+            icon = "42780.png";
         }
 
         public static CheapRug Instance
@@ -470,7 +502,9 @@
 
         Carpet()
         {
+            id = 37225;
             name = "Carpet";
+            icon = "37225.png";
         }
 
         public static Carpet Instance
@@ -497,7 +531,9 @@
 
         ThreadSpool()
         {
+            id = 37288;
             name = "Thread Spool";
+            icon = "37288.png";
         }
 
         public static ThreadSpool Instance
@@ -524,7 +560,9 @@
 
         ClothRoll()
         {
+            id = 37226;
             name = "Cloth Roll";
+            icon = "37226.png";
         }
 
         public static ClothRoll Instance
@@ -551,7 +589,9 @@
 
         LuxuryCarpet()
         {
+            id = 37246;
             name = "Luxury Carpet";
+            icon = "37246.png";
         }
 
         public static LuxuryCarpet Instance
@@ -578,7 +618,9 @@
 
         LuxuryThreadSpool()
         {
+            id = 37248;
             name = "Luxury Thread Spool";
+            icon = "37248.png";
         }
 
         public static LuxuryThreadSpool Instance
@@ -605,7 +647,9 @@
 
         RefinedClothRoll()
         {
+            id = 37262;
             name = "Refined Cloth Roll";
+            icon = "37262.png";
         }
 
         public static RefinedClothRoll Instance
@@ -632,7 +676,9 @@
 
         LuxuryClothRoll()
         {
+            id = 37247;
             name = "Luxury Cloth Roll";
+            icon = "37247.png";
         }
 
         public static LuxuryClothRoll Instance
@@ -661,7 +707,9 @@
 
         SimpleSaddle()
         {
+            id = 43246;
             name = "Simple Saddle";
+            icon = "43246.png";
         }
 
         public static SimpleSaddle Instance
@@ -688,7 +736,9 @@
 
         ComposedSaddle()
         {
+            id = 43247;
             name = "Composed Saddle";
+            icon = "43247.png";
         }
 
         public static ComposedSaddle Instance
@@ -715,7 +765,9 @@
 
         AdvancedSaddle()
         {
+            id = 43248;
             name = "Advanced Saddle";
+            icon = "43248.png";
         }
 
         public static AdvancedSaddle Instance
@@ -742,7 +794,9 @@
 
         ArtisanSaddle()
         {
+            id = 43249;
             name = "Artisan Saddle";
+            icon = "43249.png";
         }
 
         public static ArtisanSaddle Instance
@@ -769,7 +823,9 @@
 
         SuperiorSaddle()
         {
+            id = 43250;
             name = "Superior Saddle";
+            icon = "43250.png";
         }
 
         public static SuperiorSaddle Instance
@@ -796,7 +852,9 @@
 
         WarSaddle()
         {
+            id = 43251;
             name = "War Saddle";
+            icon = "43251.png";
         }
 
         public static WarSaddle Instance
@@ -823,7 +881,9 @@
 
         ProfessionalSaddle()
         {
+            id = 43253;
             name = "Professional Saddle";
+            icon = "generic.png";
         }
 
         public static ProfessionalSaddle Instance
@@ -850,7 +910,9 @@
 
         ExplorerSaddle()
         {
+            id = 43252;
             name = "Explorer Saddle";
+            icon = "generic.png";
         }
 
         public static ExplorerSaddle Instance
@@ -879,7 +941,9 @@
 
         SmallSailKit()
         {
+            id = 37276;
             name = "Small Sail Kit";
+            icon = "37276.png";
         }
 
         public static SmallSailKit Instance
@@ -906,7 +970,9 @@
 
         SmallFishingNetsKit()
         {
+            id = 37272;
             name = "Small Fishing Nets Kit";
+            icon = "37272.png";
         }
 
         public static SmallFishingNetsKit Instance
@@ -933,7 +999,9 @@
 
         MediumSailKit()
         {
+            id = 37257;
             name = "Medium Sail Kit";
+            icon = "37257.png";
         }
 
         public static MediumSailKit Instance
@@ -960,7 +1028,9 @@
 
         MediumFishingNetsKit()
         {
+            id = 37253;
             name = "Medium Fishing Nets Kit";
+            icon = "37253.png";
         }
 
         public static MediumFishingNetsKit Instance
@@ -987,7 +1057,9 @@
 
         LargeSailKit()
         {
+            id = 37242;
             name = "Large Sail Kit";
+            icon = "37242.png";
         }
 
         public static LargeSailKit Instance
@@ -1014,7 +1086,9 @@
 
         LargeFishingNetsKit()
         {
+            id = 37238;
             name = "Large Fishing Nets Kit";
+            icon = "37238.png";
         }
 
         public static LargeFishingNetsKit Instance
@@ -1043,7 +1117,9 @@
 
         HideArmor()
         {
+            id = 28634;
             name = "Hide Armor";
+            icon = "28634.png";
         }
 
         public static HideArmor Instance
@@ -1070,7 +1146,9 @@
 
         ShadeclothArmor()
         {
+            id = 28589;
             name = "Shadecloth Armor";
+            icon = "28589.png";
         }
 
         public static ShadeclothArmor Instance
@@ -1097,7 +1175,9 @@
 
         HideHelmet()
         {
+            id = 28640;
             name = "Hide Helmet";
+            icon = "28640.png";
         }
 
         public static HideHelmet Instance
@@ -1124,7 +1204,9 @@
 
         ShadeclothHelmet()
         {
+            id = 28595;
             name = "Shadecloth Helmet";
+            icon = "28595.png";
         }
 
         public static ShadeclothHelmet Instance
@@ -1151,7 +1233,9 @@
 
         HideLegs()
         {
+            id = 28641;
             name = "Hide Legs";
+            icon = "28641.png";
         }
 
         public static HideLegs Instance
@@ -1178,7 +1262,9 @@
 
         ShadeclothLegs()
         {
+            id = 28596;
             name = "Shadecloth Legs";
+            icon = "28596.png";
         }
 
         public static ShadeclothLegs Instance
@@ -1205,7 +1291,9 @@
 
         HideBoots()
         {
+            id = 28637;
             name = "Hide Boots";
+            icon = "28637.png";
         }
 
         public static HideBoots Instance
@@ -1232,7 +1320,9 @@
 
         ShadeclothBoots()
         {
+            id = 28592;
             name = "Shadecloth Boots";
+            icon = "28592.png";
         }
 
         public static ShadeclothBoots Instance
@@ -1259,7 +1349,9 @@
 
         NomadArmor()
         {
+            id = 28643;
             name = "Nomad Armor";
+            icon = "28643.png";
         }
 
         public static NomadArmor Instance
@@ -1286,7 +1378,9 @@
 
         ViperArmor()
         {
+            id = 28598;
             name = "Viper's Armor";
+            icon = "28598.png";
         }
 
         public static ViperArmor Instance
@@ -1313,7 +1407,9 @@
 
         NomadHelmet()
         {
+            id = 28649;
             name = "Nomad Helmet";
+            icon = "28649.png";
         }
 
         public static NomadHelmet Instance
@@ -1340,7 +1436,9 @@
 
         ViperHelmet()
         {
+            id = 0;
             name = "Viper's Helmet";
+            icon = "generic.png";
         }
 
         public static ViperHelmet Instance
@@ -1367,7 +1465,9 @@
 
         NomadLegs()
         {
+            id = 0;
             name = "Nomad Legs";
+            icon = "generic.png";
         }
 
         public static NomadLegs Instance
@@ -1394,7 +1494,9 @@
 
         ViperLegs()
         {
+            id = 0;
             name = "Viper's Legs";
+            icon = "generic.png";
         }
 
         public static ViperLegs Instance
@@ -1421,7 +1523,9 @@
 
         NomadBoots()
         {
+            id = 0;
             name = "Nomad Boots";
+            icon = "generic.png";
         }
 
         public static NomadBoots Instance
@@ -1448,7 +1552,9 @@
 
         ViperBoots()
         {
+            id = 0;
             name = "Viper's Boots";
+            icon = "generic.png";
         }
 
         public static ViperBoots Instance
@@ -1475,7 +1581,9 @@
 
         BruiserArmor()
         {
+            id = 0;
             name = "Bruiser's Armor";
+            icon = "generic.png";
         }
 
         public static BruiserArmor Instance
@@ -1502,7 +1610,9 @@
 
         ProfaneArmor()
         {
+            id = 0;
             name = "Profane Armor";
+            icon = "generic.png";
         }
 
         public static ProfaneArmor Instance
@@ -1529,7 +1639,9 @@
 
         BruiserHelmet()
         {
+            id = 0;
             name = "Bruiser's Helmet";
+            icon = "generic.png";
         }
 
         public static BruiserHelmet Instance
@@ -1556,7 +1668,9 @@
 
         ProfaneHelmet()
         {
+            id = 0;
             name = "Profane Helmet";
+            icon = "generic.png";
         }
 
         public static ProfaneHelmet Instance
@@ -1583,7 +1697,9 @@
 
         BruiserLegs()
         {
+            id = 0;
             name = "Bruiser's Legs";
+            icon = "generic.png";
         }
 
         public static BruiserLegs Instance
@@ -1610,7 +1726,9 @@
 
         ProfaneLegs()
         {
+            id = 0;
             name = "Profane Legs";
+            icon = "generic.png";
         }
 
         public static ProfaneLegs Instance
@@ -1637,7 +1755,9 @@
 
         BruiserBoots()
         {
+            id = 0;
             name = "Bruiser's Boots";
+            icon = "generic.png";
         }
 
         public static BruiserBoots Instance
@@ -1664,7 +1784,9 @@
 
         ProfaneBoots()
         {
+            id = 0;
             name = "Profane Boots";
+            icon = "generic.png";
         }
 
         public static ProfaneBoots Instance
@@ -1691,7 +1813,9 @@
 
         OutlawArmor()
         {
+            id = 0;
             name = "Outlaw Armor";
+            icon = "generic.png";
         }
 
         public static OutlawArmor Instance
@@ -1718,7 +1842,9 @@
 
         CelestialArmor()
         {
+            id = 0;
             name = "Celestial Armor";
+            icon = "generic.png";
         }
 
         public static CelestialArmor Instance
@@ -1745,7 +1871,9 @@
 
         OutlawHelmet()
         {
+            id = 0;
             name = "Outlaw Helmet";
+            icon = "generic.png";
         }
 
         public static OutlawHelmet Instance
@@ -1772,7 +1900,9 @@
 
         CelestialHelmet()
         {
+            id = 0;
             name = "Celestial Helmet";
+            icon = "generic.png";
         }
 
         public static CelestialHelmet Instance
@@ -1799,7 +1929,9 @@
 
         OutlawLegs()
         {
+            id = 0;
             name = "Outlaw Legs";
+            icon = "generic.png";
         }
 
         public static OutlawLegs Instance
@@ -1826,7 +1958,9 @@
 
         CelestialLegs()
         {
+            id = 0;
             name = "Celestial Legs";
+            icon = "generic.png";
         }
 
         public static CelestialLegs Instance
@@ -1853,7 +1987,9 @@
 
         OutlawBoots()
         {
+            id = 0;
             name = "Outlaw Boots";
+            icon = "generic.png";
         }
 
         public static OutlawBoots Instance
@@ -1880,7 +2016,9 @@
 
         CelestialBoots()
         {
+            id = 0;
             name = "Celestial Boots";
+            icon = "generic.png";
         }
 
         public static CelestialBoots Instance
@@ -1907,7 +2045,9 @@
 
         StuddedArmor()
         {
+            id = 0;
             name = "Studded Armor";
+            icon = "generic.png";
         }
 
         public static StuddedArmor Instance
@@ -1934,7 +2074,9 @@
 
         MysticArmor()
         {
+            id = 0;
             name = "Mystic Armor";
+            icon = "generic.png";
         }
 
         public static MysticArmor Instance
@@ -1961,7 +2103,9 @@
 
         StuddedHelmet()
         {
+            id = 0;
             name = "Studded Helmet";
+            icon = "generic.png";
         }
 
         public static StuddedHelmet Instance
@@ -1988,7 +2132,9 @@
 
         MysticHelmet()
         {
+            id = 0;
             name = "Mystic Helmet";
+            icon = "generic.png";
         }
 
         public static MysticHelmet Instance
@@ -2015,7 +2161,9 @@
 
         StuddedLegs()
         {
+            id = 0;
             name = "Studded Legs";
+            icon = "generic.png";
         }
 
         public static StuddedLegs Instance
@@ -2042,7 +2190,9 @@
 
         MysticLegs()
         {
+            id = 0;
             name = "Mystic Legs";
+            icon = "generic.png";
         }
 
         public static MysticLegs Instance
@@ -2069,7 +2219,9 @@
 
         StuddedBoots()
         {
+            id = 0;
             name = "Studded Boots";
+            icon = "generic.png";
         }
 
         public static StuddedBoots Instance
@@ -2096,7 +2248,9 @@
 
         MysticBoots()
         {
+            id = 0;
             name = "Mystic Boots";
+            icon = "generic.png";
         }
 
         public static MysticBoots Instance
@@ -2123,7 +2277,9 @@
 
         GuerrilaArmor()
         {
+            id = 0;
             name = "Guerrila Armor";
+            icon = "generic.png";
         }
 
         public static GuerrilaArmor Instance
@@ -2150,7 +2306,9 @@
 
         WarlockArmor()
         {
+            id = 0;
             name = "Warlock Armor";
+            icon = "generic.png";
         }
 
         public static WarlockArmor Instance
@@ -2177,7 +2335,9 @@
 
         GuerrilaHelmet()
         {
+            id = 0;
             name = "Guerrila Helmet";
+            icon = "generic.png";
         }
 
         public static GuerrilaHelmet Instance
@@ -2204,7 +2364,9 @@
 
         WarlockHelmet()
         {
+            id = 0;
             name = "Warlock Helmet";
+            icon = "generic.png";
         }
 
         public static WarlockHelmet Instance
@@ -2231,7 +2393,9 @@
 
         GuerrilaLegs()
         {
+            id = 0;
             name = "Guerrila Legs";
+            icon = "generic.png";
         }
 
         public static GuerrilaLegs Instance
@@ -2258,7 +2422,9 @@
 
         WarlockLegs()
         {
+            id = 0;
             name = "Warlock Legs";
+            icon = "generic.png";
         }
 
         public static WarlockLegs Instance
@@ -2285,7 +2451,9 @@
 
         GuerrilaBoots()
         {
+            id = 0;
             name = "Guerrila Boots";
+            icon = "generic.png";
         }
 
         public static GuerrilaBoots Instance
@@ -2312,7 +2480,9 @@
 
         WarlockBoots()
         {
+            id = 0;
             name = "Warlock Boots";
+            icon = "generic.png";
         }
 
         public static WarlockBoots Instance
@@ -2341,7 +2511,9 @@
 
         FryCookBoots()
         {
+            id = 0;
             name = "Fry Cook Boots";
+            icon = "generic.png";
         }
 
         public static FryCookBoots Instance
@@ -2368,7 +2540,9 @@
 
         LoomApprenticeBoots()
         {
+            id = 0;
             name = "Loom Apprentice Boots";
+            icon = "generic.png";
         }
 
         public static LoomApprenticeBoots Instance
@@ -2395,7 +2569,9 @@
 
         WorkshopAssistantBoots()
         {
+            id = 0;
             name = "Workshop Assistant Boots";
+            icon = "generic.png";
         }
 
         public static WorkshopAssistantBoots Instance
@@ -2422,7 +2598,9 @@
 
         ApprenticeAnvilBoots()
         {
+            id = 0;
             name = "Apprentice Anvil Boots";
+            icon = "generic.png";
         }
 
         public static ApprenticeAnvilBoots Instance
@@ -2449,7 +2627,9 @@
 
         FryCookLegs()
         {
+            id = 0;
             name = "Fry Cook Legs";
+            icon = "generic.png";
         }
 
         public static FryCookLegs Instance
@@ -2476,7 +2656,9 @@
 
         LoomApprenticeLegs()
         {
+            id = 0;
             name = "Loom Apprentice Legs";
+            icon = "generic.png";
         }
 
         public static LoomApprenticeLegs Instance
@@ -2503,7 +2685,9 @@
 
         WorkshopAssistantLegs()
         {
+            id = 0;
             name = "Workshop Assistant Legs";
+            icon = "generic.png";
         }
 
         public static WorkshopAssistantLegs Instance
@@ -2530,7 +2714,9 @@
 
         ApprenticeAnvilLegs()
         {
+            id = 0;
             name = "Apprentice Anvil Legs";
+            icon = "generic.png";
         }
 
         public static ApprenticeAnvilLegs Instance
@@ -2557,7 +2743,9 @@
 
         FryCookArmor()
         {
+            id = 0;
             name = "Fry Cook Armor";
+            icon = "generic.png";
         }
 
         public static FryCookArmor Instance
@@ -2584,7 +2772,9 @@
 
         LoomApprenticeArmor()
         {
+            id = 0;
             name = "Loom Apprentice Armor";
+            icon = "generic.png";
         }
 
         public static LoomApprenticeArmor Instance
@@ -2611,7 +2801,9 @@
 
         WorkshopAssistantArmor()
         {
+            id = 0;
             name = "Workshop Assistant Armor";
+            icon = "generic.png";
         }
 
         public static WorkshopAssistantArmor Instance
@@ -2638,7 +2830,9 @@
 
         ApprenticeAnvilArmor()
         {
+            id = 0;
             name = "Apprentice Anvil Armor";
+            icon = "generic.png";
         }
 
         public static ApprenticeAnvilArmor Instance
@@ -2665,7 +2859,9 @@
 
         FryCookHelmet()
         {
+            id = 0;
             name = "Fry Cook Helmet";
+            icon = "generic.png";
         }
 
         public static FryCookHelmet Instance
@@ -2692,7 +2888,9 @@
 
         LoomApprenticeHelmet()
         {
+            id = 0;
             name = "Loom Apprentice Helmet";
+            icon = "generic.png";
         }
 
         public static LoomApprenticeHelmet Instance
@@ -2719,7 +2917,9 @@
 
         WorkshopAssistantHelmet()
         {
+            id = 0;
             name = "Workshop Assistant Helmet";
+            icon = "generic.png";
         }
 
         public static WorkshopAssistantHelmet Instance
@@ -2746,7 +2946,9 @@
 
         ApprenticeAnvilHelmet()
         {
+            id = 0;
             name = "Apprentice Anvil Helmet";
+            icon = "generic.png";
         }
 
         public static ApprenticeAnvilHelmet Instance
@@ -2773,7 +2975,9 @@
 
         FryCookBracers()
         {
+            id = 0;
             name = "Fry Cook Bracers";
+            icon = "generic.png";
         }
 
         public static FryCookBracers Instance
@@ -2800,7 +3004,9 @@
 
         LoomApprenticeGloves()
         {
+            id = 0;
             name = "Loom Apprentice Gloves";
+            icon = "generic.png";
         }
 
         public static LoomApprenticeGloves Instance
@@ -2827,7 +3033,9 @@
 
         WorkshopAssistantGloves()
         {
+            id = 0;
             name = "Workshop Assistant Gloves";
+            icon = "generic.png";
         }
 
         public static WorkshopAssistantGloves Instance
@@ -2854,7 +3062,9 @@
 
         ApprenticeAnvilBracers()
         {
+            id = 0;
             name = "Apprentice Anvil Bracers";
+            icon = "generic.png";
         }
 
         public static ApprenticeAnvilBracers Instance
@@ -2881,7 +3091,9 @@
 
         SousChefBoots()
         {
+            id = 0;
             name = "Sous Chef Boots";
+            icon = "generic.png";
         }
 
         public static SousChefBoots Instance
@@ -2908,7 +3120,9 @@
 
         ThreadspinnerBoots()
         {
+            id = 0;
             name = "Threadspinner Boots";
+            icon = "generic.png";
         }
 
         public static ThreadspinnerBoots Instance
@@ -2935,7 +3149,9 @@
 
         WoodworkerBoots()
         {
+            id = 0;
             name = "Woodworker Boots";
+            icon = "generic.png";
         }
 
         public static WoodworkerBoots Instance
@@ -2962,7 +3178,9 @@
 
         SilversmithBoots()
         {
+            id = 0;
             name = "Silversmith Boots";
+            icon = "generic.png";
         }
 
         public static SilversmithBoots Instance
@@ -2989,7 +3207,9 @@
 
         SousChefLegs()
         {
+            id = 0;
             name = "Sous Chef Legs";
+            icon = "generic.png";
         }
 
         public static SousChefLegs Instance
@@ -3016,7 +3236,9 @@
 
         ThreadspinnerLegs()
         {
+            id = 0;
             name = "Threadspinner Legs";
+            icon = "generic.png";
         }
 
         public static ThreadspinnerLegs Instance
@@ -3043,7 +3265,9 @@
 
         WoodworkerLegs()
         {
+            id = 0;
             name = "Woodworker Legs";
+            icon = "generic.png";
         }
 
         public static WoodworkerLegs Instance
@@ -3070,7 +3294,9 @@
 
         SilversmithLegs()
         {
+            id = 0;
             name = "Silversmith Legs";
+            icon = "generic.png";
         }
 
         public static SilversmithLegs Instance
@@ -3097,7 +3323,9 @@
 
         SousChefArmor()
         {
+            id = 0;
             name = "Sous Chef Armor";
+            icon = "generic.png";
         }
 
         public static SousChefArmor Instance
@@ -3124,7 +3352,9 @@
 
         ThreadspinnerArmor()
         {
+            id = 0;
             name = "Threadspinner Armor";
+            icon = "generic.png";
         }
 
         public static ThreadspinnerArmor Instance
@@ -3151,7 +3381,9 @@
 
         WoodworkerArmor()
         {
+            id = 0;
             name = "Woodworker Armor";
+            icon = "generic.png";
         }
 
         public static WoodworkerArmor Instance
@@ -3178,7 +3410,9 @@
 
         SilversmithArmor()
         {
+            id = 0;
             name = "Silversmith Armor";
+            icon = "generic.png";
         }
 
         public static SilversmithArmor Instance
@@ -3205,7 +3439,9 @@
 
         SousChefHelmet()
         {
+            id = 0;
             name = "Sous Chef Helmet";
+            icon = "generic.png";
         }
 
         public static SousChefHelmet Instance
@@ -3232,7 +3468,9 @@
 
         ThreadspinnerHelmet()
         {
+            id = 0;
             name = "Threadspinner Helmet";
+            icon = "generic.png";
         }
 
         public static ThreadspinnerHelmet Instance
@@ -3259,7 +3497,9 @@
 
         WoodworkerHelmet()
         {
+            id = 0;
             name = "Woodworker Helmet";
+            icon = "generic.png";
         }
 
         public static WoodworkerHelmet Instance
@@ -3286,7 +3526,9 @@
 
         SilversmithHelmet()
         {
+            id = 0;
             name = "Silversmith Helmet";
+            icon = "generic.png";
         }
 
         public static SilversmithHelmet Instance
@@ -3313,7 +3555,9 @@
 
         SousChefBracers()
         {
+            id = 0;
             name = "Sous Chef Bracers";
+            icon = "generic.png";
         }
 
         public static SousChefBracers Instance
@@ -3340,7 +3584,9 @@
 
         ThreadspinnerGloves()
         {
+            id = 0;
             name = "Threadspinner Gloves";
+            icon = "generic.png";
         }
 
         public static ThreadspinnerGloves Instance
@@ -3367,7 +3613,9 @@
 
         WoodworkerGloves()
         {
+            id = 0;
             name = "Woodworker Gloves";
+            icon = "generic.png";
         }
 
         public static WoodworkerGloves Instance
@@ -3394,7 +3642,9 @@
 
         SilversmithBracers()
         {
+            id = 0;
             name = "Silversmith Bracers";
+            icon = "generic.png";
         }
 
         public static SilversmithBracers Instance
@@ -3421,7 +3671,9 @@
 
         MasterOfCuisineBoots()
         {
+            id = 0;
             name = "Master Of Cuisine Boots";
+            icon = "generic.png";
         }
 
         public static MasterOfCuisineBoots Instance
@@ -3448,7 +3700,9 @@
 
         MasterTailorBoots()
         {
+            id = 0;
             name = "Master Tailor Boots";
+            icon = "generic.png";
         }
 
         public static MasterTailorBoots Instance
@@ -3475,7 +3729,9 @@
 
         MasterMasonBoots()
         {
+            id = 0;
             name = "Master Mason Boots";
+            icon = "generic.png";
         }
 
         public static MasterMasonBoots Instance
@@ -3502,7 +3758,9 @@
 
         ForgemasterBoots()
         {
+            id = 0;
             name = "Forgemaster Boots";
+            icon = "generic.png";
         }
 
         public static ForgemasterBoots Instance
@@ -3529,7 +3787,9 @@
 
         MasterOfCuisineLegs()
         {
+            id = 0;
             name = "Master Of Cuisine Legs";
+            icon = "generic.png";
         }
 
         public static MasterOfCuisineLegs Instance
@@ -3556,7 +3816,9 @@
 
         MasterTailorLegs()
         {
+            id = 0;
             name = "Master Tailor Legs";
+            icon = "generic.png";
         }
 
         public static MasterTailorLegs Instance
@@ -3583,7 +3845,9 @@
 
         MasterMasonLegs()
         {
+            id = 0;
             name = "Master Mason Legs";
+            icon = "generic.png";
         }
 
         public static MasterMasonLegs Instance
@@ -3610,7 +3874,9 @@
 
         ForgemasterLegs()
         {
+            id = 0;
             name = "Forgemaster Legs";
+            icon = "generic.png";
         }
 
         public static ForgemasterLegs Instance
@@ -3637,7 +3903,9 @@
 
         MasterOfCuisineArmor()
         {
+            id = 0;
             name = "Master Of Cuisine Armor";
+            icon = "generic.png";
         }
 
         public static MasterOfCuisineArmor Instance
@@ -3664,7 +3932,9 @@
 
         MasterTailorArmor()
         {
+            id = 0;
             name = "Master Tailor Armor";
+            icon = "generic.png";
         }
 
         public static MasterTailorArmor Instance
@@ -3691,7 +3961,9 @@
 
         MasterMasonArmor()
         {
+            id = 0;
             name = "Master Mason Armor";
+            icon = "generic.png";
         }
 
         public static MasterMasonArmor Instance
@@ -3718,7 +3990,9 @@
 
         ForgemasterArmor()
         {
+            id = 0;
             name = "Forgemaster Armor";
+            icon = "generic.png";
         }
 
         public static ForgemasterArmor Instance
@@ -3745,7 +4019,9 @@
 
         MasterOfCuisineHelmet()
         {
+            id = 0;
             name = "Master Of Cuisine Helmet";
+            icon = "generic.png";
         }
 
         public static MasterOfCuisineHelmet Instance
@@ -3772,7 +4048,9 @@
 
         MasterTailorHelmet()
         {
+            id = 0;
             name = "Master Tailor Helmet";
+            icon = "generic.png";
         }
 
         public static MasterTailorHelmet Instance
@@ -3799,7 +4077,9 @@
 
         MasterMasonHelmet()
         {
+            id = 0;
             name = "Master Mason Helmet";
+            icon = "generic.png";
         }
 
         public static MasterMasonHelmet Instance
@@ -3826,7 +4106,9 @@
 
         ForgemasterHelmet()
         {
+            id = 0;
             name = "Forgemaster Helmet";
+            icon = "generic.png";
         }
 
         public static ForgemasterHelmet Instance
@@ -3853,7 +4135,9 @@
 
         MasterOfCuisineBracers()
         {
+            id = 0;
             name = "Master Of Cuisine Bracers";
+            icon = "generic.png";
         }
 
         public static MasterOfCuisineBracers Instance
@@ -3880,7 +4164,9 @@
 
         MasterTailorBracers()
         {
+            id = 0;
             name = "Master Tailor Bracers";
+            icon = "generic.png";
         }
 
         public static MasterTailorBracers Instance
@@ -3907,7 +4193,9 @@
 
         MasterMasonGloves()
         {
+            id = 0;
             name = "Master Mason Gloves";
+            icon = "generic.png";
         }
 
         public static MasterMasonGloves Instance
@@ -3934,7 +4222,9 @@
 
         ForgemasterBracers()
         {
+            id = 0;
             name = "Forgemaster Bracers";
+            icon = "generic.png";
         }
 
         public static ForgemasterBracers Instance

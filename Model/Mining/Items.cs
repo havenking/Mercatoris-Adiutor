@@ -17,7 +17,7 @@
 
         public Category Category => Category.Gathering;
 
-        public int Price 
+        public int Price
         {
             get { return price; }
             set { price = value; }
@@ -30,9 +30,11 @@
         private static Stone? instance = null;
         private static readonly object locker = new object();
 
-        Stone() 
+        Stone()
         {
+            id = 0;
             name = "Stone";
+            icon = "generic.png";
         }
 
         public static Stone Instance
@@ -59,7 +61,9 @@
 
         Salt()
         {
+            id = 0;
             name = "Salt";
+            icon = "generic.png";
         }
 
         public static Salt Instance
@@ -86,7 +90,9 @@
 
         Coal()
         {
+            id = 0;
             name = "Coal";
+            icon = "generic.png";
         }
 
         public static Coal Instance
@@ -115,7 +121,9 @@
 
         Amethyst()
         {
+            id = 0;
             name = "Amethyst";
+            icon = "generic.png";
         }
 
         public static Amethyst Instance
@@ -142,7 +150,9 @@
 
         Citrine()
         {
+            id = 0;
             name = "Citrine";
+            icon = "generic.png";
         }
 
         public static Citrine Instance
@@ -169,7 +179,9 @@
 
         Ruby()
         {
+            id = 0;
             name = "Ruby";
+            icon = "generic.png";
         }
 
         public static Ruby Instance
@@ -196,7 +208,9 @@
 
         Sapphire()
         {
+            id = 0;
             name = "Sapphire";
+            icon = "generic.png";
         }
 
         public static Sapphire Instance
@@ -223,7 +237,9 @@
 
         Topaz()
         {
+            id = 0;
             name = "Topaz";
+            icon = "generic.png";
         }
 
         public static Topaz Instance
@@ -252,7 +268,9 @@
 
         CopperOre()
         {
+            id = 0;
             name = "Copper Ore";
+            icon = "generic.png";
         }
 
         public static CopperOre Instance
@@ -279,7 +297,9 @@
 
         IronOre()
         {
+            id = 0;
             name = "Iron Ore";
+            icon = "generic.png";
         }
 
         public static IronOre Instance
@@ -306,7 +326,9 @@
 
         CobaltOre()
         {
+            id = 0;
             name = "Cobalt Ore";
+            icon = "generic.png";
         }
 
         public static CobaltOre Instance
@@ -333,7 +355,9 @@
 
         TitaniumOre()
         {
+            id = 0;
             name = "Titanium Ore";
+            icon = "generic.png";
         }
 
         public static TitaniumOre Instance
