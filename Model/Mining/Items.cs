@@ -32,9 +32,9 @@
 
         Stone()
         {
-            id = 0;
+            id = 28946;
             name = "Stone";
-            icon = "generic.png";
+            icon = "28946.png";
         }
 
         public static Stone Instance
@@ -61,9 +61,9 @@
 
         Salt()
         {
-            id = 0;
+            id = 33551;
             name = "Salt";
-            icon = "generic.png";
+            icon = "33551.png";
         }
 
         public static Salt Instance
@@ -90,9 +90,9 @@
 
         Coal()
         {
-            id = 0;
+            id = 28941;
             name = "Coal";
-            icon = "generic.png";
+            icon = "28941.png";
         }
 
         public static Coal Instance
@@ -121,9 +121,9 @@
 
         Amethyst()
         {
-            id = 0;
+            id = 28948;
             name = "Amethyst";
-            icon = "generic.png";
+            icon = "28948.png";
         }
 
         public static Amethyst Instance
@@ -150,9 +150,9 @@
 
         Citrine()
         {
-            id = 0;
+            id = 28949;
             name = "Citrine";
-            icon = "generic.png";
+            icon = "28949.png";
         }
 
         public static Citrine Instance
@@ -179,9 +179,9 @@
 
         Ruby()
         {
-            id = 0;
+            id = 28951;
             name = "Ruby";
-            icon = "generic.png";
+            icon = "28951.png";
         }
 
         public static Ruby Instance
@@ -208,9 +208,9 @@
 
         Sapphire()
         {
-            id = 0;
+            id = 28952;
             name = "Sapphire";
-            icon = "generic.png";
+            icon = "28952.png";
         }
 
         public static Sapphire Instance
@@ -237,9 +237,9 @@
 
         Topaz()
         {
-            id = 0;
+            id = 28953;
             name = "Topaz";
-            icon = "generic.png";
+            icon = "28953.png";
         }
 
         public static Topaz Instance
@@ -268,9 +268,9 @@
 
         CopperOre()
         {
-            id = 0;
+            id = 28944;
             name = "Copper Ore";
-            icon = "generic.png";
+            icon = "28944.png";
         }
 
         public static CopperOre Instance
@@ -297,9 +297,9 @@
 
         IronOre()
         {
-            id = 0;
+            id = 28943;
             name = "Iron Ore";
-            icon = "generic.png";
+            icon = "28943.png";
         }
 
         public static IronOre Instance
@@ -326,9 +326,9 @@
 
         CobaltOre()
         {
-            id = 0;
+            id = 28942;
             name = "Cobalt Ore";
-            icon = "generic.png";
+            icon = "28942.png";
         }
 
         public static CobaltOre Instance
@@ -355,9 +355,9 @@
 
         TitaniumOre()
         {
-            id = 0;
+            id = 28947;
             name = "Titanium Ore";
-            icon = "generic.png";
+            icon = "28947.png";
         }
 
         public static TitaniumOre Instance

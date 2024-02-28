@@ -32,9 +32,9 @@
 
         OrangeScales()
         {
-            id = 0;
+            id = 40832;
             name = "Orange Scales";
-            icon = "generic.png";
+            icon = "40832.png";
         }
 
         public static OrangeScales Instance
@@ -61,9 +61,9 @@
 
         FishRoe()
         {
-            id = 0;
+            id = 40825;
             name = "Fish Roe";
-            icon = "generic.png";
+            icon = "40825.png";
         }
 
         public static FishRoe Instance
@@ -90,9 +90,9 @@
 
         FishSkin()
         {
-            id = 0;
+            id = 40830;
             name = "Fish Skin";
-            icon = "generic.png";
+            icon = "40830.png";
         }
 
         public static FishSkin Instance
@@ -119,9 +119,9 @@
 
         YellowFishRoe()
         {
-            id = 0;
+            id = 40834;
             name = "Yellow Fish Roe";
-            icon = "generic.png";
+            icon = "40834.png";
         }
 
         public static YellowFishRoe Instance
@@ -148,9 +148,9 @@
 
         FishEye()
         {
-            id = 0;
+            id = 40826;
             name = "Fish Eye";
-            icon = "generic.png";
+            icon = "40826.png";
         }
 
         public static FishEye Instance
@@ -177,9 +177,9 @@
 
         RedFishRoe()
         {
-            id = 0;
+            id = 40833;
             name = "Red Fish Roe";
-            icon = "generic.png";
+            icon = "40833.png";
         }
 
         public static RedFishRoe Instance
@@ -206,9 +206,9 @@
 
         FishLiver()
         {
-            id = 0;
+            id = 40827;
             name = "Fish Liver";
-            icon = "generic.png";
+            icon = "40827.png";
         }
 
         public static FishLiver Instance
@@ -235,9 +235,9 @@
 
         FishOil()
         {
-            id = 0;
+            id = 40828;
             name = "Fish Oil";
-            icon = "generic.png";
+            icon = "40828.png";
         }
 
         public static FishOil Instance
@@ -264,9 +264,9 @@
 
         LuminousSack()
         {
-            id = 0;
+            id = 40831;
             name = "Luminous Sack";
-            icon = "generic.png";
+            icon = "40831.png";
         }
 
         public static LuminousSack Instance
@@ -293,9 +293,9 @@
 
         BlackFishRoe()
         {
-            id = 0;
-            name = "Blac kFish Roe";
-            icon = "generic.png";
+            id = 40825;
+            name = "Black Fish Roe";
+            icon = "40825.png";
         }
 
         public static BlackFishRoe Instance
@@ -324,9 +324,9 @@
 
         Shrimp()
         {
-            id = 0;
+            id = 28906;
             name = "Shrimp";
-            icon = "generic.png";
+            icon = "28906.png";
         }
 
         public static Shrimp Instance
@@ -353,9 +353,9 @@
 
         TangerineFish()
         {
-            id = 0;
+            id = 28907;
             name = "Tangerine Fish";
-            icon = "generic.png";
+            icon = "28907.png";
         }
 
         public static TangerineFish Instance
@@ -382,9 +382,9 @@
 
         Catfish()
         {
-            id = 0;
+            id = 28904;
             name = "Catfish";
-            icon = "generic.png";
+            icon = "28904.png";
         }
 
         public static Catfish Instance
@@ -411,9 +411,9 @@
 
         Mino()
         {
-            id = 0;
+            id = 28905;
             name = "Mino";
-            icon = "generic.png";
+            icon = "28905.png";
         }
 
         public static Mino Instance
@@ -440,9 +440,9 @@
 
         OversizedMino()
         {
-            id = 0;
+            id = 28911;
             name = "Oversized Mino";
-            icon = "generic.png";
+            icon = "28911.png";
         }
 
         public static OversizedMino Instance
@@ -469,9 +469,9 @@
 
         TenchFish()
         {
-            id = 0;
+            id = 28908;
             name = "Tench Fish";
-            icon = "generic.png";
+            icon = "28908.png";
         }
 
         public static TenchFish Instance
@@ -498,9 +498,9 @@
 
         RainbowFish()
         {
-            id = 0;
+            id = 28917;
             name = "Rainbow Fish";
-            icon = "generic.png";
+            icon = "28917.png";
         }
 
         public static RainbowFish Instance
@@ -527,9 +527,9 @@
 
         SandFish()
         {
-            id = 0;
+            id = 28913;
             name = "Sand Fish";
-            icon = "generic.png";
+            icon = "28913.png";
         }
 
         public static SandFish Instance
@@ -556,9 +556,9 @@
 
         ScaleFish()
         {
-            id = 0;
+            id = 28914;
             name = "Scale Fish";
-            icon = "generic.png";
+            icon = "28914.png";
         }
 
         public static ScaleFish Instance
@@ -585,9 +585,9 @@
 
         JuniperFish()
         {
-            id = 0;
+            id = 28910;
             name = "Juniper Fish";
-            icon = "generic.png";
+            icon = "28910.png";
         }
 
         public static JuniperFish Instance
@@ -614,9 +614,9 @@
 
         Lobster()
         {
-            id = 0;
+            id = 28916;
             name = "Lobster";
-            icon = "generic.png";
+            icon = "28916.png";
         }
 
         public static Lobster Instance
@@ -643,9 +643,9 @@
 
         PrincessFish()
         {
-            id = 0;
+            id = 28912;
             name = "Princess Fish";
-            icon = "generic.png";
+            icon = "28912.png";
         }
 
         public static PrincessFish Instance
@@ -672,9 +672,9 @@
 
         SunFish()
         {
-            id = 0;
+            id = 28919;
             name = "Sun Fish";
-            icon = "generic.png";
+            icon = "28919.png";
         }
 
         public static SunFish Instance
@@ -701,9 +701,9 @@
 
         AngelFish()
         {
-            id = 0;
+            id = 28915;
             name = "Angel Fish";
-            icon = "generic.png";
+            icon = "28915.png";
         }
 
         public static AngelFish Instance
@@ -730,9 +730,9 @@
 
         SkyFish()
         {
-            id = 0;
+            id = 28918;
             name = "Sky Fish";
-            icon = "generic.png";
+            icon = "28918.png";
         }
 
         public static SkyFish Instance
@@ -759,9 +759,9 @@
 
         StarFish()
         {
-            id = 0;
+            id = 28922;
             name = "Star Fish";
-            icon = "generic.png";
+            icon = "28922.png";
         }
 
         public static StarFish Instance
@@ -788,9 +788,9 @@
 
         BigmouthFlounder()
         {
-            id = 0;
+            id = 28920;
             name = "Bigmouth Flounder";
-            icon = "generic.png";
+            icon = "28920.png";
         }
 
         public static BigmouthFlounder Instance
@@ -817,9 +817,9 @@
 
         FrostSturgeon()
         {
-            id = 0;
+            id = 38528;
             name = "Frost Sturgeon";
-            icon = "generic.png";
+            icon = "38528.png";
         }
 
         public static FrostSturgeon Instance
@@ -846,9 +846,9 @@
 
         BogProwler()
         {
-            id = 0;
+            id = 39281;
             name = "Bog Prowler";
-            icon = "generic.png";
+            icon = "39281.png";
         }
 
         public static BogProwler Instance
@@ -875,9 +875,9 @@
 
         Gromper()
         {
-            id = 0;
+            id = 28924;
             name = "Gromper";
-            icon = "generic.png";
+            icon = "28924.png";
         }
 
         public static Gromper Instance
@@ -904,9 +904,9 @@
 
         RainbowFlounder()
         {
-            id = 0;
+            id = 28921;
             name = "Rainbow Flounder";
-            icon = "generic.png";
+            icon = "28921.png";
         }
 
         public static RainbowFlounder Instance
@@ -933,9 +933,9 @@
 
         TigerShark()
         {
-            id = 0;
+            id = 28926;
             name = "Tiger Shark";
-            icon = "generic.png";
+            icon = "28926.png";
         }
 
         public static TigerShark Instance
@@ -962,9 +962,9 @@
 
         Stingray()
         {
-            id = 0;
+            id = 28925;
             name = "Stingray";
-            icon = "generic.png";
+            icon = "28925.png";
         }
 
         public static Stingray Instance

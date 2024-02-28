@@ -53,7 +53,7 @@
             </Setter>
         </Style>
     </Window.Resources>
-    
+
     <Grid Background="Gray">
         <TabControl Margin="0" Padding="0" BorderThickness="0">
             <TabItem x:Name="PlannerTab" Header="Planner" FontSize="16">
@@ -85,8 +85,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2" BorderBrush="White">
-                                <TabItem  Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
+                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -100,15 +100,13 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding AlchemyRecipes}" Background="Black">
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                    <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding AlchemyRecipes}" Background="Black">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
 
                                 <TabItem Style="{StaticResource TabItemImprovedStyle}">
@@ -125,21 +123,19 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox ItemsSource="{Binding AlchemyItems}" Background="Black">
-                                            <ListBox.ItemContainerStyle>
-                                                <Style TargetType="ListBoxItem">
-                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-                                                </Style>
-                                            </ListBox.ItemContainerStyle>
+                                    <ListBox ItemsSource="{Binding AlchemyItems}" Background="Black">
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
 
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <view:ItemCatalog/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <view:ItemCatalog/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
                             </TabControl>
                         </TabItem>
@@ -158,8 +154,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2" BorderBrush="White">
-                                <TabItem  Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
+                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -173,15 +169,13 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding BlacksmithingRecipes}" Background="Black">
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                    <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding BlacksmithingRecipes}" Background="Black">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
 
                                 <TabItem Style="{StaticResource TabItemImprovedStyle}">
@@ -198,21 +192,19 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox ItemsSource="{Binding BlacksmithingItems}" Background="Black">
-                                            <ListBox.ItemContainerStyle>
-                                                <Style TargetType="ListBoxItem">
-                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-                                                </Style>
-                                            </ListBox.ItemContainerStyle>
+                                    <ListBox ItemsSource="{Binding BlacksmithingItems}" Background="Black">
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
 
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <view:ItemCatalog/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <view:ItemCatalog/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
                             </TabControl>
                         </TabItem>
@@ -231,8 +223,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2" BorderBrush="White">
-                                <TabItem  Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
+                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -246,15 +238,13 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding CarpentryRecipes}" Background="Black">
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                    <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding CarpentryRecipes}" Background="Black">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
 
                                 <TabItem Style="{StaticResource TabItemImprovedStyle}">
@@ -271,21 +261,19 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox ItemsSource="{Binding CarpentryItems}" Background="Black">
-                                            <ListBox.ItemContainerStyle>
-                                                <Style TargetType="ListBoxItem">
-                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-                                                </Style>
-                                            </ListBox.ItemContainerStyle>
+                                    <ListBox ItemsSource="{Binding CarpentryItems}" Background="Black">
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
 
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <view:ItemCatalog/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <view:ItemCatalog/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
                             </TabControl>
                         </TabItem>
@@ -304,8 +292,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2" BorderBrush="White">
-                                <TabItem  Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
+                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -319,15 +307,13 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding CookingRecipes}" Background="Black">
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                    <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding CookingRecipes}" Background="Black">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
 
                                 <TabItem Style="{StaticResource TabItemImprovedStyle}">
@@ -344,21 +330,19 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox ItemsSource="{Binding CookingItems}" Background="Black">
-                                            <ListBox.ItemContainerStyle>
-                                                <Style TargetType="ListBoxItem">
-                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-                                                </Style>
-                                            </ListBox.ItemContainerStyle>
+                                    <ListBox ItemsSource="{Binding CookingItems}" Background="Black">
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
 
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <view:ItemCatalog/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <view:ItemCatalog/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
                             </TabControl>
                         </TabItem>
@@ -377,8 +361,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2" BorderBrush="White">
-                                <TabItem  Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
+                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -392,15 +376,13 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding FarmingRecipes}" Background="Black">
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                    <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding FarmingRecipes}" Background="Black">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
 
                                 <TabItem Style="{StaticResource TabItemImprovedStyle}">
@@ -417,21 +399,19 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox ItemsSource="{Binding FarmingItems}" Background="Black">
-                                            <ListBox.ItemContainerStyle>
-                                                <Style TargetType="ListBoxItem">
-                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-                                                </Style>
-                                            </ListBox.ItemContainerStyle>
+                                    <ListBox ItemsSource="{Binding FarmingItems}" Background="Black">
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
 
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <view:ItemCatalog/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <view:ItemCatalog/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
                             </TabControl>
                         </TabItem>
@@ -450,8 +430,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2" BorderBrush="White">
-                                <TabItem  Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
+                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -465,15 +445,13 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding FishingRecipes}" Background="Black">
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                    <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding FishingRecipes}" Background="Black">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
 
                                 <TabItem Style="{StaticResource TabItemImprovedStyle}">
@@ -490,21 +468,19 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox ItemsSource="{Binding FishingItems}" Background="Black">
-                                            <ListBox.ItemContainerStyle>
-                                                <Style TargetType="ListBoxItem">
-                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-                                                </Style>
-                                            </ListBox.ItemContainerStyle>
+                                    <ListBox ItemsSource="{Binding FishingItems}" Background="Black">
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
 
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <view:ItemCatalog/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <view:ItemCatalog/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
                             </TabControl>
                         </TabItem>
@@ -523,8 +499,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2" BorderBrush="White">
-                                <TabItem  Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
+                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -538,15 +514,13 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding HusbandryRecipes}" Background="Black">
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                    <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding HusbandryRecipes}" Background="Black">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
 
                                 <TabItem Style="{StaticResource TabItemImprovedStyle}">
@@ -563,21 +537,19 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox ItemsSource="{Binding HusbandryItems}" Background="Black">
-                                            <ListBox.ItemContainerStyle>
-                                                <Style TargetType="ListBoxItem">
-                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-                                                </Style>
-                                            </ListBox.ItemContainerStyle>
+                                    <ListBox ItemsSource="{Binding HusbandryItems}" Background="Black">
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
 
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <view:ItemCatalog/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <view:ItemCatalog/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
                             </TabControl>
                         </TabItem>
@@ -596,8 +568,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2" BorderBrush="White">
-                                <TabItem  Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
+                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -611,15 +583,13 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding MiningRecipes}" Background="Black">
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                    <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding MiningRecipes}" Background="Black">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
 
                                 <TabItem Style="{StaticResource TabItemImprovedStyle}">
@@ -636,21 +606,19 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox ItemsSource="{Binding MiningItems}" Background="Black">
-                                            <ListBox.ItemContainerStyle>
-                                                <Style TargetType="ListBoxItem">
-                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-                                                </Style>
-                                            </ListBox.ItemContainerStyle>
+                                    <ListBox ItemsSource="{Binding MiningItems}" Background="Black">
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
 
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <view:ItemCatalog/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <view:ItemCatalog/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
                             </TabControl>
                         </TabItem>
@@ -669,8 +637,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2" BorderBrush="White">
-                                <TabItem  Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
+                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -684,15 +652,13 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding WeavingRecipes}" Background="Black">
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                    <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding WeavingRecipes}" Background="Black">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
 
                                 <TabItem Style="{StaticResource TabItemImprovedStyle}">
@@ -709,21 +675,19 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox ItemsSource="{Binding WeavingItems}" Background="Black">
-                                            <ListBox.ItemContainerStyle>
-                                                <Style TargetType="ListBoxItem">
-                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-                                                </Style>
-                                            </ListBox.ItemContainerStyle>
+                                    <ListBox ItemsSource="{Binding WeavingItems}" Background="Black">
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
 
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <view:ItemCatalog/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <view:ItemCatalog/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
                             </TabControl>
                         </TabItem>
@@ -742,8 +706,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2" BorderBrush="White">
-                                <TabItem  Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
+                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -757,15 +721,13 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding WoodcuttingObjects}" Background="Black">
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                    <ListBox Margin="0" Padding="0" BorderThickness="0" ItemsSource="{Binding WoodcuttingObjects}" Background="Black">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="Text" Margin="5,0" Background="Gray"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
 
                                 <TabItem Style="{StaticResource TabItemImprovedStyle}">
@@ -782,21 +744,19 @@
                                         </Grid>
                                     </TabItem.Header>
 
-                                    <ScrollViewer>
-                                        <ListBox ItemsSource="{Binding WoodcuttingItems}" Background="Black">
-                                            <ListBox.ItemContainerStyle>
-                                                <Style TargetType="ListBoxItem">
-                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-                                                </Style>
-                                            </ListBox.ItemContainerStyle>
+                                    <ListBox ItemsSource="{Binding WoodcuttingItems}" Background="Black">
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
 
-                                            <ListBox.ItemTemplate>
-                                                <DataTemplate>
-                                                    <view:ItemCatalog/>
-                                                </DataTemplate>
-                                            </ListBox.ItemTemplate>
-                                        </ListBox>
-                                    </ScrollViewer>
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <view:ItemCatalog/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
                                 </TabItem>
                             </TabControl>
                         </TabItem>
@@ -815,15 +775,13 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <ScrollViewer>
-                                <ListBox ItemsSource="{Binding MonsterDropItems}" Background="LightGray">
-                                    <ListBox.ItemTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="Text" Background="Gray"/>
-                                        </DataTemplate>
-                                    </ListBox.ItemTemplate>
-                                </ListBox>
-                            </ScrollViewer>
+                            <ListBox ItemsSource="{Binding MonsterDropItems}" Background="LightGray">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="Text" Background="Gray"/>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
                         </TabItem>
 
                         <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
@@ -840,15 +798,13 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <ScrollViewer>
-                                <ListBox Name="TradepackRecipesListBox" ItemsSource="{Binding TradepackRecipes}" Background="Gray">
-                                    <ListBox.ItemTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
-                                        </DataTemplate>
-                                    </ListBox.ItemTemplate>
-                                </ListBox>
-                            </ScrollViewer>
+                            <ListBox Name="TradepackRecipesListBox" ItemsSource="{Binding TradepackRecipes}" Background="Gray">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
                         </TabItem>
                     </TabControl>
                 </Grid>
@@ -856,7 +812,7 @@
 
             <TabItem x:Name="DetailsTab" Header="Details"  FontSize="16">
                 <Grid Background="Gray">
-                    
+
                 </Grid>
             </TabItem>
         </TabControl>

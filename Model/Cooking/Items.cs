@@ -32,9 +32,9 @@
 
         BakedPotatoes()
         {
-            id = 0;
+            id = 42105;
             name = "Baked Potatoes";
-            icon = "generic.png";
+            icon = "42105.png";
         }
 
         public static BakedPotatoes Instance
@@ -61,9 +61,9 @@
 
         CornOnACob()
         {
-            id = 0;
+            id = 42110;
             name = "Corn On A Cob";
-            icon = "generic.png";
+            icon = "42110.png";
         }
 
         public static CornOnACob Instance
@@ -90,9 +90,9 @@
 
         PotatoBread()
         {
-            id = 0;
+            id = 42117;
             name = "Potato Bread";
-            icon = "generic.png";
+            icon = "42117.png";
         }
 
         public static PotatoBread Instance
@@ -112,19 +112,19 @@
         }
     }
 
-    public sealed class SajechoHardtrack : CookingItem
+    public sealed class SajechoHardtack : CookingItem
     {
-        private static SajechoHardtrack? instance = null;
+        private static SajechoHardtack? instance = null;
         private static readonly object locker = new object();
 
-        SajechoHardtrack()
+        SajechoHardtack()
         {
-            id = 0;
-            name = "Sajecho Hardtrack";
-            icon = "generic.png";
+            id = 42121;
+            name = "Sajecho Hardtack";
+            icon = "42121.png";
         }
 
-        public static SajechoHardtrack Instance
+        public static SajechoHardtack Instance
         {
             get
             {
@@ -132,7 +132,7 @@
                 {
                     if (instance == null)
                     {
-                        instance = new SajechoHardtrack();
+                        instance = new SajechoHardtack();
                     }
 
                     return instance;
@@ -148,9 +148,9 @@
 
         RohnaCrackers()
         {
-            id = 0;
+            id = 42119;
             name = "Rohna Crackers";
-            icon = "generic.png";
+            icon = "42119.png";
         }
 
         public static RohnaCrackers Instance
@@ -177,9 +177,9 @@
 
         GlademireCrackers()
         {
-            id = 0;
+            id = 42748;
             name = "Glademire Crackers";
-            icon = "generic.png";
+            icon = "42748.png";
         }
 
         public static GlademireCrackers Instance
@@ -206,9 +206,9 @@
 
         Bun()
         {
-            id = 0;
+            id = 28754;
             name = "Bun";
-            icon = "generic.png";
+            icon = "28754.png";
         }
 
         public static Bun Instance
@@ -235,9 +235,9 @@
 
         LoafBread()
         {
-            id = 0;
+            id = 42113;
             name = "Loaf Bread";
-            icon = "generic.png";
+            icon = "42113.png";
         }
 
         public static LoafBread Instance
@@ -264,9 +264,9 @@
 
         Cookies()
         {
-            id = 0;
+            id = 28766;
             name = "Cookies";
-            icon = "generic.png";
+            icon = "28766.png";
         }
 
         public static Cookies Instance
@@ -286,19 +286,19 @@
         }
     }
 
-    public sealed class Scane : CookingItem
+    public sealed class Scone : CookingItem
     {
-        private static Scane? instance = null;
+        private static Scone? instance = null;
         private static readonly object locker = new object();
 
-        Scane()
+        Scone()
         {
-            id = 0;
-            name = "Scane";
-            icon = "generic.png";
+            id = 28759;
+            name = "Scone";
+            icon = "28759.png";
         }
 
-        public static Scane Instance
+        public static Scone Instance
         {
             get
             {
@@ -306,7 +306,7 @@
                 {
                     if (instance == null)
                     {
-                        instance = new Scane();
+                        instance = new Scone();
                     }
 
                     return instance;
@@ -322,9 +322,9 @@
 
         Cornbread()
         {
-            id = 0;
+            id = 42111;
             name = "Cornbread";
-            icon = "generic.png";
+            icon = "42111.png";
         }
 
         public static Cornbread Instance
@@ -351,9 +351,9 @@
 
         DeluxeCookies()
         {
-            id = 0;
+            id = 28764;
             name = "Deluxe Cookies";
-            icon = "generic.png";
+            icon = "28764.png";
         }
 
         public static DeluxeCookies Instance
@@ -380,9 +380,9 @@
 
         Muffin()
         {
-            id = 0;
+            id = 28765;
             name = "Muffin";
-            icon = "generic.png";
+            icon = "28765.png";
         }
 
         public static Muffin Instance
@@ -409,9 +409,9 @@
 
         Bagel()
         {
-            id = 0;
+            id = 42104;
             name = "Bagel";
-            icon = "generic.png";
+            icon = "42104.png";
         }
 
         public static Bagel Instance
@@ -438,9 +438,9 @@
 
         Cake()
         {
-            id = 0;
+            id = 28755;
             name = "Cake";
-            icon = "generic.png";
+            icon = "28755.png";
         }
 
         public static Cake Instance
@@ -467,9 +467,9 @@
 
         Croissant()
         {
-            id = 0;
+            id = 28756;
             name = "Croissant";
-            icon = "generic.png";
+            icon = "28756.png";
         }
 
         public static Croissant Instance
@@ -496,9 +496,9 @@
 
         SourdoughtBagel()
         {
-            id = 0;
+            id = 42125;
             name = "Sourdought Bagel";
-            icon = "generic.png";
+            icon = "42125.png";
         }
 
         public static SourdoughtBagel Instance
@@ -525,9 +525,9 @@
 
         DeluxeCake()
         {
-            id = 0;
+            id = 28758;
             name = "Deluxe Cake";
-            icon = "generic.png";
+            icon = "28758.png";
         }
 
         public static DeluxeCake Instance
@@ -554,9 +554,9 @@
 
         Danish()
         {
-            id = 0;
+            id = 28757;
             name = "Danish";
-            icon = "generic.png";
+            icon = "28757.png";
         }
 
         public static Danish Instance
@@ -583,9 +583,9 @@
 
         RyeBread()
         {
-            id = 0;
+            id = 42120;
             name = "Rye Bread";
-            icon = "generic.png";
+            icon = "42120.png";
         }
 
         public static RyeBread Instance
@@ -612,9 +612,9 @@
 
         Pie()
         {
-            id = 0;
+            id = 28753;
             name = "Pie";
-            icon = "generic.png";
+            icon = "28753.png";
         }
 
         public static Pie Instance
@@ -643,9 +643,9 @@
 
         Vodka()
         {
-            id = 0;
+            id = 28767;
             name = "Vodka";
-            icon = "generic.png";
+            icon = "28767.png";
         }
 
         public static Vodka Instance
@@ -672,9 +672,9 @@
 
         Beer()
         {
-            id = 0;
+            id = 28760;
             name = "Beer";
-            icon = "generic.png";
+            icon = "28760.png";
         }
 
         public static Beer Instance
@@ -701,9 +701,9 @@
 
         LandingBrandy()
         {
-            id = 0;
+            id = 42724;
             name = "Landing Brandy";
-            icon = "generic.png";
+            icon = "42724.png";
         }
 
         public static LandingBrandy Instance
@@ -730,9 +730,9 @@
 
         AppleCider()
         {
-            id = 0;
+            id = 35397;
             name = "Apple Cider";
-            icon = "generic.png";
+            icon = "35397.png";
         }
 
         public static AppleCider Instance
@@ -759,9 +759,9 @@
 
         Wine()
         {
-            id = 0;
+            id = 35400;
             name = "Wine";
-            icon = "generic.png";
+            icon = "35400.png";
         }
 
         public static Wine Instance
@@ -788,9 +788,9 @@
 
         Whiskey()
         {
-            id = 0;
+            id = 35399;
             name = "Whiskey";
-            icon = "generic.png";
+            icon = "35399.png";
         }
 
         public static Whiskey Instance
@@ -817,9 +817,9 @@
 
         OrangeLiqueur()
         {
-            id = 0;
+            id = 42721;
             name = "Orange Liqueur";
-            icon = "generic.png";
+            icon = "42721.png";
         }
 
         public static OrangeLiqueur Instance
@@ -846,9 +846,9 @@
 
         Rum()
         {
-            id = 0;
+            id = 28883;
             name = "Rum";
-            icon = "generic.png";
+            icon = "28883.png";
         }
 
         public static Rum Instance
@@ -875,9 +875,9 @@
 
         BlueberryWine()
         {
-            id = 0;
+            id = 35400;
             name = "Blueberry Wine";
-            icon = "generic.png";
+            icon = "35400.png";
         }
 
         public static BlueberryWine Instance
@@ -904,9 +904,9 @@
 
         Boozemelon()
         {
-            id = 0;
+            id = 42722;
             name = "Boozemelon";
-            icon = "generic.png";
+            icon = "42722.png";
         }
 
         public static Boozemelon Instance
@@ -933,9 +933,9 @@
 
         SpicedRum()
         {
-            id = 0;
+            id = 35401;
             name = "Spiced Rum";
-            icon = "generic.png";
+            icon = "35401.png";
         }
 
         public static SpicedRum Instance
@@ -962,9 +962,9 @@
 
         BananaVodka()
         {
-            id = 0;
+            id = 35398;
             name = "Banana Vodka";
-            icon = "generic.png";
+            icon = "35398.png";
         }
 
         public static BananaVodka Instance
@@ -991,9 +991,9 @@
 
         Eclipse()
         {
-            id = 0;
+            id = 42723;
             name = "Eclipse";
-            icon = "generic.png";
+            icon = "42723.png";
         }
 
         public static Eclipse Instance
@@ -1020,9 +1020,9 @@
 
         StrawberryWhiskey()
         {
-            id = 0;
+            id = 35399;
             name = "Strawberry Whiskey";
-            icon = "generic.png";
+            icon = "35399.png";
         }
 
         public static StrawberryWhiskey Instance
@@ -1051,9 +1051,9 @@
 
         CornChowder()
         {
-            id = 0;
+            id = 42109;
             name = "Corn Chowder";
-            icon = "generic.png";
+            icon = "42109.png";
         }
 
         public static CornChowder Instance
@@ -1080,9 +1080,9 @@
 
         CornSalada()
         {
-            id = 0;
+            id = 42128;
             name = "Corn Salad";
-            icon = "generic.png";
+            icon = "42128.png";
         }
 
         public static CornSalada Instance
@@ -1109,9 +1109,9 @@
 
         ScrambledEggs()
         {
-            id = 0;
+            id = 42122;
             name = "Scrambled Eggs";
-            icon = "generic.png";
+            icon = "42122.png";
         }
 
         public static ScrambledEggs Instance
@@ -1138,9 +1138,9 @@
 
         ApplePuree()
         {
-            id = 0;
+            id = 42103;
             name = "Apple Puree";
-            icon = "generic.png";
+            icon = "42103.png";
         }
 
         public static ApplePuree Instance
@@ -1167,9 +1167,9 @@
 
         MashedPotatoes()
         {
-            id = 0;
+            id = 42115;
             name = "Mashed Potatoes";
-            icon = "generic.png";
+            icon = "42115.png";
         }
 
         public static MashedPotatoes Instance
@@ -1196,9 +1196,9 @@
 
         CarrotSoup()
         {
-            id = 0;
+            id = 42108;
             name = "Carrot Soup";
-            icon = "generic.png";
+            icon = "42108.png";
         }
 
         public static CarrotSoup Instance
@@ -1225,9 +1225,9 @@
 
         LyderianFries()
         {
-            id = 0;
+            id = 42114;
             name = "Lyderian Fries";
-            icon = "generic.png";
+            icon = "42114.png";
         }
 
         public static LyderianFries Instance
@@ -1254,9 +1254,9 @@
 
         Omelet()
         {
-            id = 0;
+            id = 42116;
             name = "Omelet";
-            icon = "generic.png";
+            icon = "42116.png";
         }
 
         public static Omelet Instance
@@ -1283,9 +1283,9 @@
 
         SilkyScrambledEggs()
         {
-            id = 0;
+            id = 42124;
             name = "Silky Scrambled Eggs";
-            icon = "generic.png";
+            icon = "42124.png";
         }
 
         public static SilkyScrambledEggs Instance
@@ -1312,9 +1312,9 @@
 
         SteamedCarrots()
         {
-            id = 0;
+            id = 42127;
             name = "Steamed Carrots";
-            icon = "generic.png";
+            icon = "42127.png";
         }
 
         public static SteamedCarrots Instance
@@ -1341,9 +1341,9 @@
 
         FruitPancakes()
         {
-            id = 0;
+            id = 34855;
             name = "Fruit Pancakes";
-            icon = "generic.png";
+            icon = "34855.png";
         }
 
         public static FruitPancakes Instance
@@ -1370,9 +1370,9 @@
 
         SmokedSausage()
         {
-            id = 0;
+            id = 34869;
             name = "Smoked Sausage";
-            icon = "generic.png";
+            icon = "34869.png";
         }
 
         public static SmokedSausage Instance
@@ -1399,9 +1399,9 @@
 
         CharredMeatKebab()
         {
-            id = 0;
+            id = 34849;
             name = "Charred Meat Kebab";
-            icon = "generic.png";
+            icon = "34849.png";
         }
 
         public static CharredMeatKebab Instance
@@ -1428,9 +1428,9 @@
 
         RoastedChickenAndVeggies()
         {
-            id = 0;
+            id = 34861;
             name = "Roasted Chicken And Veggies";
-            icon = "generic.png";
+            icon = "34861.png";
         }
 
         public static RoastedChickenAndVeggies Instance
@@ -1457,9 +1457,9 @@
 
         RavendawnianPorridge()
         {
-            id = 0;
+            id = 34860;
             name = "Ravendawnian Porridge";
-            icon = "generic.png";
+            icon = "34860.png";
         }
 
         public static RavendawnianPorridge Instance
@@ -1486,9 +1486,9 @@
 
         RumDownslider()
         {
-            id = 0;
+            id = 34864;
             name = "Rum Downslider";
-            icon = "generic.png";
+            icon = "34864.png";
         }
 
         public static RumDownslider Instance
@@ -1515,9 +1515,9 @@
 
         ShakedFruitmilk()
         {
-            id = 0;
+            id = 34868;
             name = "Shaked Fruitmilk";
-            icon = "generic.png";
+            icon = "34868.png";
         }
 
         public static ShakedFruitmilk Instance
@@ -1544,9 +1544,9 @@
 
         SettlerStew()
         {
-            id = 0;
+            id = 34866;
             name = "Settler's Stew";
-            icon = "generic.png";
+            icon = "34866.png";
         }
 
         public static SettlerStew Instance
@@ -1573,9 +1573,9 @@
 
         DwarvenPurpleShank()
         {
-            id = 0;
+            id = 34851;
             name = "Dwarven Purple Shank";
-            icon = "generic.png";
+            icon = "34851.png";
         }
 
         public static DwarvenPurpleShank Instance
@@ -1602,9 +1602,9 @@
 
         FilletLucien()
         {
-            id = 0;
+            id = 34852;
             name = "Fillet Lucien";
-            icon = "generic.png";
+            icon = "34852.png";
         }
 
         public static FilletLucien Instance
@@ -1631,9 +1631,9 @@
 
         BlueberryPie()
         {
-            id = 0;
+            id = 42725;
             name = "Blueberry Pie";
-            icon = "generic.png";
+            icon = "42725.png";
         }
 
         public static BlueberryPie Instance
@@ -1660,9 +1660,9 @@
 
         FrozenSweetBerries()
         {
-            id = 0;
+            id = 34854;
             name = "Frozen Sweet Berries";
-            icon = "generic.png";
+            icon = "34854.png";
         }
 
         public static FrozenSweetBerries Instance
@@ -1689,9 +1689,9 @@
 
         LucienWaffles()
         {
-            id = 0;
+            id = 34858;
             name = "Lucien's Waffles";
-            icon = "generic.png";
+            icon = "34858.png";
         }
 
         public static LucienWaffles Instance
@@ -1718,9 +1718,9 @@
 
         AcorncharSausage()
         {
-            id = 0;
+            id = 34847;
             name = "Acornchar Sausage";
-            icon = "generic.png";
+            icon = "34847.png";
         }
 
         public static AcorncharSausage Instance
@@ -1747,9 +1747,9 @@
 
         FreshfishRoll()
         {
-            id = 0;
+            id = 34853;
             name = "Freshfish Roll";
-            icon = "generic.png";
+            icon = "34853.png";
         }
 
         public static FreshfishRoll Instance
@@ -1776,9 +1776,9 @@
 
         SweetenedBeans()
         {
-            id = 0;
+            id = 34870;
             name = "Sweetened Beans";
-            icon = "generic.png";
+            icon = "34870.png";
         }
 
         public static SweetenedBeans Instance
@@ -1805,9 +1805,9 @@
 
         FireredChickenKebab()
         {
-            id = 0;
+            id = 34857;
             name = "Firered Chicken Kebab";
-            icon = "generic.png";
+            icon = "34857.png";
         }
 
         public static FireredChickenKebab Instance
@@ -1834,9 +1834,9 @@
 
         LyderianChoppedTenderloin()
         {
-            id = 0;
+            id = 34859;
             name = "Lyderian Chopped Tenderloin";
-            icon = "generic.png";
+            icon = "34859.png";
         }
 
         public static LyderianChoppedTenderloin Instance
@@ -1863,9 +1863,9 @@
 
         RohnaRoastedHam()
         {
-            id = 0;
+            id = 34862;
             name = "Rohna Roasted Ham";
-            icon = "generic.png";
+            icon = "34862.png";
         }
 
         public static RohnaRoastedHam Instance
@@ -1892,9 +1892,9 @@
 
         SailorSeastew()
         {
-            id = 0;
+            id = 34865;
             name = "Sailor's Seastew";
-            icon = "generic.png";
+            icon = "34865.png";
         }
 
         public static SailorSeastew Instance
@@ -1921,9 +1921,9 @@
 
         BittersweetRoast()
         {
-            id = 0;
+            id = 34848;
             name = "Bittersweet Roast";
-            icon = "generic.png";
+            icon = "34848.png";
         }
 
         public static BittersweetRoast Instance
@@ -1950,9 +1950,9 @@
 
         ShanksNMash()
         {
-            id = 0;
+            id = 35402;
             name = "Shanks N' Mash";
-            icon = "generic.png";
+            icon = "35402.png";
         }
 
         public static ShanksNMash Instance
@@ -1979,9 +1979,9 @@
 
         IcedFruitmilk()
         {
-            id = 0;
+            id = 34856;
             name = "Iced Fruitmilk";
-            icon = "generic.png";
+            icon = "34856.png";
         }
 
         public static IcedFruitmilk Instance
@@ -2008,9 +2008,11 @@
         private static Oil? instance = null;
         private static readonly object locker = new object();
 
-        Oil() 
+        Oil()
         {
+            id = 34899;
             name = "Oil";
+            icon = "34899.png";
         }
 
         public static Oil Instance
@@ -2037,9 +2039,9 @@
 
         BasicSeasoning()
         {
-            id = 0;
+            id = 42106;
             name = "Basic Seasoning";
-            icon = "generic.png";
+            icon = "42106.png";
         }
 
         public static BasicSeasoning Instance
@@ -2066,9 +2068,9 @@
 
         SeafoodSeasoning()
         {
-            id = 0;
+            id = 42123;
             name = "Seafood Seasoning";
-            icon = "generic.png";
+            icon = "42123.png";
         }
 
         public static SeafoodSeasoning Instance
@@ -2095,9 +2097,9 @@
 
         GroundFlour()
         {
-            id = 0;
-            name = "GroundFlour";
-            icon = "generic.png";
+            id = 33553;
+            name = "Ground Flour";
+            icon = "33553.png";
         }
 
         public static GroundFlour Instance
@@ -2124,9 +2126,9 @@
 
         Butter()
         {
-            id = 0;
+            id = 42749;
             name = "Butter";
-            icon = "generic.png";
+            icon = "42749.png";
         }
 
         public static Butter Instance
@@ -2153,9 +2155,9 @@
 
         BrewerYeast()
         {
-            id = 0;
+            id = 42107;
             name = "Brewer Yeast";
-            icon = "generic.png";
+            icon = "42107.png";
         }
 
         public static BrewerYeast Instance
@@ -2182,9 +2184,9 @@
 
         GourmetSeasoning()
         {
-            id = 0;
+            id = 42112;
             name = "Gourmet Seasoning";
-            icon = "generic.png";
+            icon = "42112.png";
         }
 
         public static GourmetSeasoning Instance
@@ -2211,9 +2213,9 @@
 
         RichFlour()
         {
-            id = 0;
+            id = 42118;
             name = "Rich Flour";
-            icon = "generic.png";
+            icon = "42118.png";
         }
 
         public static RichFlour Instance
@@ -2240,9 +2242,9 @@
 
         SpicedOil()
         {
-            id = 0;
+            id = 34900;
             name = "Spiced Oil";
-            icon = "generic.png";
+            icon = "34900.png";
         }
 
         public static SpicedOil Instance
@@ -2269,9 +2271,9 @@
 
         SpicySeasoning()
         {
-            id = 0;
+            id = 42126;
             name = "Spicy Seasoning";
-            icon = "generic.png";
+            icon = "42126.png";
         }
 
         public static SpicySeasoning Instance
@@ -2300,9 +2302,9 @@
 
         BasicAnimalFeed()
         {
-            id = 0;
+            id = 34896;
             name = "Basic Animal Feed";
-            icon = "generic.png";
+            icon = "34896.png";
         }
 
         public static BasicAnimalFeed Instance
@@ -2329,9 +2331,9 @@
 
         MoaRation()
         {
-            id = 0;
+            id = 38161;
             name = "Moa Ration";
-            icon = "generic.png";
+            icon = "38161.png";
         }
 
         public static MoaRation Instance
@@ -2358,9 +2360,9 @@
 
         SuperiorRation()
         {
-            id = 0;
+            id = 43649;
             name = "Superior Ration";
-            icon = "generic.png";
+            icon = "43649.png";
         }
 
         public static SuperiorRation Instance
@@ -2387,9 +2389,9 @@
 
         ComplexAnimalFeed()
         {
-            id = 0;
+            id = 34897;
             name = "Complex Animal Feed";
-            icon = "generic.png";
+            icon = "34897.png";
         }
 
         public static ComplexAnimalFeed Instance
@@ -2416,9 +2418,9 @@
 
         GourmetRation()
         {
-            id = 0;
+            id = 43640;
             name = "Gourmet Ration";
-            icon = "generic.png";
+            icon = "43640.png";
         }
 
         public static GourmetRation Instance
@@ -2438,19 +2440,19 @@
         }
     }
 
-    public sealed class SafoodExtravaganza : CookingItem
+    public sealed class SeafoodExtravaganza : CookingItem
     {
-        private static SafoodExtravaganza? instance = null;
+        private static SeafoodExtravaganza? instance = null;
         private static readonly object locker = new object();
 
-        SafoodExtravaganza()
+        SeafoodExtravaganza()
         {
-            id = 0;
-            name = "Safood Extravaganza";
-            icon = "generic.png";
+            id = 43646;
+            name = "Seafood Extravaganza";
+            icon = "43646.png";
         }
 
-        public static SafoodExtravaganza Instance
+        public static SeafoodExtravaganza Instance
         {
             get
             {
@@ -2458,7 +2460,7 @@
                 {
                     if (instance == null)
                     {
-                        instance = new SafoodExtravaganza();
+                        instance = new SeafoodExtravaganza();
                     }
 
                     return instance;
@@ -2474,9 +2476,9 @@
 
         UncannyRation()
         {
-            id = 0;
+            id = 43642;
             name = "Uncanny Ration";
-            icon = "generic.png";
+            icon = "43642.png";
         }
 
         public static UncannyRation Instance
@@ -2503,9 +2505,9 @@
 
         MoaDelight()
         {
-            id = 0;
+            id = 43643;
             name = "Moa's Delight";
-            icon = "generic.png";
+            icon = "43643.png";
         }
 
         public static MoaDelight Instance

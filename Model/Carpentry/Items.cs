@@ -31,9 +31,11 @@
         private static DensePlank? instance = null;
         private static readonly object locker = new object();
 
-        DensePlank() 
+        DensePlank()
         {
+            id = 41847;
             name = "Dense Plank";
+            icon = "41847.png";
         }
 
         public static DensePlank Instance
@@ -60,9 +62,9 @@
 
         RoughPlank()
         {
-            id = 0;
+            id = 28744;
             name = "Rough Plank";
-            icon = "generic.png";
+            icon = "28744.png";
         }
 
         public static RoughPlank Instance
@@ -89,9 +91,9 @@
 
         RefinedPlank()
         {
-            id = 0;
+            id = 28743;
             name = "Refined Plank";
-            icon = "generic.png";
+            icon = "28743.png";
         }
 
         public static RefinedPlank Instance
@@ -118,9 +120,9 @@
 
         TreatedPlank()
         {
-            id = 0;
+            id = 28745;
             name = "Treated Plank";
-            icon = "generic.png";
+            icon = "28745.png";
         }
 
         public static TreatedPlank Instance
@@ -147,9 +149,9 @@
 
         HeavyPlank()
         {
-            id = 0;
+            id = 41848;
             name = "Heavy Plank";
-            icon = "generic.png";
+            icon = "41848.png";
         }
 
         public static HeavyPlank Instance
@@ -176,9 +178,9 @@
 
         SturdyPlank()
         {
-            id = 0;
+            id = 45506;
             name = "Sturdy Plank";
-            icon = "generic.png";
+            icon = "45506.png";
         }
 
         public static SturdyPlank Instance
@@ -205,9 +207,9 @@
 
         FinePlank()
         {
-            id = 0;
+            id = 45503;
             name = "Fine Plank";
-            icon = "generic.png";
+            icon = "45503.png";
         }
 
         public static FinePlank Instance
@@ -237,9 +239,9 @@
 
         WoodenBulwark()
         {
-            id = 0;
+            id = 46241;
             name = "Wooden Bulwark";
-            icon = "generic.png";
+            icon = "46241.png";
         }
 
         public static WoodenBulwark Instance
@@ -266,9 +268,9 @@
 
         MysticStaff()
         {
-            id = 0;
+            id = 29050;
             name = "Mystic Staff";
-            icon = "generic.png";
+            icon = "29050.png";
         }
 
         public static MysticStaff Instance
