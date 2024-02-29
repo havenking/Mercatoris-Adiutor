@@ -297,9 +297,9 @@
 
         OakWoodBow()
         {
-            id = 0;
+            id = 28998;
             name = "OakWood Bow";
-            icon = "generic.png";
+            icon = "28998.png";
         }
 
         public static OakWoodBow Instance
@@ -326,9 +326,9 @@
 
         WoodenBuckler()
         {
-            id = 0;
+            id = 29028;
             name = "Wooden Buckler";
-            icon = "generic.png";
+            icon = "29028.png";
         }
 
         public static WoodenBuckler Instance
@@ -355,9 +355,9 @@
 
         KnottedSceptre()
         {
-            id = 0;
+            id = 33990;
             name = "Knotted Sceptre";
-            icon = "generic.png";
+            icon = "33990.png";
         }
 
         public static KnottedSceptre Instance
@@ -386,9 +386,9 @@
 
         SentinelShield()
         {
-            id = 0;
+            id = 46242;
             name = "Sentinel Shield";
-            icon = "generic.png";
+            icon = "46242.png";
         }
 
         public static SentinelShield Instance
@@ -415,9 +415,9 @@
 
         SturdyBuckler()
         {
-            id = 0;
+            id = 290290;
             name = "Sturdy Buckler";
-            icon = "generic.png";
+            icon = "29029.png";
         }
 
         public static SturdyBuckler Instance
@@ -444,9 +444,9 @@
 
         TribalSceptre()
         {
-            id = 0;
+            id = 33991;
             name = "Tribal Sceptre";
-            icon = "generic.png";
+            icon = "33991.png";
         }
 
         public static TribalSceptre Instance
@@ -473,9 +473,9 @@
 
         ViperBow()
         {
-            id = 0;
+            id = 28999;
             name = "Viper's Bow";
-            icon = "generic.png";
+            icon = "28999.png";
         }
 
         public static ViperBow Instance
@@ -502,9 +502,9 @@
 
         WarlockStaff()
         {
-            id = 0;
+            id = 29051;
             name = "Warlock Staff";
-            icon = "generic.png";
+            icon = "29051.png";
         }
 
         public static WarlockStaff Instance
@@ -533,9 +533,9 @@
 
         SerpentSceptre()
         {
-            id = 0;
+            id = 33992;
             name = "Serpent Sceptre";
-            icon = "generic.png";
+            icon = "33992.png";
         }
 
         public static SerpentSceptre Instance
@@ -562,9 +562,9 @@
 
         DefenderBulwark()
         {
-            id = 0;
+            id = 46243;
             name = "Defender's Bulwark";
-            icon = "generic.png";
+            icon = "46243.png";
         }
 
         public static DefenderBulwark Instance
@@ -591,9 +591,9 @@
 
         CultistStaff()
         {
-            id = 0;
+            id = 29052;
             name = "Cultist Staff";
-            icon = "generic.png";
+            icon = "29052.png";
         }
 
         public static CultistStaff Instance
@@ -620,9 +620,9 @@
 
         MarauderShield()
         {
-            id = 0;
+            id = 29030;
             name = "Marauder's Shield";
-            icon = "generic.png";
+            icon = "29030.png";
         }
 
         public static MarauderShield Instance
@@ -649,9 +649,9 @@
 
         BlackAshBow()
         {
-            id = 0;
+            id = 29000;
             name = "Black Ash Bow";
-            icon = "generic.png";
+            icon = "29000.png";
         }
 
         public static BlackAshBow Instance
@@ -680,9 +680,9 @@
 
         CrystalSceptre()
         {
-            id = 0;
+            id = 33993;
             name = "Crystal Sceptre";
-            icon = "generic.png";
+            icon = "33993.png";
         }
 
         public static CrystalSceptre Instance
@@ -709,9 +709,9 @@
 
         CelestialStaff()
         {
-            id = 0;
+            id = 29053;
             name = "Celestial Staff";
-            icon = "generic.png";
+            icon = "29053.png";
         }
 
         public static CelestialStaff Instance
@@ -738,9 +738,9 @@
 
         RuneShield()
         {
-            id = 0;
+            id = 29031;
             name = "Rune Shield";
-            icon = "generic.png";
+            icon = "29031.png";
         }
 
         public static RuneShield Instance
@@ -767,9 +767,9 @@
 
         SteelcladBulwark()
         {
-            id = 0;
+            id = 46244;
             name = "Steelclad Bulwark";
-            icon = "generic.png";
+            icon = "46244.png";
         }
 
         public static SteelcladBulwark Instance
@@ -796,9 +796,9 @@
 
         BullseyeBow()
         {
-            id = 0;
+            id = 29001;
             name = "Bullseye Bow";
-            icon = "generic.png";
+            icon = "29001.png";
         }
 
         public static BullseyeBow Instance
@@ -827,9 +827,9 @@
 
         RavenguardShield()
         {
-            id = 0;
+            id = 29032;
             name = "Ravenguard's Shield";
-            icon = "generic.png";
+            icon = "29032.png";
         }
 
         public static RavenguardShield Instance
@@ -856,9 +856,9 @@
 
         KingDefender()
         {
-            id = 0;
+            id = 46245;
             name = "King's Defender";
-            icon = "generic.png";
+            icon = "46245.png";
         }
 
         public static KingDefender Instance
@@ -885,9 +885,9 @@
 
         CelestialSceptre()
         {
-            id = 0;
+            id = 33994;
             name = "Celestial Sceptre";
-            icon = "generic.png";
+            icon = "33994.png";
         }
 
         public static CelestialSceptre Instance
@@ -914,9 +914,9 @@
 
         PredatorBow()
         {
-            id = 0;
+            id = 29002;
             name = "Predator Bow";
-            icon = "generic.png";
+            icon = "29002.png";
         }
 
         public static PredatorBow Instance
@@ -943,9 +943,9 @@
 
         LightshardStaff()
         {
-            id = 0;
+            id = 29054;
             name = "Lightshard Staff";
-            icon = "generic.png";
+            icon = "29054.png";
         }
 
         public static LightshardStaff Instance
@@ -974,9 +974,9 @@
 
         ProtectorTowerShield()
         {
-            id = 0;
+            id = 46246;
             name = "Protector's Tower Shield";
-            icon = "generic.png";
+            icon = "46246.png";
         }
 
         public static ProtectorTowerShield Instance
@@ -1003,9 +1003,9 @@
 
         NecromancerStaff()
         {
-            id = 0;
-            name = "Necromancer Staff";
-            icon = "generic.png";
+            id = 37150;
+            name = "Necromancer's Staff";
+            icon = "37150.png";
         }
 
         public static NecromancerStaff Instance
@@ -1032,9 +1032,9 @@
 
         MarksmanBow()
         {
-            id = 0;
+            id = 37155;
             name = "Marksman Bow";
-            icon = "generic.png";
+            icon = "37155.png";
         }
 
         public static MarksmanBow Instance
@@ -1061,9 +1061,9 @@
 
         CrowboneSceptre()
         {
-            id = 0;
+            id = 37157;
             name = "Crowbone Sceptre";
-            icon = "generic.png";
+            icon = "37157.png";
         }
 
         public static CrowboneSceptre Instance
@@ -1090,9 +1090,9 @@
 
         NocturnalShield()
         {
-            id = 0;
+            id = 37149;
             name = "Nocturnal Shield";
-            icon = "generic.png";
+            icon = "37149.png";
         }
 
         public static NocturnalShield Instance
@@ -1122,9 +1122,9 @@
 
         FishingStick()
         {
-            id = 0;
+            id = 28896;
             name = "Fishing Stick";
-            icon = "generic.png";
+            icon = "28896.png";
         }
 
         public static FishingStick Instance
@@ -1151,9 +1151,9 @@
 
         FishingRod()
         {
-            id = 0;
+            id = 28898;
             name = "Fishing Rod";
-            icon = "generic.png";
+            icon = "28898.png";
         }
 
         public static FishingRod Instance
@@ -1180,9 +1180,9 @@
 
         CraftmanFishingRod()
         {
-            id = 0;
+            id = 28895;
             name = "Craftman's Fishing Rod";
-            icon = "generic.png";
+            icon = "28895.png";
         }
 
         public static CraftmanFishingRod Instance
@@ -1209,9 +1209,9 @@
 
         SailorFishingRod()
         {
-            id = 0;
+            id = 28899;
             name = "Sailor's Fishing Rod";
-            icon = "generic.png";
+            icon = "28899.png";
         }
 
         public static SailorFishingRod Instance
@@ -1238,9 +1238,9 @@
 
         ArtisanFishingRod()
         {
-            id = 0;
+            id = 28900;
             name = "Artisan Fishing Rod";
-            icon = "generic.png";
+            icon = "28900.png";
         }
 
         public static ArtisanFishingRod Instance
@@ -1267,9 +1267,9 @@
 
         LightwoodAngler()
         {
-            id = 0;
+            id = 28897;
             name = "Lightwood Angler";
-            icon = "generic.png";
+            icon = "28897.png";
         }
 
         public static LightwoodAngler Instance
@@ -1298,9 +1298,9 @@
 
         WeakTable()
         {
-            id = 0;
+            id = 42777;
             name = "Weak Table";
-            icon = "generic.png";
+            icon = "42777.png";
         }
 
         public static WeakTable Instance
@@ -1320,19 +1320,19 @@
         }
     }
 
-    public sealed class FrailLoam : CarpentryItem
+    public sealed class FrailLoom : CarpentryItem
     {
-        private static FrailLoam? instance = null;
+        private static FrailLoom? instance = null;
         private static readonly object locker = new object();
 
-        FrailLoam()
+        FrailLoom()
         {
-            id = 0;
-            name = "Frail Loam";
-            icon = "generic.png";
+            id = 42781;
+            name = "Frail Loom";
+            icon = "42781.png";
         }
 
-        public static FrailLoam Instance
+        public static FrailLoom Instance
         {
             get
             {
@@ -1340,7 +1340,7 @@
                 {
                     if (instance == null)
                     {
-                        instance = new FrailLoam();
+                        instance = new FrailLoom();
                     }
 
                     return instance;
@@ -1356,9 +1356,9 @@
 
         ProtectiveCharm()
         {
-            id = 0;
+            id = 47280;
             name = "Protective Charm";
-            icon = "generic.png";
+            icon = "47280.png";
         }
 
         public static ProtectiveCharm Instance
@@ -1385,9 +1385,9 @@
 
         BasicStabilizer()
         {
-            id = 0;
+            id = 47277;
             name = "Basic Stabilizer";
-            icon = "generic.png";
+            icon = "47277.png";
         }
 
         public static BasicStabilizer Instance
@@ -1407,19 +1407,19 @@
         }
     }
 
-    public sealed class StorageContaier : CarpentryItem
+    public sealed class StorageContainer : CarpentryItem
     {
-        private static StorageContaier? instance = null;
+        private static StorageContainer? instance = null;
         private static readonly object locker = new object();
 
-        StorageContaier()
+        StorageContainer()
         {
-            id = 0;
-            name = "Storage Contaier";
-            icon = "generic.png";
+            id = 37280;
+            name = "Storage Container";
+            icon = "37280.png";
         }
 
-        public static StorageContaier Instance
+        public static StorageContainer Instance
         {
             get
             {
@@ -1427,7 +1427,7 @@
                 {
                     if (instance == null)
                     {
-                        instance = new StorageContaier();
+                        instance = new StorageContainer();
                     }
 
                     return instance;
@@ -1443,9 +1443,9 @@
 
         WorkBench()
         {
-            id = 0;
+            id = 37290;
             name = "Work Bench";
-            icon = "generic.png";
+            icon = "37290.png";
         }
 
         public static WorkBench Instance
@@ -1472,9 +1472,9 @@
 
         Chair()
         {
-            id = 0;
+            id = 37227;
             name = "Chair";
-            icon = "generic.png";
+            icon = "37227.png";
         }
 
         public static Chair Instance
@@ -1501,9 +1501,9 @@
 
         SimpleBed()
         {
-            id = 0;
+            id = 37267;
             name = "Simple Bed";
-            icon = "generic.png";
+            icon = "37267.png";
         }
 
         public static SimpleBed Instance
@@ -1530,9 +1530,9 @@
 
         WallReinforcement()
         {
-            id = 0;
+            id = 47285;
             name = "Wall Reinforcement";
-            icon = "generic.png";
+            icon = "47285.png";
         }
 
         public static WallReinforcement Instance
@@ -1559,9 +1559,9 @@
 
         EnergyStabilizer()
         {
-            id = 0;
+            id = 47278;
             name = "Energy Stabilizer";
-            icon = "generic.png";
+            icon = "47278.png";
         }
 
         public static EnergyStabilizer Instance
@@ -1588,9 +1588,9 @@
 
         SimpleLoom()
         {
-            id = 0;
+            id = 42783;
             name = "Simple Loom";
-            icon = "generic.png";
+            icon = "42783.png";
         }
 
         public static SimpleLoom Instance
@@ -1617,9 +1617,9 @@
 
         WardingCharm()
         {
-            id = 0;
+            id = 47286;
             name = "Warding Charm";
-            icon = "generic.png";
+            icon = "47286.png";
         }
 
         public static WardingCharm Instance
@@ -1646,9 +1646,9 @@
 
         SuperiorWorkBench()
         {
-            id = 0;
+            id = 37287;
             name = "Superior Work Bench";
-            icon = "generic.png";
+            icon = "37287.png";
         }
 
         public static SuperiorWorkBench Instance
@@ -1675,9 +1675,9 @@
 
         Cabinet()
         {
-            id = 0;
+            id = 37224;
             name = "Cabinet";
-            icon = "generic.png";
+            icon = "37224.png";
         }
 
         public static Cabinet Instance
@@ -1704,9 +1704,9 @@
 
         SquareTable()
         {
-            id = 0;
+            id = 37279;
             name = "Square Table";
-            icon = "generic.png";
+            icon = "37279.png";
         }
 
         public static SquareTable Instance
@@ -1733,9 +1733,9 @@
 
         ComfortableBed()
         {
-            id = 0;
+            id = 37228;
             name = "Comfortable Bed";
-            icon = "generic.png";
+            icon = "37228.png";
         }
 
         public static ComfortableBed Instance
@@ -1762,9 +1762,9 @@
 
         SturdyContainer()
         {
-            id = 0;
+            id = 42782;
             name = "Sturdy Container";
-            icon = "generic.png";
+            icon = "42782.png";
         }
 
         public static SturdyContainer Instance
@@ -1791,9 +1791,9 @@
 
         ArcaneStabilizer()
         {
-            id = 0;
+            id = 47275;
             name = "Arcane Stabilizer";
-            icon = "generic.png";
+            icon = "47275.png";
         }
 
         public static ArcaneStabilizer Instance
@@ -1820,9 +1820,9 @@
 
         SpellboundCharm()
         {
-            id = 0;
+            id = 47282;
             name = "Spellbound Charm";
-            icon = "generic.png";
+            icon = "47282.png";
         }
 
         public static SpellboundCharm Instance
@@ -1849,9 +1849,9 @@
 
         WallFortification()
         {
-            id = 0;
+            id = 47284;
             name = "Wall Fortification";
-            icon = "generic.png";
+            icon = "47284.png";
         }
 
         public static WallFortification Instance
@@ -1878,9 +1878,9 @@
 
         LuxuryBed()
         {
-            id = 0;
+            id = 37245;
             name = "Luxury Bed";
-            icon = "generic.png";
+            icon = "37245.png";
         }
 
         public static LuxuryBed Instance
@@ -1907,9 +1907,9 @@
 
         Loom()
         {
-            id = 0;
+            id = 37244;
             name = "Loom";
-            icon = "generic.png";
+            icon = "37244.png";
         }
 
         public static Loom Instance
@@ -1936,9 +1936,9 @@
 
         ArtisanWorkBench()
         {
-            id = 0;
+            id = 37222;
             name = "Artisan Work Bench";
-            icon = "generic.png";
+            icon = "37222.png";
         }
 
         public static ArtisanWorkBench Instance
@@ -1965,9 +1965,9 @@
 
         Armoires()
         {
-            id = 0;
+            id = 37219;
             name = "Armoires";
-            icon = "generic.png";
+            icon = "37219.png";
         }
 
         public static Armoires Instance
@@ -1994,9 +1994,9 @@
 
         SturdySquareTable()
         {
-            id = 0;
+            id = 37283;
             name = "Sturdy Square Table";
-            icon = "generic.png";
+            icon = "37283.png";
         }
 
         public static SturdySquareTable Instance
@@ -2023,9 +2023,9 @@
 
         Fireplace()
         {
-            id = 0;
+            id = 37231;
             name = "Fireplace";
-            icon = "generic.png";
+            icon = "37231.png";
         }
 
         public static Fireplace Instance
@@ -2054,9 +2054,9 @@
 
         Mast()
         {
-            id = 0;
+            id = 37249;
             name = "Mast";
-            icon = "generic.png";
+            icon = "37249.png";
         }
 
         public static Mast Instance
@@ -2083,9 +2083,9 @@
 
         SmallGunDeck()
         {
-            id = 0;
+            id = 37274;
             name = "Small Gun Deck";
-            icon = "generic.png";
+            icon = "37274.png";
         }
 
         public static SmallGunDeck Instance
@@ -2112,9 +2112,9 @@
 
         SmallFishingStorage()
         {
-            id = 0;
+            id = 37273;
             name = "Small Fishing Storage";
-            icon = "generic.png";
+            icon = "37273.png";
         }
 
         public static SmallFishingStorage Instance
@@ -2141,9 +2141,9 @@
 
         SmallCargoHold()
         {
-            id = 0;
+            id = 37270;
             name = "Small Cargo Hold";
-            icon = "generic.png";
+            icon = "37270.png";
         }
 
         public static SmallCargoHold Instance
@@ -2170,9 +2170,9 @@
 
         SmallHullFrame()
         {
-            id = 0;
+            id = 37275;
             name = "Small Hull Frame";
-            icon = "generic.png";
+            icon = "37275.png";
         }
 
         public static SmallHullFrame Instance
@@ -2199,9 +2199,9 @@
 
         MediumGunDeck()
         {
-            id = 0;
+            id = 37255;
             name = "Medium Gun Deck";
-            icon = "generic.png";
+            icon = "37255.png";
         }
 
         public static MediumGunDeck Instance
@@ -2228,9 +2228,9 @@
 
         MediumFishingStorage()
         {
-            id = 0;
+            id = 37254;
             name = "Medium Fishing Storage";
-            icon = "generic.png";
+            icon = "37254.png";
         }
 
         public static MediumFishingStorage Instance
@@ -2257,9 +2257,9 @@
 
         MediumHullFrame()
         {
-            id = 0;
+            id = 37256;
             name = "Medium Hull Frame";
-            icon = "generic.png";
+            icon = "37256.png";
         }
 
         public static MediumHullFrame Instance
@@ -2286,9 +2286,9 @@
 
         MediumCargoHold()
         {
-            id = 0;
+            id = 37251;
             name = "Medium Cargo Hold";
-            icon = "generic.png";
+            icon = "37251.png";
         }
 
         public static MediumCargoHold Instance
@@ -2315,9 +2315,9 @@
 
         LargeCargoHold()
         {
-            id = 0;
+            id = 37237;
             name = "Large Cargo Hold";
-            icon = "generic.png";
+            icon = "37237.png";
         }
 
         public static LargeCargoHold Instance
@@ -2344,9 +2344,9 @@
 
         LargeGunDeck()
         {
-            id = 0;
+            id = 37240;
             name = "Large Gun Deck";
-            icon = "generic.png";
+            icon = "37240.png";
         }
 
         public static LargeGunDeck Instance
@@ -2373,9 +2373,9 @@
 
         LargeFishingStorage()
         {
-            id = 0;
+            id = 37239;
             name = "Large Fishing Storage";
-            icon = "generic.png";
+            icon = "37239.png";
         }
 
         public static LargeFishingStorage Instance
@@ -2402,9 +2402,9 @@
 
         LargeHullFrame()
         {
-            id = 0;
-            name = "LargeHullFrame";
-            icon = "generic.png";
+            id = 37241;
+            name = "Large Hull Frame";
+            icon = "37241.png";
         }
 
         public static LargeHullFrame Instance
@@ -2433,9 +2433,9 @@
 
         SmallAmmunitionCabinKit()
         {
-            id = 0;
+            id = 37269;
             name = "Small Ammunition Cabin Kit";
-            icon = "generic.png";
+            icon = "37269.png";
         }
 
         public static SmallAmmunitionCabinKit Instance
@@ -2462,9 +2462,9 @@
 
         SmallMaintenanceUnitKit()
         {
-            id = 0;
+            id = 43638;
             name = "Small Maintenance Unit Kit";
-            icon = "generic.png";
+            icon = "43638.png";
         }
 
         public static SmallMaintenanceUnitKit Instance
@@ -2491,9 +2491,9 @@
 
         SmallFishingCraneKit()
         {
-            id = 0;
+            id = 37271;
             name = "Small Fishing Crane Kit";
-            icon = "generic.png";
+            icon = "37271.png";
         }
 
         public static SmallFishingCraneKit Instance
@@ -2520,9 +2520,9 @@
 
         SmallTradepackContainerKit()
         {
-            id = 0;
+            id = 37277;
             name = "Small Tradepack Container Kit";
-            icon = "generic.png";
+            icon = "37277.png";
         }
 
         public static SmallTradepackContainerKit Instance
@@ -2549,9 +2549,9 @@
 
         MediumTradepackContainerKit()
         {
-            id = 0;
+            id = 37258;
             name = "Medium Tradepack Container Kit";
-            icon = "generic.png";
+            icon = "37258.png";
         }
 
         public static MediumTradepackContainerKit Instance
@@ -2578,9 +2578,9 @@
 
         MediumMaintenanceUnitKit()
         {
-            id = 0;
+            id = 43635;
             name = "Medium Maintenance Unit Kit";
-            icon = "generic.png";
+            icon = "43635.png";
         }
 
         public static MediumMaintenanceUnitKit Instance
@@ -2607,9 +2607,9 @@
 
         MediumAmmunitionCabinKit()
         {
-            id = 0;
+            id = 37250;
             name = "Medium Ammunition Cabin Kit";
-            icon = "generic.png";
+            icon = "37250.png";
         }
 
         public static MediumAmmunitionCabinKit Instance
@@ -2636,9 +2636,9 @@
 
         MediumFishingCraneKit()
         {
-            id = 0;
+            id = 37252;
             name = "Medium Fishing Crane Kit";
-            icon = "generic.png";
+            icon = "37252.png";
         }
 
         public static MediumFishingCraneKit Instance
@@ -2667,9 +2667,9 @@
 
         CommonWheel()
         {
-            id = 0;
+            id = 37229;
             name = "Common Wheel";
-            icon = "generic.png";
+            icon = "37229.png";
         }
 
         public static CommonWheel Instance
@@ -2696,9 +2696,9 @@
 
         SmallWagonContainer()
         {
-            id = 0;
+            id = 37278;
             name = "Small Wagon Container";
-            icon = "generic.png";
+            icon = "37278.png";
         }
 
         public static SmallWagonContainer Instance
@@ -2725,9 +2725,9 @@
 
         WoodenArch()
         {
-            id = 0;
+            id = 40286;
             name = "Wooden Arch";
-            icon = "generic.png";
+            icon = "40286.png";
         }
 
         public static WoodenArch Instance
@@ -2754,9 +2754,9 @@
 
         SwiftWheel()
         {
-            id = 0;
+            id = 40492;
             name = "Swift Wheel";
-            icon = "generic.png";
+            icon = "40492.png";
         }
 
         public static SwiftWheel Instance
@@ -2784,9 +2784,9 @@
 
         CommonWagonContainer()
         {
-            id = 0;
+            id = 40491;
             name = "Common Wagon Container";
-            icon = "generic.png";
+            icon = "40491.png";
         }
 
         public static CommonWagonContainer Instance
@@ -2813,9 +2813,9 @@
 
         SturdyWheel()
         {
-            id = 0;
+            id = 37284;
             name = "Sturdy Wheel";
-            icon = "generic.png";
+            icon = "37284.png";
         }
 
         public static SturdyWheel Instance
@@ -2842,9 +2842,9 @@
 
         MediumWagonContainer()
         {
-            id = 0;
+            id = 37259;
             name = "Medium Wagon Container";
-            icon = "generic.png";
+            icon = "37259.png";
         }
 
         public static MediumWagonContainer Instance
@@ -2871,9 +2871,9 @@
 
         SuppleWoodenArch()
         {
-            id = 0;
+            id = 40285;
             name = "Supple Wooden Arch";
-            icon = "generic.png";
+            icon = "40285.png";
         }
 
         public static SuppleWoodenArch Instance
@@ -2900,9 +2900,9 @@
 
         ReinforcedWheel()
         {
-            id = 0;
+            id = 37264;
             name = "Reinforced Wheel";
-            icon = "generic.png";
+            icon = "37264.png";
         }
 
         public static ReinforcedWheel Instance
@@ -2929,9 +2929,9 @@
 
         LargeWagonContainer()
         {
-            id = 0;
+            id = 37243;
             name = "Large Wagon Container";
-            icon = "generic.png";
+            icon = "37243.png";
         }
 
         public static LargeWagonContainer Instance

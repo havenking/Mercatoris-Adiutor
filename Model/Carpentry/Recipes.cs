@@ -1590,7 +1590,7 @@
                 new Material() { Item = Carpentry.Items.RoughPlank.Instance, Quantity = 10 },
                 new Material() { Item = Weaving.Items.SimpleCloth.Instance, Quantity = 6 }
             ];
-            craftedItem = Items.FrailLoam.Instance;
+            craftedItem = Items.FrailLoom.Instance;
         }
 
         public static FrailLoamRecipe Instance
@@ -1696,7 +1696,7 @@
                 new Material() { Item = Blacksmithing.Items.Nail.Instance, Quantity = 1 },
                 new Material() { Item = Blacksmithing.Items.IronBar.Instance, Quantity = 1 }
             ];
-            craftedItem = Items.StorageContaier.Instance;
+            craftedItem = Items.StorageContainer.Instance;
         }
 
         public static StorageContaierRecipe Instance
