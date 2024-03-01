@@ -27,51 +27,32 @@
         <BitmapImage x:Key="RecipeImageSource" UriSource="../Resources/Images/Generic.png" />
         <BitmapImage x:Key="ItemImageSource" UriSource="../Resources/Images/Generic.png" />
         <BitmapImage x:Key="TreeImageSource" UriSource="../Resources/Images/Generic.png" />
-
-        <Style x:Key="TabItemImprovedStyle" TargetType="{x:Type TabItem}">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type TabItem}">
-                        <Grid Margin="0">
-                            <Border Name="Border" Margin="0" Background="Transparent" BorderBrush="Black" BorderThickness="0" CornerRadius="3">
-                                <ContentPresenter x:Name="ContentSite" VerticalAlignment="Center" HorizontalAlignment="Stretch" ContentSource="Header" Margin="2" RecognizesAccessKey="True"/>
-                            </Border>
-                        </Grid>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsSelected" Value="True">
-                                <Setter Property="Panel.ZIndex" Value="100" />
-                                <Setter TargetName="Border" Property="Background" Value="White" />
-                            </Trigger>
-                            <Trigger Property="IsEnabled" Value="False">
-                                <Setter TargetName="Border" Property="Background" Value="DarkRed" />
-                                <Setter TargetName="Border" Property="BorderBrush" Value="Black" />
-                                <Setter Property="Foreground" Value="DarkGray" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
     </Window.Resources>
 
-    <Grid Background="Gray">
-        <TabControl Margin="0" Padding="0" BorderThickness="0">
-            <TabItem x:Name="PlannerTab" Header="Planner" FontSize="16">
-                <Grid Background="Gray">
-                    <ListBox x:Name="PlannerlistBox" ItemsSource="{Binding UserLog}" Background="LightGray">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <local:PlannerRegistry/>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
-                </Grid>
-            </TabItem>
+    <Grid Background="Black">
+        <TabControl Margin="0" Padding="0" BorderThickness="2" BorderBrush="White" Background="Black">
+            <view:ImprovedTabItem x:Name="PlannerTab" IsEnabled="false" FontSize="18">
+                <TabItem.Header>
+                    <Grid Background="Black">
+                        <TextBlock Grid.Column="1" Text="Planner" Margin="5,0" Foreground="White"/>
+                    </Grid>
+                </TabItem.Header>
 
-            <TabItem x:Name="CatalogTab" Header="Catalog"  FontSize="16">
+                <Grid Background="Black">
+                    
+                </Grid>
+            </view:ImprovedTabItem>
+
+            <view:ImprovedTabItem x:Name="CatalogTab" IsSelected="True" FontSize="18">
+                <TabItem.Header>
+                    <Grid Background="Black">
+                        <TextBlock Grid.Column="1" Text="Catalog" Margin="5,0" Foreground="White"/>
+                    </Grid>
+                </TabItem.Header>
+
                 <Grid Background="Black">
                     <TabControl TabStripPlacement="Left" BorderThickness="2,0,0,0" Padding="0" BorderBrush="White" Background="Black">
-                        <TabItem Style="{StaticResource TabItemImprovedStyle}" IsEnabled="false" FontSize="16">
+                        <view:ImprovedTabItem IsEnabled="false" FontSize="16">
                             <TabItem.Header>
                                 <Grid Background="Black">
                                     <Grid.ColumnDefinitions>
@@ -85,8 +66,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,0,0" BorderBrush="White">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -107,9 +88,9 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
 
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -136,11 +117,11 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
                             </TabControl>
-                        </TabItem>
+                        </view:ImprovedTabItem>
 
-                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                        <view:ImprovedTabItem FontSize="16">
                             <TabItem.Header>
                                 <Grid Background="Black">
                                     <Grid.ColumnDefinitions>
@@ -154,8 +135,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,0,0" BorderBrush="White">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -176,9 +157,9 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
 
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -205,11 +186,11 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
                             </TabControl>
-                        </TabItem>
+                        </view:ImprovedTabItem>
 
-                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                        <view:ImprovedTabItem FontSize="16">
                             <TabItem.Header>
                                 <Grid Background="Black">
                                     <Grid.ColumnDefinitions>
@@ -223,8 +204,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,0,0" BorderBrush="White">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -245,9 +226,9 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
 
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -274,11 +255,11 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
                             </TabControl>
-                        </TabItem>
+                        </view:ImprovedTabItem>
 
-                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                        <view:ImprovedTabItem FontSize="16">
                             <TabItem.Header>
                                 <Grid Background="Black">
                                     <Grid.ColumnDefinitions>
@@ -292,8 +273,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,0,0" BorderBrush="White">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -314,9 +295,9 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
 
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -343,11 +324,11 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
                             </TabControl>
-                        </TabItem>
+                        </view:ImprovedTabItem>
 
-                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                        <view:ImprovedTabItem FontSize="16">
                             <TabItem.Header>
                                 <Grid Background="Black">
                                     <Grid.ColumnDefinitions>
@@ -361,8 +342,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,0,0" BorderBrush="White">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -383,9 +364,9 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
 
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -412,11 +393,11 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
                             </TabControl>
-                        </TabItem>
+                        </view:ImprovedTabItem>
 
-                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                        <view:ImprovedTabItem FontSize="16">
                             <TabItem.Header>
                                 <Grid Background="Black">
                                     <Grid.ColumnDefinitions>
@@ -430,8 +411,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,0,0" BorderBrush="White">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -452,9 +433,9 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
 
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -481,11 +462,11 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
                             </TabControl>
-                        </TabItem>
+                        </view:ImprovedTabItem>
 
-                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                        <view:ImprovedTabItem FontSize="16">
                             <TabItem.Header>
                                 <Grid Background="Black">
                                     <Grid.ColumnDefinitions>
@@ -499,8 +480,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,0,0" BorderBrush="White">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -521,9 +502,9 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
 
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -550,11 +531,11 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
                             </TabControl>
-                        </TabItem>
+                        </view:ImprovedTabItem>
 
-                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                        <view:ImprovedTabItem FontSize="16">
                             <TabItem.Header>
                                 <Grid Background="Black">
                                     <Grid.ColumnDefinitions>
@@ -568,8 +549,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,0,0" BorderBrush="White">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -590,9 +571,9 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
 
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -619,11 +600,11 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
                             </TabControl>
-                        </TabItem>
+                        </view:ImprovedTabItem>
 
-                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                        <view:ImprovedTabItem FontSize="16">
                             <TabItem.Header>
                                 <Grid Background="Black">
                                     <Grid.ColumnDefinitions>
@@ -637,8 +618,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,0,0" BorderBrush="White">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -659,9 +640,9 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
 
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -688,11 +669,11 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
                             </TabControl>
-                        </TabItem>
+                        </view:ImprovedTabItem>
 
-                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                        <view:ImprovedTabItem FontSize="16">
                             <TabItem.Header>
                                 <Grid Background="Black">
                                     <Grid.ColumnDefinitions>
@@ -706,8 +687,8 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,2,2" BorderBrush="White">
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                            <TabControl Padding="0" Margin="0" BorderThickness="0,2,0,0" BorderBrush="White">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -728,9 +709,9 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
 
-                                <TabItem Style="{StaticResource TabItemImprovedStyle}">
+                                <view:ImprovedTabItem>
                                     <TabItem.Header>
                                         <Grid Background="Black">
                                             <Grid.ColumnDefinitions>
@@ -757,11 +738,11 @@
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
-                                </TabItem>
+                                </view:ImprovedTabItem>
                             </TabControl>
-                        </TabItem>
+                        </view:ImprovedTabItem>
 
-                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                        <view:ImprovedTabItem IsEnabled="false" FontSize="16">
                             <TabItem.Header>
                                 <Grid Background="Black">
                                     <Grid.ColumnDefinitions>
@@ -782,9 +763,9 @@
                                     </DataTemplate>
                                 </ListBox.ItemTemplate>
                             </ListBox>
-                        </TabItem>
+                        </view:ImprovedTabItem>
 
-                        <TabItem Style="{StaticResource TabItemImprovedStyle}" FontSize="16">
+                        <view:ImprovedTabItem IsEnabled="false" FontSize="16">
                             <TabItem.Header>
                                 <Grid Background="Black">
                                     <Grid.ColumnDefinitions>
@@ -798,23 +779,29 @@
                                 </Grid>
                             </TabItem.Header>
 
-                            <ListBox Name="TradepackRecipesListBox" ItemsSource="{Binding TradepackRecipes}" Background="Gray">
+                            <ListBox ItemsSource="{Binding TradepackRecipes}" Background="Black">
                                 <ListBox.ItemTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding Mode=OneWay}" Background="Gray"/>
                                     </DataTemplate>
                                 </ListBox.ItemTemplate>
                             </ListBox>
-                        </TabItem>
+                        </view:ImprovedTabItem>
                     </TabControl>
                 </Grid>
-            </TabItem>
+            </view:ImprovedTabItem>
 
-            <TabItem x:Name="DetailsTab" Header="Details"  FontSize="16">
-                <Grid Background="Gray">
+            <view:ImprovedTabItem x:Name="DetailsTab" IsEnabled="false" FontSize="18">
+                <TabItem.Header>
+                    <Grid Background="Black">
+                        <TextBlock Grid.Column="1" Text="Details" Margin="5,0" Foreground="White"/>
+                    </Grid>
+                </TabItem.Header>
+                
+                <Grid Background="Black">
 
                 </Grid>
-            </TabItem>
+            </view:ImprovedTabItem>
         </TabControl>
     </Grid>
 </Window>
